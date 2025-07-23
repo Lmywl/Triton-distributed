@@ -81,7 +81,7 @@ def get_max_nic_bandwidth_gpbs(interface="eth0"):
 def get_nic_gbps_per_gpu():
     """ in GB/s not Gbps """
     interfaces = get_network_interfaces()
-    bws = [get_max_nic_bandwidth_gpbs(interface) for interface in interfaces]
+    bws = [get_max_nic_bandwidth_gpbs(interface) for interface in interfaces if interface != 'xgbe1']
     # suppose use the max speed ones only
     max_bw = max(bws)
     outs = [(interface, bw) for interface, bw in zip(interfaces, bws) if bw == max_bw]

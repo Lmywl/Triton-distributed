@@ -1,6 +1,9 @@
 # Pytest
 pytest.ini
 
+# core
+core.33866
+
 # Python caches
 __pycache__/
 *.py[cod]
