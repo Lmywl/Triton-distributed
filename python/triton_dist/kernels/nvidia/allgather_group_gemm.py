@@ -405,7 +405,6 @@ def ag_group_gemm(a: torch.Tensor, b: torch.Tensor, ctx: MoEAllGatherGroupGEMMTe
         device=a.device,
     )
     rowise_ag_scatter_group_gemm_dispatcher(a, b, c, ctx, full_topk_ids)
-
     torch.cuda.synchronize()
 
     EM = ctx.topk * ntokens_per_rank * ctx.num_ranks

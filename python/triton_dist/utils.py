@@ -175,21 +175,22 @@ def initialize_distributed(seed=None):
     global _TP_GROUP
     assert _TP_GROUP is None, "TP_GROUP has already been initialized"
 
-    RANK = int(os.environ.get("RANK", 0))
-    LOCAL_RANK = int(os.environ.get("LOCAL_RANK", 0))
-    WORLD_SIZE = int(os.environ.get("WORLD_SIZE", 1))
-    torch.cuda.set_device(LOCAL_RANK)
-    torch.distributed.init_process_group(
-        backend="nccl",
-        world_size=WORLD_SIZE,
-        rank=RANK,
-        timeout=datetime.timedelta(seconds=1800),
-    )
-    assert torch.distributed.is_initialized()
-    # use all ranks as tp group
-    _TP_GROUP = torch.distributed.new_group(ranks=list(range(WORLD_SIZE)), backend="nccl")
+    # RANK = int(os.environ.get("RANK", 0))
+    # LOCAL_RANK = int(os.environ.get("LOCAL_RANK", 0))
+    # WORLD_SIZE = int(os.environ.get("WORLD_SIZE", 1))
+    # torch.cuda.set_device(LOCAL_RANK)
+    # torch.distributed.init_process_group(
+    #     backend="nccl",
+    #     world_size=WORLD_SIZE,
+    #     rank=RANK,
+    #     timeout=datetime.timedelta(seconds=1800),
+    # )
+    # assert torch.distributed.is_initialized()
+    # # use all ranks as tp group
+    # _TP_GROUP = torch.distributed.new_group(ranks=list(range(WORLD_SIZE)), backend="nccl")
 
-    init_seed(seed=seed if seed is not None else RANK)
+    # init_seed(seed=seed if seed is not None else RANK)
+    _TP_GROUP = torch.distributed.group.WORLD
     init_nvshmem_by_torch_process_group(_TP_GROUP)
     return _TP_GROUP
 
