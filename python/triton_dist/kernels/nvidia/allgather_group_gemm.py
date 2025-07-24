@@ -405,7 +405,29 @@ def ag_group_gemm(a: torch.Tensor, b: torch.Tensor, ctx: MoEAllGatherGroupGEMMTe
         device=a.device,
     )
     rowise_ag_scatter_group_gemm_dispatcher(a, b, c, ctx, full_topk_ids)
-    return c
+
+    torch.cuda.synchronize()
+
+    EM = ctx.topk * ntokens_per_rank * ctx.num_ranks
+    d = torch.empty(
+        [EM, ctx.N_per_rank // 2], # [topk * global_M, intermediate_size]
+        dtype=ctx.dtype,
+        device=a.device,
+    )
+    grid_silu = lambda META: (EM, triton.cdiv(ctx.N_per_rank // 2, META['BLOCK_SIZE_N'])) # N -- intermediate_size
+    gated_silu_kernel[grid_silu](
+        c,
+        d,
+        EM,
+        ctx.N_per_rank,
+        c.stride(0),
+        c.stride(1),
+        d.stride(0),
+        d.stride(1),
+        ctx.BLOCK_N
+    )
+
+    return d
 
 
 def rowise_ag_scatter_group_gemm_dispatcher(a,  # local tensor
@@ -603,3 +625,45 @@ def kernel_consumer_m_parallel_scatter_group_gemm(
     c_ptrs = (c_ptr + offs_token[:, None] * stride_cm + offs_cn[None, :] * stride_cn)
     c_mask = token_mask[:, None] & (offs_cn[None, :] < N)
     tl.store(c_ptrs, accumulator, mask=c_mask)
+
+
+@triton.jit
+def gated_silu_kernel(
+    x_ptr,      # 输入指针 [EM, N]
+    y_ptr,      # 输出指针 [EM, N//2]
+    M: int,     # 行数
+    N: int,     # 列数（必须是偶数）
+    stride_xm: int,
+    stride_xn: int,
+    stride_ym: int,
+    stride_yn: int,
+    BLOCK_SIZE_N: tl.constexpr
+):
+    pid_m = tl.program_id(axis=0)   # 当前行索引 (M 维度)
+    pid_n = tl.program_id(axis=1)   # 当前块编号 (N 维度)
+
+    # 每个 block 处理 N//2 中的一部分（因为输出是 N//2）
+    row_offset = pid_m * stride_xm # only get one row_offset since the block num of dim 0 is EM, equal to the dim_size
+    col_offsets = (pid_n * BLOCK_SIZE_N + tl.arange(0, BLOCK_SIZE_N)) # get a series of col_offset, forming a vector
+
+    # 检查是否越界
+    mask = col_offsets < N
+
+    # 加载两个部分：前一半和后一半
+    x1_ptrs = x_ptr + row_offset + col_offsets
+    x2_ptrs = x_ptr + row_offset + col_offsets + N // 2
+
+    x1 = tl.load(x1_ptrs, mask=mask)
+    x2 = tl.load(x2_ptrs, mask=mask)
+
+    x1_f32 = x1.to(tl.float32)
+    x2_f32 = x2.to(tl.float32)
+
+    sigmoid_x1 = tl.sigmoid(x1_f32)
+    y_f32 = x1_f32 * sigmoid_x1 * x2_f32
+
+    y = y_f32.to(tl.float16)
+
+    # 写入输出
+    y_ptrs = y_ptr + pid_m * stride_ym + (pid_n * BLOCK_SIZE_N + tl.arange(0, BLOCK_SIZE_N)) * stride_yn
+    tl.store(y_ptrs, y, mask=mask)
