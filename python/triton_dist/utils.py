@@ -194,6 +194,13 @@ def initialize_distributed(seed=None):
     init_nvshmem_by_torch_process_group(_TP_GROUP)
     return _TP_GROUP
 
+def initialize_distributed_for_vllm(seed=None):
+    global _TP_GROUP
+    assert _TP_GROUP is None, "TP_GROUP has already been initialized"
+    
+    _TP_GROUP = torch.distributed.group.WORLD
+    init_nvshmem_by_torch_process_group(_TP_GROUP)
+    return _TP_GROUP
 
 def TP_GROUP() -> torch.distributed.ProcessGroup:
     global _TP_GROUP
