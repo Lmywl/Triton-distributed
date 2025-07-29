@@ -41,17 +41,18 @@ Obtaining file:///root/paddlejob/workspace/env_run/output/liumengyuan/code/Trito
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed.so
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed_kernel.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed_kernel.so
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton
-  creating /tmp/pip-modern-metadata-llz9rjsi/triton_dist.egg-info
-  writing /tmp/pip-modern-metadata-llz9rjsi/triton_dist.egg-info/PKG-INFO
-  writing dependency_links to /tmp/pip-modern-metadata-llz9rjsi/triton_dist.egg-info/dependency_links.txt
-  writing entry points to /tmp/pip-modern-metadata-llz9rjsi/triton_dist.egg-info/entry_points.txt
-  writing requirements to /tmp/pip-modern-metadata-llz9rjsi/triton_dist.egg-info/requires.txt
-  writing top-level names to /tmp/pip-modern-metadata-llz9rjsi/triton_dist.egg-info/top_level.txt
-  writing manifest file '/tmp/pip-modern-metadata-llz9rjsi/triton_dist.egg-info/SOURCES.txt'
-  writing manifest file '/tmp/pip-modern-metadata-llz9rjsi/triton_dist.egg-info/SOURCES.txt'
-  creating '/tmp/pip-modern-metadata-llz9rjsi/triton_dist-3.4.0.dist-info'
+  creating /tmp/pip-modern-metadata-yz43rv4j/triton_dist.egg-info
+  writing /tmp/pip-modern-metadata-yz43rv4j/triton_dist.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-modern-metadata-yz43rv4j/triton_dist.egg-info/dependency_links.txt
+  writing entry points to /tmp/pip-modern-metadata-yz43rv4j/triton_dist.egg-info/entry_points.txt
+  writing requirements to /tmp/pip-modern-metadata-yz43rv4j/triton_dist.egg-info/requires.txt
+  writing top-level names to /tmp/pip-modern-metadata-yz43rv4j/triton_dist.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-modern-metadata-yz43rv4j/triton_dist.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/pip-modern-metadata-yz43rv4j/triton_dist.egg-info/SOURCES.txt'
+  writing manifest file '/tmp/pip-modern-metadata-yz43rv4j/triton_dist.egg-info/SOURCES.txt'
+  creating '/tmp/pip-modern-metadata-yz43rv4j/triton_dist-3.4.0.dist-info'
   Preparing editable metadata (pyproject.toml): finished with status 'done'
-Requirement already satisfied: setuptools>=40.8.0 in /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages (from triton_dist==3.4.0) (79.0.1)
+Requirement already satisfied: setuptools>=40.8.0 in /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages (from triton_dist==3.4.0) (80.9.0)
 Building wheels for collected packages: triton_dist
   Building editable for triton_dist (pyproject.toml): started
   Running command Building editable for triton_dist (pyproject.toml)
@@ -89,22 +90,119 @@ Building wheels for collected packages: triton_dist
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed.so
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed_kernel.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed_kernel.so
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton
-  creating /tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist.egg-info
-  writing /tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist.egg-info/PKG-INFO
-  writing dependency_links to /tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist.egg-info/dependency_links.txt
-  writing entry points to /tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist.egg-info/entry_points.txt
-  writing requirements to /tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist.egg-info/requires.txt
-  writing top-level names to /tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist.egg-info/top_level.txt
-  writing manifest file '/tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist.egg-info/SOURCES.txt'
-  writing manifest file '/tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist.egg-info/SOURCES.txt'
-  creating '/tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist-3.4.0.dist-info'
-  creating /tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist-3.4.0.dist-info/WHEEL
+  creating /tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist.egg-info
+  writing /tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist.egg-info/dependency_links.txt
+  writing entry points to /tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist.egg-info/entry_points.txt
+  writing requirements to /tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist.egg-info/requires.txt
+  writing top-level names to /tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist.egg-info/SOURCES.txt'
+  writing manifest file '/tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist.egg-info/SOURCES.txt'
+  creating '/tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist-3.4.0.dist-info'
+  creating /tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist-3.4.0.dist-info/WHEEL
   running build_py
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/../3rdparty/triton/python/triton/tools/extra/cuda -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/third_party/nvidia/tools/cuda
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/../3rdparty/triton/python/triton/profiler -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/third_party/proton/proton
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed.so
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed_kernel.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed_kernel.so
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton
+  running build_ext
+  creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/../3rdparty/triton/python/triton/tools/extra/cuda -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/third_party/nvidia/tools/cuda
+  creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/../3rdparty/triton/python/triton/profiler -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/third_party/proton/proton
+  creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed.so
+  creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed_kernel.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed_kernel.so
+  creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton
+  /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/command/editable_wheel.py:297: SetuptoolsDeprecationWarning: Customization incompatible with editable install
+  !!
+
+          ********************************************************************************
+                          Traceback (most recent call last):
+            File "/usr/lib/python3.12/urllib/request.py", line 1344, in do_open
+              h.request(req.get_method(), req.selector, req.data, headers,
+            File "/usr/lib/python3.12/http/client.py", line 1336, in request
+              self._send_request(method, url, body, headers, encode_chunked)
+            File "/usr/lib/python3.12/http/client.py", line 1382, in _send_request
+              self.endheaders(body, encode_chunked=encode_chunked)
+            File "/usr/lib/python3.12/http/client.py", line 1331, in endheaders
+              self._send_output(message_body, encode_chunked=encode_chunked)
+            File "/usr/lib/python3.12/http/client.py", line 1091, in _send_output
+              self.send(msg)
+            File "/usr/lib/python3.12/http/client.py", line 1035, in send
+              self.connect()
+            File "/usr/lib/python3.12/http/client.py", line 1477, in connect
+              self.sock = self._context.wrap_socket(self.sock,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            File "/usr/lib/python3.12/ssl.py", line 455, in wrap_socket
+              return self.sslsocket_class._create(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            File "/usr/lib/python3.12/ssl.py", line 1042, in _create
+              self.do_handshake()
+            File "/usr/lib/python3.12/ssl.py", line 1320, in do_handshake
+              self._sslobj.do_handshake()
+          ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+          During handling of the above exception, another exception occurred:
+
+          Traceback (most recent call last):
+            File "/root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/command/editable_wheel.py", line 303, in _safely_run
+              return self.run_command(cmd_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+            File "/root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/_distutils/cmd.py", line 357, in run_command
+              self.distribution.run_command(command)
+            File "/root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/dist.py", line 1102, in run_command
+              super().run_command(command)
+            File "/root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+              cmd_obj.run()
+            File "<string>", line 405, in run
+            File "/root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/_distutils/cmd.py", line 357, in run_command
+              self.distribution.run_command(command)
+            File "/root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/dist.py", line 1102, in run_command
+              super().run_command(command)
+            File "/root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+              cmd_obj.run()
+            File "<string>", line 474, in run
+            File "<string>", line 520, in build_extension_cmake
+            File "<string>", line 331, in get_thirdparty_packages
+            File "<string>", line 277, in open_url
+            File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+              return opener.open(url, data, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+              response = self._open(req, data)
+                         ^^^^^^^^^^^^^^^^^^^^^
+            File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+              result = self._call_chain(self.handle_open, protocol, protocol +
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+              result = func(*args)
+                       ^^^^^^^^^^^
+            File "/usr/lib/python3.12/urllib/request.py", line 1392, in https_open
+              return self.do_open(http.client.HTTPSConnection, req,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            File "/usr/lib/python3.12/urllib/request.py", line 1347, in do_open
+              raise URLError(err)
+          urllib.error.URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>
+
+
+                          If you are seeing this warning it is very likely that a setuptools
+                          plugin or customization overrides the `build_py` command, without
+                          taking into consideration how editable installs run build steps
+                          starting from setuptools v64.0.0.
+
+                          Plugin authors and developers relying on custom build steps are
+                          encouraged to update their `build_py` implementation considering the
+                          information about editable installs in
+                          https://setuptools.pypa.io/en/latest/userguide/extension.html.
+
+                          For the time being `setuptools` will silence this error and ignore
+                          the faulty command, but this behavior will change in future versions.
+
+          ********************************************************************************
+
+  !!
+    self._safely_run(name)
+  downloading and extracting https://oaitriton.blob.core.windows.net/public/llvm-builds/llvm-8957e64a-ubuntu-x64.tar.gz ...
   running build_ext
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/../3rdparty/triton/python/triton/tools/extra/cuda -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/third_party/nvidia/tools/cuda
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/../3rdparty/triton/python/triton/profiler -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/third_party/proton/proton
@@ -122,32 +220,10 @@ Building wheels for collected packages: triton_dist
     behavior and not rely on setting a policy to OLD.
 
 
-  -- The CXX compiler identification is GNU 13.3.0
-  -- The C compiler identification is GNU 13.3.0
-  -- Detecting CXX compiler ABI info
-  -- Detecting CXX compiler ABI info - done
-  -- Check for working CXX compiler: /bin/c++ - skipped
-  -- Detecting CXX compile features
-  -- Detecting CXX compile features - done
-  -- Detecting C compiler ABI info
-  -- Detecting C compiler ABI info - done
-  -- Check for working C compiler: /bin/cc - skipped
-  -- Detecting C compile features
-  -- Detecting C compile features - done
-  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
-  -- Found Threads: TRUE
-  -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")
-  -- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.14")
-  -- Linker detection: GNU ld
   -- Adding Python module for TritonDistributed
   -- Adding Python module
   -- Found Python3: /root/.virtualenvs/lmy_vllm_triton/bin/python (found version "3.12.3") found components: Development.Module Interpreter
-  -- Performing Test HAS_FLTO
-  -- Performing Test HAS_FLTO - Success
   -- Found pybind11: /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/pybind11/include (found version "3.0.0")
-  -- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS
-  -- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS - Success
   -- Found Python3: /root/.virtualenvs/lmy_vllm_triton/bin/python (found version "3.12.3") found components: Interpreter Development.Module
   -- Collecting object files from Proton
   -- Collecting object files from ProtonContext
@@ -156,12 +232,6 @@ Building wheels for collected packages: triton_dist
   -- Collecting object files from ProtonProfiler
   -- Collecting object files from ProtonSession
   -- CUDA compiler detected, setting project language to CUDA.
-  -- The CUDA compiler identification is NVIDIA 12.9.41 with host compiler GNU 13.3.0
-  -- Detecting CUDA compiler ABI info
-  -- Detecting CUDA compiler ABI info - done
-  -- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc - skipped
-  -- Detecting CUDA compile features
-  -- Detecting CUDA compile features - done
   -- Found Python3: /root/.virtualenvs/lmy_vllm_triton/bin/python (found version "3.12.3") found components: Development.Module Interpreter
   -- Found Python3: /root/.virtualenvs/lmy_vllm_triton/bin/python (found version "3.12.3") found components: Interpreter Development Development.Module Development.Embed
   CMake Warning (dev) at csrc/lib/CMakeLists.txt:9 (find_package):
@@ -171,58 +241,24 @@ Building wheels for collected packages: triton_dist
 
   This warning is for project developers.  Use -Wno-dev to suppress it.
 
-  -- Found CUDA: /usr/local/cuda (found version "12.9")
   -- Found CUDAToolkit: /usr/local/cuda/targets/x86_64-linux/include (found version "12.9.41")
-  -- Found CUDA: /usr/local/cuda (found version "12.9")
   -- Found CUDAToolkit: /usr/local/cuda/include (found version "12.9.41")
-  -- PyTorch: CUDA detected: 12.9
-  -- PyTorch: CUDA nvcc is: /usr/local/cuda/bin/nvcc
-  -- PyTorch: CUDA toolkit directory: /usr/local/cuda
-  -- PyTorch: Header version is: 12.9
-  -- Found Python: /bin/python3.13 (found version "3.13.3") found components: Interpreter
-  CMake Warning at /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Caffe2/public/cuda.cmake:140 (message):
-    Failed to compute shorthash for libnvrtc.so
-  Call Stack (most recent call first):
-    /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
-    /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
-    csrc/lib/CMakeLists.txt:26 (find_package)
-
-
-  CMake Warning (dev) at /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/cmake/data/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:430 (message):
-    The package name passed to find_package_handle_standard_args() (nvtx3) does
-    not match the name of the calling package (Caffe2).  This can lead to
-    problems in calling code that expects find_package() result variables
-    (e.g., `_FOUND`) to follow a certain pattern.
-  Call Stack (most recent call first):
-    /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Caffe2/public/cuda.cmake:178 (find_package_handle_standard_args)
-    /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
-    /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
-    csrc/lib/CMakeLists.txt:26 (find_package)
-  This warning is for project developers.  Use -Wno-dev to suppress it.
-
-  -- Could NOT find nvtx3 (missing: nvtx3_dir)
-  CMake Warning at /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Caffe2/public/cuda.cmake:184 (message):
-    Cannot find NVTX3, find old NVTX instead
-  Call Stack (most recent call first):
-    /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
-    /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
-    csrc/lib/CMakeLists.txt:26 (find_package)
-
-
+  -- Caffe2: CUDA detected: 12.9
+  -- Caffe2: CUDA nvcc is: /usr/local/cuda/bin/nvcc
+  -- Caffe2: CUDA toolkit directory: /usr/local/cuda
+  -- Caffe2: Header version is: 12.9
+  -- /usr/local/cuda-12.9/targets/x86_64-linux/lib/libnvrtc.so shorthash is b0064dcb
   -- USE_CUDNN is set to 0. Compiling without cuDNN support
   -- USE_CUSPARSELT is set to 0. Compiling without cuSPARSELt support
-  -- USE_CUDSS is set to 0. Compiling without cuDSS support
-  -- USE_CUFILE is set to 0. Compiling without cuFile support
-  -- Autodetected CUDA architecture(s):  12.0a 12.0a 12.0a 12.0a 12.0a 12.0a 12.0a 12.0a
-  -- Added CUDA NVCC flags for: -gencode;arch=compute_120a,code=sm_120a
+  -- Autodetected CUDA architecture(s):  9.0a 9.0a 9.0a 9.0a 9.0a 9.0a 9.0a 9.0a
+  -- Added CUDA NVCC flags for: -gencode;arch=compute_90a,code=sm_90a
   CMake Warning at /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:22 (message):
     static library kineto_LIBRARY-NOTFOUND not found.
   Call Stack (most recent call first):
-    /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:125 (append_torchlib_if_found)
+    /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:120 (append_torchlib_if_found)
     csrc/lib/CMakeLists.txt:26 (find_package)
 
 
-  -- Found Torch: /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/lib/libtorch.so
   -- torch lib: /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/torch/lib
   -- cu files: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/csrc/lib/moe_utils.cu
   -- lib files: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/csrc/lib/op_pybind.cc;/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/csrc/lib/registry.cc
@@ -232,461 +268,394 @@ Building wheels for collected packages: triton_dist
 
 
   -- Triton backends tuple: nvidia,amd,proton,distributed
-  CMake Warning at /root/.triton/llvm/llvm-8957e64a-ubuntu-x64/lib/cmake/llvm/AddLLVM.cmake:2047 (message):
-    LLVM_EXTERNAL_LIT set to
-    /root/.triton/llvm/llvm-8957e64a-ubuntu-x64/bin/llvm-lit, but the path does
-    not exist.
-  Call Stack (most recent call first):
-    /root/.triton/llvm/llvm-8957e64a-ubuntu-x64/lib/cmake/llvm/AddLLVM.cmake:2092 (get_llvm_lit_path)
-    /root/.triton/llvm/llvm-8957e64a-ubuntu-x64/lib/cmake/llvm/AddLLVM.cmake:2185 (add_lit_target)
-    3rdparty/triton/test/CMakeLists.txt:23 (add_lit_testsuite)
-
-
-  -- Configuring done (135.1s)
-  -- Generating done (0.7s)
-  CMake Warning:
-    Manually-specified variables were not used by the project:
-
-      JSON_SYSPATH
-      LLVM_ENABLE_WERROR
-
-
+  -- Configuring done (3.8s)
+  -- Generating done (0.8s)
   -- Build files have been written to: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/build/cmake.linux-x86_64-cpython-3.12
-  [1/399] Building Passes.h.inc...
-  [2/399] Building Passes.h.inc...
-  [3/399] Building AttrInterfaces.cpp.inc...
-  [4/399] Building AttrInterfaces.h.inc...
-  [5/399] Building Dialect.cpp.inc...
-  [6/399] Building Dialect.h.inc...
-  [7/399] Building OpInterfaces.cpp.inc...
-  [8/399] Building OpInterfaces.h.inc...
-  [9/399] Building OpsEnums.cpp.inc...
-  [10/399] Building OpsEnums.h.inc...
-  [11/399] Building Types.cpp.inc...
-  [12/399] Building Types.h.inc...
-  [13/399] Building Passes.h.inc...
-  [14/399] Building Types.cpp.inc...
-  [15/399] Building Types.h.inc...
-  [16/399] Building Passes.h.inc...
-  [17/399] Building Dialect.h.inc...
-  [18/399] Building Passes.h.inc...
-  [19/399] Building Passes.h.inc...
-  [20/399] Building Passes.h.inc...
-  [21/399] Building Passes.h.inc...
-  [22/399] Building Passes.h.inc...
-  [23/399] Building Passes.h.inc...
-  [24/399] Building Passes.h.inc...
-  [25/399] Building Passes.h.inc...
-  [26/399] Building Passes.h.inc...
-  [27/399] Building Passes.h.inc...
-  [28/399] Building Dialect.h.inc...
-  [29/399] Building Dialect.cpp.inc...
-  [30/399] Building Dialect.h.inc...
-  [31/399] Building Dialect.h.inc...
-  [32/399] Building TritonCanonicalize.inc...
-  [33/399] Building OpsConversions.inc...
-  [34/399] Building Dialect.cpp.inc...
-  [35/399] Building Ops.cpp.inc...
-  [36/399] Building Ops.h.inc...
-  [37/399] Building Ops.cpp.inc...
-  [38/399] Building Ops.h.inc...
-  [39/399] Building TritonCombine.inc...
-  [40/399] Building Ops.h.inc...
-  [41/399] Building Dialect.cpp.inc...
-  [42/399] Building Dialect.cpp.inc...
-  [43/399] Building Ops.cpp.inc...
-  [44/399] Building Ops.h.inc...
-  [45/399] Building Dialect.cpp.inc...
-  [46/399] Building Dialect.h.inc...
-  [47/399] Building Ops.cpp.inc...
-  [48/399] Building Ops.h.inc...
-  [49/399] Building OpsConversions.inc...
-  [50/399] Building Dialect.h.inc...
-  [51/399] Building OpsConversions.inc...
-  [52/399] Building OpsEnums.cpp.inc...
-  [53/399] Building OpsEnums.h.inc...
-  [54/399] Building Dialect.cpp.inc...
-  [55/399] Building Ops.h.inc...
-  [56/399] Building Types.cpp.inc...
-  [57/399] Building Types.h.inc...
-  [58/399] Building Ops.cpp.inc...
-  [59/399] Building Ops.h.inc...
-  [60/399] Building Dialect.h.inc...
-  [61/399] Building Dialect.h.inc...
-  [62/399] Building Ops.cpp.inc...
-  [63/399] Building Ops.h.inc...
-  [64/399] Building OpsConversions.inc...
-  [65/399] Building OpsEnums.cpp.inc...
-  [66/399] Building OpsEnums.h.inc...
-  [67/399] Building OpsEnums.cpp.inc...
-  [68/399] Building AttrDefs.h.inc...
-  [69/399] Building AttrInterfaces.cpp.inc...
-  [70/399] Building AttrInterfaces.h.inc...
-  [71/399] Building OpsEnums.cpp.inc...
-  [72/399] Building OpsEnums.h.inc...
-  [73/399] Building Ops.cpp.inc...
-  [74/399] Building Ops.cpp.inc...
-  [75/399] Building Dialect.cpp.inc...
-  [76/399] Building Ops.cpp.inc...
-  [77/399] Building OpsConversions.inc...
-  [78/399] Building Dialect.cpp.inc...
-  [79/399] Building OpsEnums.h.inc...
-  [80/399] Building TritonNvidiaGPUAttrDefs.cpp.inc...
-  [81/399] Building AttrDefs.cpp.inc...
-  [82/399] Building TritonNvidiaGPUAttrDefs.h.inc...
-  [83/399] Building NVGPUAttrDefs.cpp.inc...
-  [84/399] Building NVGPUAttrDefs.h.inc...
-  [85/399] Building SIMTEnums.h.inc...
-  [86/399] Building SIMTEnums.cpp.inc...
-  [87/399] Building NVWSAttrDefs.h.inc...
-  [88/399] Building NVWSAttrEnums.h.inc...
-  [89/399] Building ProtonAttrDefs.cpp.inc...
-  [90/399] Building Ops.h.inc...
-  [91/399] Building SIMTAttrDefs.h.inc...
-  [92/399] Building NVWSAttrDefs.cpp.inc...
-  [93/399] Building SIMTAttrDefs.cpp.inc...
-  [94/399] Building DistributedAttrDefs.cpp.inc...
-  [95/399] Building NVWSAttrEnums.cpp.inc...
-  [96/399] Building DistributedEnums.cpp.inc...
-  [97/399] Building TritonNvidiaGPUOpInterfaces.cpp.inc...
-  [98/399] Building TypeInterfaces.h.inc...
-  [99/399] Building DistributedAttrDefs.h.inc...
-  [100/399] Building TritonNvidiaGPUOpInterfaces.h.inc...
-  [101/399] Building TypeInterfaces.cpp.inc...
-  [102/399] Building DistributedEnums.h.inc...
-  [103/399] Building ProtonAttrDefs.h.inc...
-  [104/399] Building TritonAMDGPUAttrDefs.cpp.inc...
-  [105/399] Building TritonAMDGPUAttrDefs.h.inc...
-  [106/399] Building TritonAMDGPUEnums.cpp.inc...
-  [107/399] Building TritonAMDGPUEnums.h.inc...
-  [108/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/HsaApi.cpp.o
-  [109/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/Device.cpp.o
-  [110/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Context/CMakeFiles/ProtonContext.dir/Context.cpp.o
-  [111/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/HipApi.cpp.o
-  [112/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Data/CMakeFiles/ProtonData.dir/TraceData.cpp.o
-  [113/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Data/CMakeFiles/ProtonData.dir/Data.cpp.o
-  [114/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/RoctracerApi.cpp.o
-  [115/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/TargetUtils.cpp.o
-  [116/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/CudaApi.cpp.o
-  [117/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/CuptiApi.cpp.o
-  [118/399] Building CXX object 3rdparty/triton/third_party/f2reduce/CMakeFiles/f2reduce.dir/f2reduce.cpp.o
-  [119/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Context/CMakeFiles/ProtonContext.dir/Shadow.cpp.o
-  [120/399] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-  [121/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/OpInterfaces.cpp.o
-  [122/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Profiler/CMakeFiles/ProtonProfiler.dir/Cupti/CuptiPCSampling.cpp.o
-  [123/399] Building CXX object 3rdparty/triton/lib/Target/LLVMIR/CMakeFiles/TritonLLVMIR.dir/LLVMIRBreakPhiStruct.cpp.o
-  [124/399] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
-  [125/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Session/CMakeFiles/ProtonSession.dir/Session.cpp.o
-  [126/399] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
-  [127/399] Building CXX object 3rdparty/triton/lib/Tools/CMakeFiles/TritonTools.dir/GenericSwizzling.cpp.o
-  [128/399] Building CXX object 3rdparty/triton/unittest/Tools/CMakeFiles/LinearLayout.dir/LayoutUtilsTest.cpp.o
-  [129/399] Building CXX object 3rdparty/triton/lib/Tools/CMakeFiles/TritonTools.dir/LayoutUtils.cpp.o
-  [130/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Profiler/CMakeFiles/ProtonProfiler.dir/RocTracer/RoctracerProfiler.cpp.o
-  [131/399] Building CXX object 3rdparty/triton/unittest/Dialect/TritonGPU/CMakeFiles/TestSwizzling.dir/SwizzleTest.cpp.o
-  [132/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/ArithTypeConversion.cpp.o
-  [133/399] Building CXX object 3rdparty/triton/test/lib/Dialect/CMakeFiles/obj.TritonTestDialect.dir/TestLoopPeeling.cpp.o
-  [134/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/Utility.cpp.o
-  [135/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Profiler/CMakeFiles/ProtonProfiler.dir/Cupti/CuptiProfiler.cpp.o
-  [136/399] Building CXX object 3rdparty/triton/third_party/amd/lib/Dialect/TritonAMDGPU/Utility/CMakeFiles/TritonAMDUtils.dir/CommonUtils.cpp.o
-  [137/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/Utility.cpp.o
-  [138/399] Building CXX object 3rdparty/triton/lib/Instrumentation/CMakeFiles/PrintLoadStoreMemSpaces.dir/PrintLoadStoreMemSpaces.cpp.o
-  [139/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/LoopAwareCSE.cpp.o
-  [140/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/DiscardableAttributes.cpp.o
-  [141/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Traits.cpp.o
-  [142/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Types.cpp.o
-  [143/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/LoopInvariantCodeMotion.cpp.o
-  [144/399] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/instrumentation/libPrintLoadStoreMemSpaces.so
-  [145/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Context/CMakeFiles/ProtonContext.dir/Python.cpp.o
-  [146/399] Building CXX object 3rdparty/triton/test/lib/Instrumentation/CMakeFiles/GPUInstrumentationTestLib.dir/GPUHello.cpp.o
-  [147/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/LoopPeeling.cpp.o
-  [148/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Data/CMakeFiles/ProtonData.dir/TreeData.cpp.o
-  [149/399] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/instrumentation/libGPUInstrumentationTestLib.so
-  [150/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/LoopUnroll.cpp.o
-  [151/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Utility.cpp.o
-  [152/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/ReorderBroadcast.cpp.o
-  [153/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/FunctionTypeConversion.cpp.o
-  [154/399] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/main.cc.o
-  [155/399] Building CXX object 3rdparty/triton/lib/Target/LLVMIR/CMakeFiles/TritonLLVMIR.dir/LLVMDIScope.cpp.o
-  [156/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/TMAStoresPipeline.cpp.o
-  [157/399] Building CXX object 3rdparty/triton/lib/Tools/CMakeFiles/TritonTools.dir/LinearLayout.cpp.o
-  [158/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/TMAUtilities.cpp.o
-  [159/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/DecomposeScaledBlocked.cpp.o
-  [160/399] Building CXX object 3rdparty/triton/unittest/Analysis/CMakeFiles/TestTritonAnalysis.dir/UtilityTest.cpp.o
-  [161/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Canonicalize.cpp.o
-  [162/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/TestPipelineLowerLoop.cpp.o
-  [163/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization.cpp.o
-  [164/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/CoalesceAsyncCopy.cpp.o
-  [165/399] Building CXX object 3rdparty/triton/third_party/amd/unittest/Conversion/CMakeFiles/TestOptimizeLDS.dir/OptimizeLDSTest.cpp.o
-  [166/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/RewriteTensorDescriptorToPointer.cpp.o
-  [167/399] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/Alias.cpp.o
-  [168/399] Building CXX object 3rdparty/triton/third_party/nvidia/unittest/Conversion/TritonGPUToLLVM/CMakeFiles/TestPtxAsmFormat.dir/PTXAsmFormatTest.cpp.o
-  [169/399] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-llvm-opt.dir/triton-llvm-opt.cpp.o
-  [170/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/GlobalScratchMemoryAllocation.cpp.o
-  [171/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/CodePartitionUtility.cpp.o
-  [172/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/PartitionLoops.cpp.o
-  [173/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/AutomaticWarpSpecialization.cpp.o
-  [174/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/LayoutUtility.cpp.o
-  [175/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/PartitionBuilder.cpp.o
-  [176/399] Building CXX object 3rdparty/triton/test/lib/Analysis/CMakeFiles/obj.TritonTestAnalysis.dir/TestAllocation.cpp.o
-  [177/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUDialectToLLVM/CMakeFiles/TritonAMDGPUDialectToLLVM.dir/TritonAMDGPUToLLVMPatterns.cpp.o
-  [178/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/MMALowering.cpp.o
-  [179/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVWS/Transforms/CMakeFiles/NVWSTransforms.dir/LowerWarpGroup.cpp.o
-  [180/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/InterleaveTMem.cpp.o
-  [181/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/AllocateWarpGroups.cpp.o
-  [182/399] Building CXX object 3rdparty/triton/test/lib/Analysis/CMakeFiles/obj.TritonTestAnalysis.dir/TestAlias.cpp.o
-  [183/399] Building CXX object 3rdparty/triton/test/lib/Analysis/CMakeFiles/obj.TritonTestAnalysis.dir/TestAxisInfo.cpp.o
-  [184/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/Schedule.cpp.o
-  [185/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/OptimizeTMemLayouts.cpp.o
-  [186/399] Building CXX object 3rdparty/triton/third_party/proton/dialect/lib/Dialect/Proton/IR/CMakeFiles/ProtonIR.dir/Dialect.cpp.o
-  [187/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/MMAv5PipelineUtility.cpp.o
-  [188/399] Building CXX object 3rdparty/triton/unittest/Dialect/TritonGPU/CMakeFiles/DumpLayoutTest.dir/DumpLayoutTest.cpp.o
-  [189/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/Types.cpp.o
-  [190/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonToTritonGPU/CMakeFiles/TritonToTritonGPU.dir/TritonGPUConversion.cpp.o
-  [191/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/HoistTMEMAlloc.cpp.o
-  [192/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSTaskPartition.cpp.o
-  [193/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/OptimizeLDSUtility.cpp.o
-  [194/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/FenceInsertion.cpp.o
-  [195/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonToTritonGPU/CMakeFiles/TritonToTritonGPU.dir/RelayoutTritonGPU.cpp.o
-  [196/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/RemoveTMEMTokens.cpp.o
-  [197/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVWS/Transforms/CMakeFiles/NVWSTransforms.dir/LowerAref.cpp.o
-  [198/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/PromoteLHSToTMem.cpp.o
-  [199/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/TaskIdPropagation.cpp.o
-  [200/399] Building CXX object 3rdparty/triton/third_party/amd/test/lib/Analysis/CMakeFiles/obj.TritonAMDGPUTestAnalysis.dir/TestAxisInfo.cpp.o
-  [201/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/CombineTensorSelectAndIf.cpp.o
-  [202/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVWS/IR/CMakeFiles/NVWSIR.dir/Ops.cpp.o
-  [203/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/TMALowering.cpp.o
-  [204/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/AssignLatencies.cpp.o
-  [205/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSTaskIdPropagate.cpp.o
-  [206/399] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-  [207/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/TensorMemoryAllocation.cpp.o
-  [208/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/Combine.cpp.o
-  [209/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSLowerMem.cpp.o
-  [210/399] Building CXX object 3rdparty/triton/third_party/amd/test/lib/Analysis/CMakeFiles/obj.TritonAMDGPUTestAnalysis.dir/TestAMDGPUMembar.cpp.o
-  [211/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/ScheduleLoops.cpp.o
-  [212/399] Linking CXX static library lib/libgtest.a
-  [213/399] Linking CXX static library lib/libgtest_main.a
-  [214/399] Linking CXX static library lib/libgmock.a
-  [215/399] Linking CXX static library lib/libgmock_main.a
-  [216/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSBuffer.cpp.o
-  [217/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/Fp4ToFpOpToLLVM.cpp.o
-  [218/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/GCNAsmFormat.cpp.o
-  [219/399] Building CXX object lib/Dialect/SIMT/IR/CMakeFiles/SIMTIR.dir/Ops.cpp.o
-  [220/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/F32DotTC.cpp.o
-  [221/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/SoftwarePipeliner.cpp.o
-  [222/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSSpecialize.cpp.o
-  [223/399] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/Utility.cpp.o
-  [224/399] Linking CXX executable 3rdparty/triton/unittest/Dialect/TritonGPU/TestSwizzling
-  [225/399] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/Membar.cpp.o
-  [226/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/Partition.cpp.o
-  [227/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/OptimizeThreadLocality.cpp.o
-  [228/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/AllocateSharedMemory.cpp.o
-  [229/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/LinearLayoutConversions.cpp.o
-  [230/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/WmmaGroup.cpp.o
-  [231/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/DotOpToLLVM/FMA.cpp.o
-  [232/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ScalarizePackedFOps.cpp.o
-  [233/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/PipelineExpander.cpp.o
-  [234/399] Building CXX object 3rdparty/triton/third_party/proton/dialect/lib/Dialect/Proton/IR/CMakeFiles/ProtonIR.dir/Ops.cpp.o
-  [235/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/ReorderInstructions.cpp.o
-  [236/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/RewriteTensorPointer.cpp.o
-  [237/399] Building CXX object 3rdparty/triton/test/lib/Analysis/CMakeFiles/obj.TritonTestAnalysis.dir/TestMembar.cpp.o
-  [238/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/MfmaGroup.cpp.o
-  [239/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Coalesce.cpp.o
-  [240/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/ReduceDataDuplication.cpp.o
-  [241/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/OptimizePartitionWarps.cpp.o
-  [242/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVWS/IR/CMakeFiles/NVWSIR.dir/Dialect.cpp.o
-  [243/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Prefetch.cpp.o
-  [244/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/PTXAsmFormat.cpp.o
-  [245/399] Building CXX object lib/Dialect/SIMT/IR/CMakeFiles/SIMTIR.dir/Dialect.cpp.o
-  [246/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/MakeRangeOpToLLVM.cpp.o
-  [247/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUDialectToLLVM/CMakeFiles/TritonAMDGPUDialectToLLVM.dir/InThreadTransposeOpToTTG.cpp.o
-  [248/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/PlanCTA.cpp.o
-  [249/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSDataPartition.cpp.o
-  [250/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/DotOpToLLVM/FMADotUtility.cpp.o
-  [251/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/OptimizeDotOperands.cpp.o
-  [252/399] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/interpreter.cc.o
-  [253/399] Building CXX object lib/Dialect/Distributed/IR/CMakeFiles/DistributedIR.dir/Ops.cpp.o
-  [254/399] Building CXX object 3rdparty/triton/third_party/amd/lib/Analysis/CMakeFiles/TritonAMDAnalysis.dir/AxisInfoExt.cpp.o
-  [255/399] Building CXX object 3rdparty/triton/third_party/amd/test/lib/Analysis/CMakeFiles/obj.TritonAMDGPUTestAnalysis.dir/TestAMDRangeAnalysis.cpp.o
-  [256/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/WGMMAPipeline.cpp.o
-  [257/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/FoldTrueCmpIOp.cpp.o
-  [258/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/PartitionScheduling.cpp.o
-  [259/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/AccelerateMatmul.cpp.o
-  [260/399] Linking CXX static library 3rdparty/triton/third_party/amd/test/lib/Analysis/libTritonAMDGPUTestAnalysis.a
-  [261/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/RewritePartitionDependencies.cpp.o
-  [262/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/AsyncUtility.cpp.o
-  [263/399] Building CXX object 3rdparty/triton/unittest/Dialect/TritonGPU/CMakeFiles/Dialect.dir/DialectTest.cpp.o
-  [264/399] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/Allocation.cpp.o
-  [265/399] Building CXX object 3rdparty/triton/third_party/proton/csrc/CMakeFiles/Proton.dir/Proton.cpp.o
-  [266/399] Building CXX object lib/Dialect/Distributed/IR/CMakeFiles/DistributedIR.dir/Dialect.cpp.o
-  [267/399] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/_C/libproton.so
-  [268/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/FuseNestedLoops.cpp.o
-  [269/399] Building CXX object 3rdparty/triton/third_party/proton/dialect/CMakeFiles/TritonProton.dir/triton_proton.cc.o
-  [270/399] Building CXX object 3rdparty/triton/third_party/proton/dialect/lib/TritonProtonToLLVM/CMakeFiles/TritonProtonToLLVM.dir/RecordOpToLLVM.cpp.o
-  [271/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/DotOpToLLVM/FMA.cpp.o
-  [272/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/TypeConverter.cpp.o
-  [273/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/PrintOpToLLVM.cpp.o
-  [274/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/DotOpToLLVM/WMMA.cpp.o
-  [275/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/MembarUtility.cpp.o
-  [276/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/LoadMMASpecialization.cpp.o
-  [277/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/AssertOpToLLVM.cpp.o
-  [278/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/ClusterOpsToLLVM.cpp.o
-  [279/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/HistogramOpToLLVM.cpp.o
-  [280/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/SPMDOpToLLVM.cpp.o
-  [281/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/MemoryOpToLLVM.cpp.o
-  [282/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUDialectToLLVM/CMakeFiles/TritonAMDGPUDialectToLLVM.dir/ConcatOpToLLVM.cpp.o
-  [283/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/BuiltinFuncToLLVM.cpp.o
-  [284/399] Building CXX object CMakeFiles/TritonDistributed.dir/python/src/triton_distributed.cc.o
-  [285/399] Building CXX object 3rdparty/triton/unittest/Tools/CMakeFiles/LinearLayout.dir/LinearLayoutTest.cpp.o
-  [286/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ControlFlowOpToLLVM.cpp.o
-  [287/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/LowerLoops.cpp.o
-  [288/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/IR/CMakeFiles/TritonNvidiaGPUIR.dir/Dialect.cpp.o
-  [289/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/DotOpToLLVM.cpp.o
-  [290/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ViewOpToLLVM.cpp.o
-  [291/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/DotOpToLLVM/MMAv2.cpp.o
-  [292/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/SPMDOpToLLVM.cpp.o
-  [293/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/UpcastMXFPToLLVM.cpp.o
-  [294/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/DotOpToLLVM.cpp.o
-  [295/399] Linking CXX executable 3rdparty/triton/unittest/Tools/LinearLayout
-  [296/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TensorPtrOpsToLLVM.cpp.o
-  [297/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/OptimizeEpilogue.cpp.o
-  [298/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ConvertLayoutOpToLLVM/SharedToDotOperandWMMA.cpp.o
-  [299/399] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/AMD/DistributedOpToLLVM.cpp.o
-  [300/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/GatherOpToLLVM.cpp.o
-  [301/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/OptimizeDescriptorEncoding.cpp.o
-  [302/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/NVGPUToLLVM/CMakeFiles/NVGPUToLLVM.dir/NVGPUToLLVMPass.cpp.o
-  [303/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TargetInfo.cpp.o
-  [304/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/MemoryOpToLLVM.cpp.o
-  [305/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TMAToLLVM.cpp.o
-  [306/399] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSCodePartition.cpp.o
-  [307/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVGPU/IR/CMakeFiles/NVGPUIR.dir/Dialect.cpp.o
-  [308/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/ConvertLayoutOpToLLVM.cpp.o
-  [309/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUDialectToLLVM/CMakeFiles/TritonAMDGPUDialectToLLVM.dir/ExtractSliceOpToLLVM.cpp.o
-  [310/399] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/NVIDIA/ConvertTritonDistributedToLLVM.cpp.o
-  [311/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/RemoveLayoutConversions.cpp.o
-  [312/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/MemoryOpToLLVM.cpp.o
-  [313/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/FuncOpToLLVM.cpp.o
-  [314/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ConvertLayoutOpToLLVM.cpp.o
-  [315/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/DotOpToLLVM/MFMA.cpp.o
-  [316/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Utility.cpp.o
-  [317/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/SchedInstructions.cpp.o
-  [318/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/OptimizeLDSUsage.cpp.o
-  [319/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/AtomicRMWOpsEmitter.cpp.o
-  [320/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/UpdateAsyncWaitCount.cpp.o
-  [321/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ReduceOpToLLVM.cpp.o
-  [322/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/SPMDOpToLLVM.cpp.o
-  [323/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ConvertLayoutOpToLLVM/SharedToDotOperandHelper.cpp.o
-  [324/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/OptimizeAccumulatorInit.cpp.o
-  [325/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/DotOpToLLVM/MMAv5.cpp.o
-  [326/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/AccelerateAMDMatmul.cpp.o
-  [327/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/DotOpToLLVM/WGMMA.cpp.o
-  [328/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ConvertLayoutOpToLLVM/SharedToDotOperandMFMA.cpp.o
-  [329/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ScanOpToLLVM.cpp.o
-  [330/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/BufferOpsEmitter.cpp.o
-  [331/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/CoalesceAsyncCopy.cpp.o
-  [332/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/StreamPipeline.cpp.o
-  [333/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/TargetInfo.cpp.o
-  [334/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TensorMemoryToLLVM.cpp.o
-  [335/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/HoistLayoutConversions.cpp.o
-  [336/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/Utility.cpp.o
-  [337/399] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/AMD/LibDeviceToLLVM.cpp.o
-  [338/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/Utility.cpp.o
-  [339/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ConvertLayoutOpToLLVM.cpp.o
-  [340/399] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/NVIDIA/DistributedOpToLLVM.cpp.o
-  [341/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Dialect.cpp.o
-  [342/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/InThreadTranspose.cpp.o
-  [343/399] Building CXX object 3rdparty/triton/third_party/amd/lib/Analysis/CMakeFiles/TritonAMDAnalysis.dir/RangeAnalysis.cpp.o
-  [344/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/Ops.cpp.o
-  [345/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/BlockPingpong.cpp.o
-  [346/399] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/SIMTOpToLLVM.cpp.o
-  [347/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/IR/CMakeFiles/TritonNvidiaGPUIR.dir/Ops.cpp.o
-  [348/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/Utility.cpp.o
-  [349/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/ReorderInstructions.cpp.o
-  [350/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/BarrierOpToLLVM.cpp.o
-  [351/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/ConvertToBufferOps.cpp.o
-  [352/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TritonGPUToLLVM.cpp.o
-  [353/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/PipeliningUtility.cpp.o
-  [354/399] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/AMD/ConvertAMDDistributedToLLVM.cpp.o
-  [355/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/LoadStoreOpToLLVM.cpp.o
-  [356/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/CanonicalizePointers.cpp.o
-  [357/399] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/AxisInfo.cpp.o
-  [358/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/ElementwiseOpToLLVM.cpp.o
-  [359/399] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/gluon_ir.cc.o
-  [360/399] Building CXX object 3rdparty/triton/third_party/amd/lib/Dialect/TritonAMDGPU/IR/CMakeFiles/TritonAMDGPUIR.dir/Dialect.cpp.o
-  [361/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/TritonGPUToLLVM.cpp.o
-  [362/399] Building CXX object 3rdparty/triton/third_party/nvidia/CMakeFiles/TritonNVIDIA.dir/triton_nvidia.cc.o
-  [363/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/LoadStoreOpToLLVM.cpp.o
-  [364/399] Building CXX object CMakeFiles/TritonDistributed.dir/python/src/passes.cc.o
-  [365/399] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/Dialect.cpp.o
-  [366/399] Building CXX object csrc/lib/CMakeFiles/triton_distributed.dir/op_pybind.cc.o
-  [367/399] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/ConvertWarpSpecializeToLLVM.cpp.o
-  [368/399] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ElementwiseOpToLLVM.cpp.o
-  [369/399] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/llvm.cc.o
-  [370/399] Building CXX object 3rdparty/triton/third_party/amd/CMakeFiles/TritonAMD.dir/python/triton_amd.cc.o
-  [371/399] Building CXX object CMakeFiles/TritonDistributed.dir/python/src/ir.cc.o
-  [372/399] Building CXX object csrc/lib/CMakeFiles/triton_distributed.dir/registry.cc.o
-  [373/399] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Ops.cpp.o
-  [374/399] Linking CXX static library 3rdparty/triton/test/lib/Dialect/libTritonTestDialect.a
-  [375/399] Linking CXX static library 3rdparty/triton/test/lib/Analysis/libTritonTestAnalysis.a
-  [376/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ElementwiseOpToLLVM.cpp.o
-  [377/399] Building CXX object 3rdparty/triton/lib/Conversion/TritonToTritonGPU/CMakeFiles/TritonToTritonGPU.dir/TritonToTritonGPUPass.cpp.o
-  [378/399] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-reduce.dir/triton-reduce.cpp.o
-  [379/399] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/passes.cc.o
-  [380/399] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-lsp.dir/triton-lsp.cpp.o
-  [381/399] Building CXX object lib/Conversion/TritonDistributedToTritonGPU/CMakeFiles/TritonDistributedToTritonGPU.dir/TritonDistributedToTritonGPU.cpp.o
-  [382/399] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-opt.dir/triton-opt.cpp.o
-  [383/399] Linking CXX executable 3rdparty/triton/unittest/Analysis/TestTritonAnalysis
-  [384/399] Linking CXX executable 3rdparty/triton/unittest/Dialect/TritonGPU/Dialect
-  [385/399] Linking CXX executable 3rdparty/triton/unittest/Dialect/TritonGPU/DumpLayoutTest
-  [386/399] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-tensor-layout.dir/triton-tensor-layout.cpp.o
-  [387/399] Linking CXX executable 3rdparty/triton/bin/triton-llvm-opt
-  [388/399] Linking CXX executable 3rdparty/triton/third_party/nvidia/unittest/Conversion/TritonGPUToLLVM/TestPtxAsmFormat
-  [389/399] Linking CXX executable 3rdparty/triton/third_party/amd/unittest/Conversion/TestOptimizeLDS
-  [390/399] Building CXX object 3rdparty/triton/unittest/Dialect/TritonGPU/CMakeFiles/LinearLayoutConversions.dir/LinearLayoutConversionsTest.cpp.o
-  [391/399] Linking CXX executable 3rdparty/triton/bin/triton-reduce
-  [392/399] Linking CXX executable 3rdparty/triton/bin/triton-lsp
-  [393/399] Linking CXX executable 3rdparty/triton/unittest/Dialect/TritonGPU/LinearLayoutConversions
-  [394/399] Linking CXX executable 3rdparty/triton/bin/triton-opt
-  [395/399] Linking CXX executable 3rdparty/triton/bin/triton-tensor-layout
-  [396/399] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/ir.cc.o
-  [397/399] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/_C/libtriton.so
-  [398/399] Building CUDA object csrc/lib/CMakeFiles/triton_distributed.dir/moe_utils.cu.o
-  [399/399] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/_C/libtriton_distributed.so
-  [1/36] Building TritonGPUDialect.md...
-  [2/36] Building TritonNvidiaGPUDialect.md...
-  [3/36] Building TritonDialect.md...
-  [4/36] Building DistributedDialect.md...
-  [5/36] Building NVGPUDialect.md...
-  [6/36] Building NVWSDialect.md...
-  [7/36] Building TritonAMDGPUDialect.md...
-  [8/36] Building SIMTDialect.md...
-  [9/36] Building ProtonDialect.md...
-  [10/36] Generating ../../../../../../../docs/dialects/TritonGPUDialect.md
-  [11/36] Generating ../../../../../../../docs/dialects/TritonDialect.md
-  [12/36] Generating ../../../../../docs/dialects/DistributedDialect.md
-  [13/36] Generating ../../../../../../../docs/dialects/TritonNvidiaGPUDialect.md
-  [14/36] Generating ../../../../../../../../docs/dialects/NVGPUDialect.md
-  [15/36] Generating ../../../../../../../../docs/dialects/NVWSDialect.md
-  [16/36] Generating ../../../../../../../../docs/dialects/TritonAMDGPUDialect.md
-  [17/36] Generating ../../../../../docs/dialects/SIMTDialect.md
-  [18/36] Building NVWSOps.md...
-  [19/36] Generating ../../../../../../../../../docs/dialects/ProtonDialect.md
-  [20/36] Building TritonOps.md...
-  [21/36] Building TritonGPUOps.md...
-  [22/36] Building NVGPUOps.md...
-  [23/36] Building TritonNvidiaGPUOps.md...
-  [24/36] Building DistributedOps.md...
-  [25/36] Building ProtonOps.md...
-  [26/36] Generating ../../../../../../../../docs/dialects/NVWSOps.md
-  [27/36] Building SIMTOps.md...
-  [28/36] Generating ../../../../../../../docs/dialects/TritonOps.md
-  [29/36] Generating ../../../../../../../docs/dialects/TritonGPUOps.md
-  [30/36] Building TritonAMDGPUOps.md...
-  [31/36] Generating ../../../../../../../../docs/dialects/NVGPUOps.md
-  [32/36] Generating ../../../../../../../docs/dialects/TritonNvidiaGPUOps.md
-  [33/36] Generating ../../../../../docs/dialects/DistributedOps.md
-  [34/36] Generating ../../../../../../../../../docs/dialects/ProtonOps.md
-  [35/36] Generating ../../../../../docs/dialects/SIMTOps.md
-  [36/36] Generating ../../../../../../../../docs/dialects/TritonAMDGPUOps.md
+  [1/371] Building Passes.h.inc...
+  [2/371] Building Passes.h.inc...
+  [3/371] Building AttrInterfaces.cpp.inc...
+  [4/371] Building AttrInterfaces.h.inc...
+  [5/371] Building Dialect.cpp.inc...
+  [6/371] Building Dialect.h.inc...
+  [7/371] Building OpInterfaces.cpp.inc...
+  [8/371] Building OpInterfaces.h.inc...
+  [9/371] Building Types.cpp.inc...
+  [10/371] Building Types.h.inc...
+  [11/371] Building Passes.h.inc...
+  [12/371] Building Passes.h.inc...
+  [13/371] Building Passes.h.inc...
+  [14/371] Building Passes.h.inc...
+  [15/371] Building Passes.h.inc...
+  [16/371] Building Passes.h.inc...
+  [17/371] Building Passes.h.inc...
+  [18/371] Building Passes.h.inc...
+  [19/371] Building Passes.h.inc...
+  [20/371] Building Passes.h.inc...
+  [21/371] Building Ops.cpp.inc...
+  [22/371] Building Ops.h.inc...
+  [23/371] Building OpsEnums.cpp.inc...
+  [24/371] Building OpsEnums.h.inc...
+  [25/371] Building Dialect.cpp.inc...
+  [26/371] Building Dialect.h.inc...
+  [27/371] Building Ops.cpp.inc...
+  [28/371] Building Ops.h.inc...
+  [29/371] Building Types.cpp.inc...
+  [30/371] Building Types.h.inc...
+  [31/371] Building Dialect.cpp.inc...
+  [32/371] Building Dialect.h.inc...
+  [33/371] Building Ops.cpp.inc...
+  [34/371] Building Ops.h.inc...
+  [35/371] Building TritonCanonicalize.inc...
+  [36/371] Building TritonCombine.inc...
+  [37/371] Building Dialect.cpp.inc...
+  [38/371] Building Dialect.h.inc...
+  [39/371] Building Ops.cpp.inc...
+  [40/371] Building Ops.h.inc...
+  [41/371] Building OpsConversions.inc...
+  [42/371] Building OpsEnums.cpp.inc...
+  [43/371] Building OpsEnums.h.inc...
+  [44/371] Building Dialect.cpp.inc...
+  [45/371] Building Dialect.h.inc...
+  [46/371] Building Ops.cpp.inc...
+  [47/371] Building Ops.h.inc...
+  [48/371] Building Types.cpp.inc...
+  [49/371] Building Types.h.inc...
+  [50/371] Building Dialect.cpp.inc...
+  [51/371] Building Dialect.h.inc...
+  [52/371] Building Ops.cpp.inc...
+  [53/371] Building Ops.h.inc...
+  [54/371] Building OpsConversions.inc...
+  [55/371] Building Dialect.cpp.inc...
+  [56/371] Building Dialect.h.inc...
+  [57/371] Building Ops.cpp.inc...
+  [58/371] Building Ops.h.inc...
+  [59/371] Building OpsConversions.inc...
+  [60/371] Building OpsEnums.cpp.inc...
+  [61/371] Building OpsEnums.h.inc...
+  [62/371] Building AttrDefs.cpp.inc...
+  [63/371] Building AttrDefs.h.inc...
+  [64/371] Building AttrInterfaces.cpp.inc...
+  [65/371] Building AttrInterfaces.h.inc...
+  [66/371] Building OpsEnums.cpp.inc...
+  [67/371] Building OpsEnums.h.inc...
+  [68/371] Building OpsEnums.cpp.inc...
+  [69/371] Building OpsEnums.h.inc...
+  [70/371] Building TritonNvidiaGPUAttrDefs.cpp.inc...
+  [71/371] Building TritonNvidiaGPUAttrDefs.h.inc...
+  [72/371] Building NVGPUAttrDefs.cpp.inc...
+  [73/371] Building NVGPUAttrDefs.h.inc...
+  [74/371] Building NVWSAttrDefs.cpp.inc...
+  [75/371] Building NVWSAttrDefs.h.inc...
+  [76/371] Building NVWSAttrEnums.cpp.inc...
+  [77/371] Building NVWSAttrEnums.h.inc...
+  [78/371] Building TritonAMDGPUAttrDefs.cpp.inc...
+  [79/371] Building TritonAMDGPUAttrDefs.h.inc...
+  [80/371] Building TritonAMDGPUEnums.cpp.inc...
+  [81/371] Building TritonAMDGPUEnums.h.inc...
+  [82/371] Building ProtonAttrDefs.cpp.inc...
+  [83/371] Building ProtonAttrDefs.h.inc...
+  [84/371] Building TypeInterfaces.cpp.inc...
+  [85/371] Building TypeInterfaces.h.inc...
+  [86/371] Building TritonNvidiaGPUOpInterfaces.cpp.inc...
+  [87/371] Building TritonNvidiaGPUOpInterfaces.h.inc...
+  [88/371] Building CXX object 3rdparty/triton/third_party/f2reduce/CMakeFiles/f2reduce.dir/f2reduce.cpp.o
+  [89/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/Device.cpp.o
+  [90/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Data/CMakeFiles/ProtonData.dir/TraceData.cpp.o
+  [91/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/CudaApi.cpp.o
+  [92/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/HsaApi.cpp.o
+  [93/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/HipApi.cpp.o
+  [94/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Context/CMakeFiles/ProtonContext.dir/Shadow.cpp.o
+  [95/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Data/CMakeFiles/ProtonData.dir/Data.cpp.o
+  [96/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Context/CMakeFiles/ProtonContext.dir/Context.cpp.o
+  [97/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/RoctracerApi.cpp.o
+  [98/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/TargetUtils.cpp.o
+  [99/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Driver/CMakeFiles/ProtonDriver.dir/GPU/CuptiApi.cpp.o
+  [100/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/OpInterfaces.cpp.o
+  [101/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Profiler/CMakeFiles/ProtonProfiler.dir/Cupti/CuptiPCSampling.cpp.o
+  [102/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Session/CMakeFiles/ProtonSession.dir/Session.cpp.o
+  [103/371] Building CXX object 3rdparty/triton/lib/Target/LLVMIR/CMakeFiles/TritonLLVMIR.dir/LLVMIRBreakPhiStruct.cpp.o
+  [104/371] Building CXX object 3rdparty/triton/lib/Tools/CMakeFiles/TritonTools.dir/GenericSwizzling.cpp.o
+  [105/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Profiler/CMakeFiles/ProtonProfiler.dir/RocTracer/RoctracerProfiler.cpp.o
+  [106/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Profiler/CMakeFiles/ProtonProfiler.dir/Cupti/CuptiProfiler.cpp.o
+  [107/371] Building CXX object 3rdparty/triton/unittest/Tools/CMakeFiles/LinearLayout.dir/LayoutUtilsTest.cpp.o
+  [108/371] Building CXX object 3rdparty/triton/lib/Tools/CMakeFiles/TritonTools.dir/LayoutUtils.cpp.o
+  [109/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/Utility.cpp.o
+  [110/371] Building CXX object 3rdparty/triton/lib/Instrumentation/CMakeFiles/PrintLoadStoreMemSpaces.dir/PrintLoadStoreMemSpaces.cpp.o
+  [111/371] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/instrumentation/libPrintLoadStoreMemSpaces.so
+  [112/371] Building CXX object 3rdparty/triton/unittest/Dialect/TritonGPU/CMakeFiles/TestSwizzling.dir/SwizzleTest.cpp.o
+  [113/371] Building CXX object 3rdparty/triton/lib/Tools/CMakeFiles/TritonTools.dir/LinearLayout.cpp.o
+  [114/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/DiscardableAttributes.cpp.o
+  [115/371] Building CXX object 3rdparty/triton/test/lib/Instrumentation/CMakeFiles/GPUInstrumentationTestLib.dir/GPUHello.cpp.o
+  [116/371] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/main.cc.o
+  [117/371] Linking CXX executable 3rdparty/triton/unittest/Dialect/TritonGPU/TestSwizzling
+  [118/371] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-llvm-opt.dir/triton-llvm-opt.cpp.o
+  [119/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/LoopAwareCSE.cpp.o
+  [120/371] Building CXX object 3rdparty/triton/test/lib/Dialect/CMakeFiles/obj.TritonTestDialect.dir/TestLoopPeeling.cpp.o
+  [121/371] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/instrumentation/libGPUInstrumentationTestLib.so
+  [122/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/ArithTypeConversion.cpp.o
+  [123/371] Building CXX object 3rdparty/triton/unittest/Analysis/CMakeFiles/TestTritonAnalysis.dir/UtilityTest.cpp.o
+  [124/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/LoopPeeling.cpp.o
+  [125/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/PartitionBuilder.cpp.o
+  [126/371] Building CXX object 3rdparty/triton/third_party/amd/lib/Dialect/TritonAMDGPU/Utility/CMakeFiles/TritonAMDUtils.dir/CommonUtils.cpp.o
+  [127/371] Building CXX object 3rdparty/triton/third_party/proton/dialect/lib/Dialect/Proton/IR/CMakeFiles/ProtonIR.dir/Dialect.cpp.o
+  [128/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Data/CMakeFiles/ProtonData.dir/TreeData.cpp.o
+  [129/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Traits.cpp.o
+  [130/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/Utility.cpp.o
+  [131/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/LoopUnroll.cpp.o
+  [132/371] Building CXX object 3rdparty/triton/lib/Target/LLVMIR/CMakeFiles/TritonLLVMIR.dir/LLVMDIScope.cpp.o
+  [133/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Utility.cpp.o
+  [134/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/AllocateWarpGroups.cpp.o
+  [135/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Types.cpp.o
+  [136/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/LoopInvariantCodeMotion.cpp.o
+  [137/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/FunctionTypeConversion.cpp.o
+  [138/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/TaskIdPropagation.cpp.o
+  [139/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/lib/Context/CMakeFiles/ProtonContext.dir/Python.cpp.o
+  [140/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUDialectToLLVM/CMakeFiles/TritonAMDGPUDialectToLLVM.dir/TritonAMDGPUToLLVMPatterns.cpp.o
+  [141/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/Types.cpp.o
+  [142/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/LayoutUtility.cpp.o
+  [143/371] Building CXX object 3rdparty/triton/third_party/nvidia/unittest/Conversion/TritonGPUToLLVM/CMakeFiles/TestPtxAsmFormat.dir/PTXAsmFormatTest.cpp.o
+  [144/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/GlobalScratchMemoryAllocation.cpp.o
+  [145/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/AllocateSharedMemory.cpp.o
+  [146/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/Combine.cpp.o
+  [147/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/RewriteTensorPointer.cpp.o
+  [148/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/ReduceDataDuplication.cpp.o
+  [149/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/WmmaGroup.cpp.o
+  [150/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/ReorderBroadcast.cpp.o
+  [151/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/F32DotTC.cpp.o
+  [152/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/OptimizeLDSUtility.cpp.o
+  [153/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/Partition.cpp.o
+  [154/371] Building CXX object 3rdparty/triton/test/lib/Analysis/CMakeFiles/obj.TritonTestAnalysis.dir/TestAllocation.cpp.o
+  [155/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonToTritonGPU/CMakeFiles/TritonToTritonGPU.dir/TritonGPUConversion.cpp.o
+  [156/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/InterleaveTMem.cpp.o
+  [157/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/CoalesceAsyncCopy.cpp.o
+  [158/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/PartitionLoops.cpp.o
+  [159/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSLowerMem.cpp.o
+  [160/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/FenceInsertion.cpp.o
+  [161/371] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/Membar.cpp.o
+  [162/371] Building CXX object 3rdparty/triton/unittest/Dialect/TritonGPU/CMakeFiles/DumpLayoutTest.dir/DumpLayoutTest.cpp.o
+  [163/371] Building CXX object 3rdparty/triton/third_party/amd/unittest/Conversion/CMakeFiles/TestOptimizeLDS.dir/OptimizeLDSTest.cpp.o
+  [164/371] Building CXX object 3rdparty/triton/third_party/amd/test/lib/Analysis/CMakeFiles/obj.TritonAMDGPUTestAnalysis.dir/TestAxisInfo.cpp.o
+  [165/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/TMAStoresPipeline.cpp.o
+  [166/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonToTritonGPU/CMakeFiles/TritonToTritonGPU.dir/RelayoutTritonGPU.cpp.o
+  [167/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/TestPipelineLowerLoop.cpp.o
+  [168/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/TMAUtilities.cpp.o
+  [169/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/PromoteLHSToTMem.cpp.o
+  [170/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSSpecialize.cpp.o
+  [171/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/MMALowering.cpp.o
+  [172/371] Building CXX object 3rdparty/triton/test/lib/Analysis/CMakeFiles/obj.TritonTestAnalysis.dir/TestMembar.cpp.o
+  [173/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSTaskIdPropagate.cpp.o
+  [174/371] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/Utility.cpp.o
+  [175/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/RemoveTMEMTokens.cpp.o
+  [176/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/MMAv5PipelineUtility.cpp.o
+  [177/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVWS/Transforms/CMakeFiles/NVWSTransforms.dir/LowerWarpGroup.cpp.o
+  [178/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/TMALowering.cpp.o
+  [179/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/AutomaticWarpSpecialization.cpp.o
+  [180/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSTaskPartition.cpp.o
+  [181/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/OptimizeTMemLayouts.cpp.o
+  [182/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/PartitionScheduling.cpp.o
+  [183/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Canonicalize.cpp.o
+  [184/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/CodePartitionUtility.cpp.o
+  [185/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/ReorderInstructions.cpp.o
+  [186/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUDialectToLLVM/CMakeFiles/TritonAMDGPUDialectToLLVM.dir/InThreadTransposeOpToTTG.cpp.o
+  [187/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/GCNAsmFormat.cpp.o
+  [188/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/PipelineExpander.cpp.o
+  [189/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/MfmaGroup.cpp.o
+  [190/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization.cpp.o
+  [191/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/DecomposeScaledBlocked.cpp.o
+  [192/371] Building CXX object 3rdparty/triton/test/lib/Analysis/CMakeFiles/obj.TritonTestAnalysis.dir/TestAlias.cpp.o
+  [193/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/SoftwarePipeliner.cpp.o
+  [194/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/AssignLatencies.cpp.o
+  [195/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Coalesce.cpp.o
+  [196/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/Schedule.cpp.o
+  [197/371] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/Alias.cpp.o
+  [198/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/HoistTMEMAlloc.cpp.o
+  [199/371] Building CXX object lib/Dialect/Distributed/IR/CMakeFiles/DistributedIR.dir/Dialect.cpp.o
+  [200/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Prefetch.cpp.o
+  [201/371] Building CXX object 3rdparty/triton/third_party/proton/dialect/lib/TritonProtonToLLVM/CMakeFiles/TritonProtonToLLVM.dir/RecordOpToLLVM.cpp.o
+  [202/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/Transforms/CMakeFiles/TritonTransforms.dir/RewriteTensorDescriptorToPointer.cpp.o
+  [203/371] Building CXX object 3rdparty/triton/third_party/amd/test/lib/Analysis/CMakeFiles/obj.TritonAMDGPUTestAnalysis.dir/TestAMDGPUMembar.cpp.o
+  [204/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/OptimizeThreadLocality.cpp.o
+  [205/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/OptimizeDotOperands.cpp.o
+  [206/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/SPMDOpToLLVM.cpp.o
+  [207/371] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/interpreter.cc.o
+  [208/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/TensorMemoryAllocation.cpp.o
+  [209/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/DotOpToLLVM/FMADotUtility.cpp.o
+  [210/371] Building CXX object lib/Dialect/SIMT/IR/CMakeFiles/SIMTIR.dir/Dialect.cpp.o
+  [211/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVWS/Transforms/CMakeFiles/NVWSTransforms.dir/LowerAref.cpp.o
+  [212/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/AccelerateMatmul.cpp.o
+  [213/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/AssertOpToLLVM.cpp.o
+  [214/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/WGMMAPipeline.cpp.o
+  [215/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/MembarUtility.cpp.o
+  [216/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/RewritePartitionDependencies.cpp.o
+  [217/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/CombineTensorSelectAndIf.cpp.o
+  [218/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVWS/IR/CMakeFiles/NVWSIR.dir/Dialect.cpp.o
+  [219/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ScalarizePackedFOps.cpp.o
+  [220/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/ScheduleLoops.cpp.o
+  [221/371] Building CXX object 3rdparty/triton/test/lib/Analysis/CMakeFiles/obj.TritonTestAnalysis.dir/TestAxisInfo.cpp.o
+  [222/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/PrintOpToLLVM.cpp.o
+  [223/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/PlanCTA.cpp.o
+  [224/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/PTXAsmFormat.cpp.o
+  [225/371] Building CXX object 3rdparty/triton/unittest/Dialect/TritonGPU/CMakeFiles/Dialect.dir/DialectTest.cpp.o
+  [226/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSBuffer.cpp.o
+  [227/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/DotOpToLLVM/FMA.cpp.o
+  [228/371] Building CXX object 3rdparty/triton/third_party/amd/lib/Analysis/CMakeFiles/TritonAMDAnalysis.dir/AxisInfoExt.cpp.o
+  [229/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/GatherOpToLLVM.cpp.o
+  [230/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/MemoryOpToLLVM.cpp.o
+  [231/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/FuseNestedLoops.cpp.o
+  [232/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVWS/IR/CMakeFiles/NVWSIR.dir/Ops.cpp.o
+  [233/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/AsyncUtility.cpp.o
+  [234/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/OptimizePartitionWarps.cpp.o
+  [235/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/DotOpToLLVM/FMA.cpp.o
+  [236/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/Fp4ToFpOpToLLVM.cpp.o
+  [237/371] Building CXX object 3rdparty/triton/third_party/proton/dialect/lib/Dialect/Proton/IR/CMakeFiles/ProtonIR.dir/Ops.cpp.o
+  [238/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUDialectToLLVM/CMakeFiles/TritonAMDGPUDialectToLLVM.dir/ConcatOpToLLVM.cpp.o
+  [239/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/LinearLayoutConversions.cpp.o
+  [240/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/WarpSpecialization/LoadMMASpecialization.cpp.o
+  [241/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/HistogramOpToLLVM.cpp.o
+  [242/371] Building CXX object 3rdparty/triton/third_party/proton/dialect/CMakeFiles/TritonProton.dir/triton_proton.cc.o
+  [243/371] Building CXX object 3rdparty/triton/third_party/amd/test/lib/Analysis/CMakeFiles/obj.TritonAMDGPUTestAnalysis.dir/TestAMDRangeAnalysis.cpp.o
+  [244/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSCodePartition.cpp.o
+  [245/371] Building CXX object lib/Dialect/SIMT/IR/CMakeFiles/SIMTIR.dir/Ops.cpp.o
+  [246/371] Linking CXX static library 3rdparty/triton/third_party/amd/test/lib/Analysis/libTritonAMDGPUTestAnalysis.a
+  [247/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/ClusterOpsToLLVM.cpp.o
+  [248/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/SPMDOpToLLVM.cpp.o
+  [249/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/TypeConverter.cpp.o
+  [250/371] Building CXX object 3rdparty/triton/third_party/proton/csrc/CMakeFiles/Proton.dir/Proton.cpp.o
+  [251/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TensorPtrOpsToLLVM.cpp.o
+  [252/371] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/_C/libproton.so
+  [253/371] Building CXX object 3rdparty/triton/unittest/Tools/CMakeFiles/LinearLayout.dir/LinearLayoutTest.cpp.o
+  [254/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ScanOpToLLVM.cpp.o
+  [255/371] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/Allocation.cpp.o
+  [256/371] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/AMD/LibDeviceToLLVM.cpp.o
+  [257/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/BarrierOpToLLVM.cpp.o
+  [258/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/OptimizeEpilogue.cpp.o
+  [259/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/IR/CMakeFiles/TritonNvidiaGPUIR.dir/Dialect.cpp.o
+  [260/371] Building CXX object lib/Dialect/Distributed/IR/CMakeFiles/DistributedIR.dir/Ops.cpp.o
+  [261/371] Linking CXX executable 3rdparty/triton/unittest/Tools/LinearLayout
+  [262/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/DotOpToLLVM.cpp.o
+  [263/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/LowerLoops.cpp.o
+  [264/371] Building CXX object 3rdparty/triton/third_party/nvidia/hopper/lib/Transforms/CMakeFiles/NVHopperTransforms.dir/WarpSpecialization/WSDataPartition.cpp.o
+  [265/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/OptimizeAccumulatorInit.cpp.o
+  [266/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ControlFlowOpToLLVM.cpp.o
+  [267/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ReduceOpToLLVM.cpp.o
+  [268/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/DotOpToLLVM/MMAv5.cpp.o
+  [269/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/DotOpToLLVM.cpp.o
+  [270/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/MakeRangeOpToLLVM.cpp.o
+  [271/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/DotOpToLLVM/WMMA.cpp.o
+  [272/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Utility.cpp.o
+  [273/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/DotOpToLLVM/WGMMA.cpp.o
+  [274/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/HoistLayoutConversions.cpp.o
+  [275/371] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/AMD/DistributedOpToLLVM.cpp.o
+  [276/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/UpcastMXFPToLLVM.cpp.o
+  [277/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/FuncOpToLLVM.cpp.o
+  [278/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/Dialect/NVGPU/IR/CMakeFiles/NVGPUIR.dir/Dialect.cpp.o
+  [279/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TMAToLLVM.cpp.o
+  [280/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/MemoryOpToLLVM.cpp.o
+  [281/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/RemoveLayoutConversions.cpp.o
+  [282/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/SPMDOpToLLVM.cpp.o
+  [283/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/InThreadTranspose.cpp.o
+  [284/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/MemoryOpToLLVM.cpp.o
+  [285/371] Building CXX object 3rdparty/triton/third_party/amd/lib/Analysis/CMakeFiles/TritonAMDAnalysis.dir/RangeAnalysis.cpp.o
+  [286/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/BufferOpsEmitter.cpp.o
+  [287/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ViewOpToLLVM.cpp.o
+  [288/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/DotOpToLLVM/MFMA.cpp.o
+  [289/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/OptimizeLDSUsage.cpp.o
+  [290/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/DotOpToLLVM/MMAv2.cpp.o
+  [291/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/Transforms/CMakeFiles/TritonNvidiaGPUTransforms.dir/OptimizeDescriptorEncoding.cpp.o
+  [292/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/BuiltinFuncToLLVM.cpp.o
+  [293/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/ConvertLayoutOpToLLVM.cpp.o
+  [294/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ConvertLayoutOpToLLVM.cpp.o
+  [295/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/FoldTrueCmpIOp.cpp.o
+  [296/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ConvertLayoutOpToLLVM/SharedToDotOperandMFMA.cpp.o
+  [297/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ConvertLayoutOpToLLVM/SharedToDotOperandWMMA.cpp.o
+  [298/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/Utility.cpp.o
+  [299/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ConvertLayoutOpToLLVM.cpp.o
+  [300/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/ReorderInstructions.cpp.o
+  [301/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/AtomicRMWOpsEmitter.cpp.o
+  [302/371] Building CXX object CMakeFiles/TritonDistributed.dir/python/src/triton_distributed.cc.o
+  [303/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUDialectToLLVM/CMakeFiles/TritonAMDGPUDialectToLLVM.dir/ExtractSliceOpToLLVM.cpp.o
+  [304/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TargetInfo.cpp.o
+  [305/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Dialect.cpp.o
+  [306/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TritonGPUToLLVM.cpp.o
+  [307/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/ElementwiseOpToLLVM.cpp.o
+  [308/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/TensorMemoryToLLVM.cpp.o
+  [309/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/Utility.cpp.o
+  [310/371] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/SIMTOpToLLVM.cpp.o
+  [311/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/Transforms/CMakeFiles/TritonGPUTransforms.dir/Pipeliner/PipeliningUtility.cpp.o
+  [312/371] Building CXX object 3rdparty/triton/lib/Analysis/CMakeFiles/TritonAnalysis.dir/AxisInfo.cpp.o
+  [313/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/CoalesceAsyncCopy.cpp.o
+  [314/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ConvertLayoutOpToLLVM/SharedToDotOperandHelper.cpp.o
+  [315/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/TargetInfo.cpp.o
+  [316/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/Utility.cpp.o
+  [317/371] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/NVIDIA/DistributedOpToLLVM.cpp.o
+  [318/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/BlockPingpong.cpp.o
+  [319/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/UpdateAsyncWaitCount.cpp.o
+  [320/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonNvidiaGPU/IR/CMakeFiles/TritonNvidiaGPUIR.dir/Ops.cpp.o
+  [321/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/LoadStoreOpToLLVM.cpp.o
+  [322/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/StreamPipeline.cpp.o
+  [323/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/AccelerateAMDMatmul.cpp.o
+  [324/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/ConvertToBufferOps.cpp.o
+  [325/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/SchedInstructions.cpp.o
+  [326/371] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/NVIDIA/ConvertTritonDistributedToLLVM.cpp.o
+  [327/371] Building CXX object lib/Conversion/TritonDistributedToLLVM/CMakeFiles/TritonDistributedToLLVM.dir/AMD/ConvertAMDDistributedToLLVM.cpp.o
+  [328/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/NVGPUToLLVM/CMakeFiles/NVGPUToLLVM.dir/NVGPUToLLVMPass.cpp.o
+  [329/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/Ops.cpp.o
+  [330/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/TritonGPUToLLVM.cpp.o
+  [331/371] Building CXX object 3rdparty/triton/third_party/amd/lib/Dialect/TritonAMDGPU/IR/CMakeFiles/TritonAMDGPUIR.dir/Dialect.cpp.o
+  [332/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUTransforms/CMakeFiles/TritonAMDGPUTransforms.dir/CanonicalizePointers.cpp.o
+  [333/371] Building CXX object 3rdparty/triton/third_party/nvidia/CMakeFiles/TritonNVIDIA.dir/triton_nvidia.cc.o
+  [334/371] Building CXX object csrc/lib/CMakeFiles/triton_distributed.dir/registry.cc.o
+  [335/371] Building CXX object csrc/lib/CMakeFiles/triton_distributed.dir/op_pybind.cc.o
+  [336/371] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/llvm.cc.o
+  [337/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/LoadStoreOpToLLVM.cpp.o
+  [338/371] Building CXX object 3rdparty/triton/third_party/amd/CMakeFiles/TritonAMD.dir/python/triton_amd.cc.o
+  [339/371] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/gluon_ir.cc.o
+  [340/371] Building CXX object 3rdparty/triton/third_party/nvidia/lib/TritonNVIDIAGPUToLLVM/CMakeFiles/TritonNVIDIAGPUToLLVM.dir/ConvertWarpSpecializeToLLVM.cpp.o
+  [341/371] Building CXX object CMakeFiles/TritonDistributed.dir/python/src/passes.cc.o
+  [342/371] Building CXX object 3rdparty/triton/third_party/amd/lib/TritonAMDGPUToLLVM/CMakeFiles/TritonAMDGPUToLLVM.dir/ElementwiseOpToLLVM.cpp.o
+  [343/371] Building CXX object 3rdparty/triton/lib/Dialect/Triton/IR/CMakeFiles/TritonIR.dir/Ops.cpp.o
+  [344/371] Building CXX object 3rdparty/triton/lib/Dialect/TritonGPU/IR/CMakeFiles/TritonGPUIR.dir/Dialect.cpp.o
+  [345/371] Linking CXX static library 3rdparty/triton/test/lib/Dialect/libTritonTestDialect.a
+  [346/371] Building CXX object CMakeFiles/TritonDistributed.dir/python/src/ir.cc.o
+  [347/371] Linking CXX static library 3rdparty/triton/test/lib/Analysis/libTritonTestAnalysis.a
+  [348/371] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/passes.cc.o
+  [349/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonGPUToLLVM/CMakeFiles/TritonGPUToLLVM.dir/ElementwiseOpToLLVM.cpp.o
+  [350/371] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-lsp.dir/triton-lsp.cpp.o
+  [351/371] Building CXX object 3rdparty/triton/lib/Conversion/TritonToTritonGPU/CMakeFiles/TritonToTritonGPU.dir/TritonToTritonGPUPass.cpp.o
+  [352/371] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-opt.dir/triton-opt.cpp.o
+  [353/371] Building CXX object lib/Conversion/TritonDistributedToTritonGPU/CMakeFiles/TritonDistributedToTritonGPU.dir/TritonDistributedToTritonGPU.cpp.o
+  [354/371] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-reduce.dir/triton-reduce.cpp.o
+  [355/371] Building CXX object 3rdparty/triton/bin/CMakeFiles/triton-tensor-layout.dir/triton-tensor-layout.cpp.o
+  [356/371] Linking CXX executable 3rdparty/triton/unittest/Analysis/TestTritonAnalysis
+  [357/371] Linking CXX executable 3rdparty/triton/unittest/Dialect/TritonGPU/Dialect
+  [358/371] Linking CXX executable 3rdparty/triton/unittest/Dialect/TritonGPU/DumpLayoutTest
+  [359/371] Linking CXX executable 3rdparty/triton/third_party/amd/unittest/Conversion/TestOptimizeLDS
+  [360/371] Linking CXX executable 3rdparty/triton/bin/triton-llvm-opt
+  [361/371] Linking CXX executable 3rdparty/triton/third_party/nvidia/unittest/Conversion/TritonGPUToLLVM/TestPtxAsmFormat
+  [362/371] Building CXX object 3rdparty/triton/unittest/Dialect/TritonGPU/CMakeFiles/LinearLayoutConversions.dir/LinearLayoutConversionsTest.cpp.o
+  [363/371] Linking CXX executable 3rdparty/triton/bin/triton-opt
+  [364/371] Linking CXX executable 3rdparty/triton/bin/triton-lsp
+  [365/371] Linking CXX executable 3rdparty/triton/unittest/Dialect/TritonGPU/LinearLayoutConversions
+  [366/371] Linking CXX executable 3rdparty/triton/bin/triton-reduce
+  [367/371] Linking CXX executable 3rdparty/triton/bin/triton-tensor-layout
+  [368/371] Building CXX object CMakeFiles/triton.dir/3rdparty/triton/python/src/ir.cc.o
+  [369/371] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/_C/libtriton.so
+  [370/371] Building CUDA object csrc/lib/CMakeFiles/triton_distributed.dir/moe_utils.cu.o
+  [371/371] Linking CXX shared library /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton/_C/libtriton_distributed.so
+  [1/28] Building TritonGPUDialect.md...
+  [2/27] Building TritonNvidiaGPUDialect.md...
+  [3/26] Building NVGPUDialect.md...
+  [4/25] Building NVWSDialect.md...
+  [5/24] Building TritonDialect.md...
+  [6/23] Building TritonAMDGPUDialect.md...
+  [7/22] Building ProtonDialect.md...
+  [8/21] Building NVWSOps.md...
+  [9/20] Building NVGPUOps.md...
+  [10/19] Building TritonOps.md...
+  [11/18] Building TritonGPUOps.md...
+  [12/17] Building ProtonOps.md...
+  [13/16] Building TritonNvidiaGPUOps.md...
+  [14/15] Building TritonAMDGPUOps.md...
   downloading and extracting https://oaitriton.blob.core.windows.net/public/llvm-builds/llvm-8957e64a-ubuntu-x64.tar.gz ...
   downloading and extracting https://github.com/nlohmann/json/releases/download/v3.11.3/include.zip ...
   running egg_info
@@ -695,14 +664,15 @@ Building wheels for collected packages: triton_dist
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed.so
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton_dist/_C/libtriton_distributed_kernel.so -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton/_C/libtriton_distributed_kernel.so
   creating symlink: /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/python/triton -> /root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/3rdparty/triton/python/triton
-  creating /tmp/tmpa5uf0o27.build-temp/triton_dist.egg-info
-  writing /tmp/tmpa5uf0o27.build-temp/triton_dist.egg-info/PKG-INFO
-  writing dependency_links to /tmp/tmpa5uf0o27.build-temp/triton_dist.egg-info/dependency_links.txt
-  writing entry points to /tmp/tmpa5uf0o27.build-temp/triton_dist.egg-info/entry_points.txt
-  writing requirements to /tmp/tmpa5uf0o27.build-temp/triton_dist.egg-info/requires.txt
-  writing top-level names to /tmp/tmpa5uf0o27.build-temp/triton_dist.egg-info/top_level.txt
-  writing manifest file '/tmp/tmpa5uf0o27.build-temp/triton_dist.egg-info/SOURCES.txt'
-  writing manifest file '/tmp/tmpa5uf0o27.build-temp/triton_dist.egg-info/SOURCES.txt'
+  creating /tmp/tmpnh5n_bg5.build-temp/triton_dist.egg-info
+  writing /tmp/tmpnh5n_bg5.build-temp/triton_dist.egg-info/PKG-INFO
+  writing dependency_links to /tmp/tmpnh5n_bg5.build-temp/triton_dist.egg-info/dependency_links.txt
+  writing entry points to /tmp/tmpnh5n_bg5.build-temp/triton_dist.egg-info/entry_points.txt
+  writing requirements to /tmp/tmpnh5n_bg5.build-temp/triton_dist.egg-info/requires.txt
+  writing top-level names to /tmp/tmpnh5n_bg5.build-temp/triton_dist.egg-info/top_level.txt
+  writing manifest file '/tmp/tmpnh5n_bg5.build-temp/triton_dist.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/tmpnh5n_bg5.build-temp/triton_dist.egg-info/SOURCES.txt'
+  writing manifest file '/tmp/tmpnh5n_bg5.build-temp/triton_dist.egg-info/SOURCES.txt'
   /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/command/build_py.py:212: _Warning: Package 'triton/backends/amd.include.hip' is absent from the `packages` configuration.
   !!
 
@@ -1318,170 +1288,6 @@ Building wheels for collected packages: triton_dist
 
   !!
     check.warn(importable)
-  /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/command/build_py.py:212: _Warning: Package 'triton_dist/layers.amd' is absent from the `packages` configuration.
-  !!
-
-          ********************************************************************************
-          ############################
-          # Package would be ignored #
-          ############################
-          Python recognizes 'triton_dist/layers.amd' as an importable package[^1],
-          but it is absent from setuptools' `packages` configuration.
-
-          This leads to an ambiguous overall configuration. If you want to distribute this
-          package, please make sure that 'triton_dist/layers.amd' is explicitly added
-          to the `packages` configuration field.
-
-          Alternatively, you can also rely on setuptools' discovery methods
-          (for example by using `find_namespace_packages(...)`/`find_namespace:`
-          instead of `find_packages(...)`/`find:`).
-
-          You can read more about "package discovery" on setuptools documentation page:
-
-          - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
-
-          If you don't want 'triton_dist/layers.amd' to be distributed and are
-          already explicitly excluding 'triton_dist/layers.amd' via
-          `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
-          you can try to use `exclude_package_data`, or `include-package-data=False` in
-          combination with a more fine grained `package-data` configuration.
-
-          You can read more about "package data files" on setuptools documentation page:
-
-          - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
-
-
-          [^1]: For Python, any directory (with suitable naming) can be imported,
-                even if it does not contain any `.py` files.
-                On the other hand, currently there is no concept of package data
-                directory, all directories are treated like packages.
-          ********************************************************************************
-
-  !!
-    check.warn(importable)
-  /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/command/build_py.py:212: _Warning: Package 'triton_dist/test.amd' is absent from the `packages` configuration.
-  !!
-
-          ********************************************************************************
-          ############################
-          # Package would be ignored #
-          ############################
-          Python recognizes 'triton_dist/test.amd' as an importable package[^1],
-          but it is absent from setuptools' `packages` configuration.
-
-          This leads to an ambiguous overall configuration. If you want to distribute this
-          package, please make sure that 'triton_dist/test.amd' is explicitly added
-          to the `packages` configuration field.
-
-          Alternatively, you can also rely on setuptools' discovery methods
-          (for example by using `find_namespace_packages(...)`/`find_namespace:`
-          instead of `find_packages(...)`/`find:`).
-
-          You can read more about "package discovery" on setuptools documentation page:
-
-          - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
-
-          If you don't want 'triton_dist/test.amd' to be distributed and are
-          already explicitly excluding 'triton_dist/test.amd' via
-          `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
-          you can try to use `exclude_package_data`, or `include-package-data=False` in
-          combination with a more fine grained `package-data` configuration.
-
-          You can read more about "package data files" on setuptools documentation page:
-
-          - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
-
-
-          [^1]: For Python, any directory (with suitable naming) can be imported,
-                even if it does not contain any `.py` files.
-                On the other hand, currently there is no concept of package data
-                directory, all directories are treated like packages.
-          ********************************************************************************
-
-  !!
-    check.warn(importable)
-  /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/command/build_py.py:212: _Warning: Package 'triton_dist/test.nvidia' is absent from the `packages` configuration.
-  !!
-
-          ********************************************************************************
-          ############################
-          # Package would be ignored #
-          ############################
-          Python recognizes 'triton_dist/test.nvidia' as an importable package[^1],
-          but it is absent from setuptools' `packages` configuration.
-
-          This leads to an ambiguous overall configuration. If you want to distribute this
-          package, please make sure that 'triton_dist/test.nvidia' is explicitly added
-          to the `packages` configuration field.
-
-          Alternatively, you can also rely on setuptools' discovery methods
-          (for example by using `find_namespace_packages(...)`/`find_namespace:`
-          instead of `find_packages(...)`/`find:`).
-
-          You can read more about "package discovery" on setuptools documentation page:
-
-          - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
-
-          If you don't want 'triton_dist/test.nvidia' to be distributed and are
-          already explicitly excluding 'triton_dist/test.nvidia' via
-          `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
-          you can try to use `exclude_package_data`, or `include-package-data=False` in
-          combination with a more fine grained `package-data` configuration.
-
-          You can read more about "package data files" on setuptools documentation page:
-
-          - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
-
-
-          [^1]: For Python, any directory (with suitable naming) can be imported,
-                even if it does not contain any `.py` files.
-                On the other hand, currently there is no concept of package data
-                directory, all directories are treated like packages.
-          ********************************************************************************
-
-  !!
-    check.warn(importable)
-  /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/command/build_py.py:212: _Warning: Package 'triton_dist/test.stress' is absent from the `packages` configuration.
-  !!
-
-          ********************************************************************************
-          ############################
-          # Package would be ignored #
-          ############################
-          Python recognizes 'triton_dist/test.stress' as an importable package[^1],
-          but it is absent from setuptools' `packages` configuration.
-
-          This leads to an ambiguous overall configuration. If you want to distribute this
-          package, please make sure that 'triton_dist/test.stress' is explicitly added
-          to the `packages` configuration field.
-
-          Alternatively, you can also rely on setuptools' discovery methods
-          (for example by using `find_namespace_packages(...)`/`find_namespace:`
-          instead of `find_packages(...)`/`find:`).
-
-          You can read more about "package discovery" on setuptools documentation page:
-
-          - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
-
-          If you don't want 'triton_dist/test.stress' to be distributed and are
-          already explicitly excluding 'triton_dist/test.stress' via
-          `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
-          you can try to use `exclude_package_data`, or `include-package-data=False` in
-          combination with a more fine grained `package-data` configuration.
-
-          You can read more about "package data files" on setuptools documentation page:
-
-          - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
-
-
-          [^1]: For Python, any directory (with suitable naming) can be imported,
-                even if it does not contain any `.py` files.
-                On the other hand, currently there is no concept of package data
-                directory, all directories are treated like packages.
-          ********************************************************************************
-
-  !!
-    check.warn(importable)
   Editable install will be performed using a meta path finder.
 
   Options like `package-data`, `include/exclude-package-data` or
@@ -1489,13 +1295,13 @@ Building wheels for collected packages: triton_dist
 
   adding '__editable___triton_dist_3_4_0_finder.py'
   adding '__editable__.triton_dist-3.4.0.pth'
-  creating '/tmp/pip-wheel-98cq110q/.tmp-xdzuowl3/triton_dist-3.4.0-0.editable-cp312-cp312-linux_x86_64.whl' and adding '/tmp/tmpnl1qwc6wtriton_dist-3.4.0-0.editable-cp312-cp312-linux_x86_64.whl' to it
+  creating '/tmp/pip-wheel-6ion447f/.tmp-onfrfwk9/triton_dist-3.4.0-0.editable-cp312-cp312-linux_x86_64.whl' and adding '/tmp/tmpdugzpyqztriton_dist-3.4.0-0.editable-cp312-cp312-linux_x86_64.whl' to it
   adding 'triton_dist-3.4.0.dist-info/METADATA'
   adding 'triton_dist-3.4.0.dist-info/WHEEL'
   adding 'triton_dist-3.4.0.dist-info/entry_points.txt'
   adding 'triton_dist-3.4.0.dist-info/top_level.txt'
   adding 'triton_dist-3.4.0.dist-info/RECORD'
-  /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/command/editable_wheel.py:342: InformationOnly: Editable installation.
+  /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/setuptools/command/editable_wheel.py:351: InformationOnly: Editable installation.
   !!
 
           ********************************************************************************
@@ -1506,8 +1312,8 @@ Building wheels for collected packages: triton_dist
   !!
     with strategy, WheelFile(wheel_path, "w") as wheel_obj:
   Building editable for triton_dist (pyproject.toml): finished with status 'done'
-  Created wheel for triton_dist: filename=triton_dist-3.4.0-0.editable-cp312-cp312-linux_x86_64.whl size=4390 sha256=1e9fb771b107e1c2187222b5d8462c89c90dcd215512fff55f65fafdbc1fd783
-  Stored in directory: /tmp/pip-ephem-wheel-cache-pfhp0hq2/wheels/43/85/66/127d0e41efdb0eaf37648bca19f27fdee85abecb583cf70528
+  Created wheel for triton_dist: filename=triton_dist-3.4.0-0.editable-cp312-cp312-linux_x86_64.whl size=4388 sha256=dedc17b8994497be2a7759f9998467d55fd951d33c00a18572b783cda5402cb9
+  Stored in directory: /tmp/pip-ephem-wheel-cache-tq_g9jwp/wheels/43/85/66/127d0e41efdb0eaf37648bca19f27fdee85abecb583cf70528
 Successfully built triton_dist
 Installing collected packages: triton_dist
   changing mode of /root/.virtualenvs/lmy_vllm_triton/bin/proton to 755

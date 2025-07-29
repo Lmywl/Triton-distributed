@@ -92,7 +92,7 @@ def perf_test(name, input_len, dtype: torch.dtype, config, debug=False):
     assert M % WORLD_SIZE == 0
     assert N % WORLD_SIZE == 0
     M_per_rank = M // WORLD_SIZE
-    N_per_rank = N // WORLD_SIZE
+    N_per_rank = N // WORLD_SIZE * 2
 
     if RANK == 0:
         print(f"shape: M={M}, N={N}, K={K}; num experts={E}, topk={topk}")
@@ -141,6 +141,7 @@ def perf_test(name, input_len, dtype: torch.dtype, config, debug=False):
         print(f"stage {stage} exceeds max stages {max_stages}, force set to {max_stages}...")
         config["num_stages"] = max_stages
 
+    
     ctx = create_ag_group_gemm_context(
         M,
         N_per_rank,
@@ -196,24 +197,28 @@ def perf_test(name, input_len, dtype: torch.dtype, config, debug=False):
 
 
 layer_configs = {
-    "Dummy-Model": {
-        "N": 8192, "K": 8192, "E": 32, "TOPK": 3, "BM": 128, "BN": 128, "BK": 32, "GROUP_SIZE_M": 8, "num_stages": 4,
-        "num_warps": 8
-    },
-    "Qwen1.5-MoE-A2.7B": {
-        "N": 1408, "K": 2048, "E": 60, "TOPK": 4, "BM": 128, "BN": 128, "BK": 64, "GROUP_SIZE_M": 8, "num_stages": 4,
-        "num_warps": 8
-    },
-    "Mixtral-8x7B": {
-        "N": 4096, "K": 14336, "E": 8, "TOPK": 2, "BM": 128, "BN": 256, "BK": 64, "GROUP_SIZE_M": 8, "num_stages": 4,
-        "num_warps": 8
-    },
-    "Mixtral-8x22B": {
-        "N": 6144, "K": 16384, "E": 8, "TOPK": 2, "BM": 128, "BN": 256, "BK": 64, "GROUP_SIZE_M": 8, "num_stages": 4,
-        "num_warps": 8
-    },
-    "DeepSeek-MoE": {
-        "N": 2048, "K": 1408, "E": 64, "TOPK": 6, "BM": 128, "BN": 256, "BK": 64, "GROUP_SIZE_M": 8, "num_stages": 4,
+    # "Dummy-Model": {
+    #     "N": 8192, "K": 8192, "E": 32, "TOPK": 3, "BM": 128, "BN": 128, "BK": 32, "GROUP_SIZE_M": 8, "num_stages": 4,
+    #     "num_warps": 8
+    # },
+    # "Qwen1.5-MoE-A2.7B": {
+    #     "N": 1408, "K": 2048, "E": 60, "TOPK": 4, "BM": 128, "BN": 128, "BK": 64, "GROUP_SIZE_M": 8, "num_stages": 4,
+    #     "num_warps": 8
+    # },
+    # "Mixtral-8x7B": {
+    #     "N": 4096, "K": 14336, "E": 8, "TOPK": 2, "BM": 128, "BN": 256, "BK": 64, "GROUP_SIZE_M": 8, "num_stages": 4,
+    #     "num_warps": 8
+    # },
+    # "Mixtral-8x22B": {
+    #     "N": 6144, "K": 16384, "E": 8, "TOPK": 2, "BM": 128, "BN": 256, "BK": 64, "GROUP_SIZE_M": 8, "num_stages": 4,
+    #     "num_warps": 8
+    # },
+    # "DeepSeek-MoE": {
+    #     "N": 2048, "K": 1408, "E": 64, "TOPK": 6, "BM": 128, "BN": 256, "BK": 64, "GROUP_SIZE_M": 8, "num_stages": 4,
+    #     "num_warps": 8
+    # },
+    "Qwen3-MoE": {
+        "K": 2048, "N": 6144, "E": 128, "TOPK": 8, "BM": 128, "BN": 256, "BK": 64, "GROUP_SIZE_M": 8, "num_stages": 4,
         "num_warps": 8
     },
 }

@@ -153,7 +153,7 @@ node_rank=${ARNOLD_ID:=0}
 
 master_addr=${ARNOLD_WORKER_0_HOST:="127.0.0.1"}
 if [ -z ${ARNOLD_WORKER_0_PORT} ]; then
-  master_port="23456"
+  master_port="23457"
 else
   master_port=$(echo "$ARNOLD_WORKER_0_PORT" | cut -d "," -f 1)
 fi
@@ -163,6 +163,7 @@ additional_args="--rdzv_endpoint=${master_addr}:${master_port}"
 # If you want to use compute-sanitizer, please set TORCHRUN="/usr/local/cuda/bin/compute-sanitizer --tool memcheck torchrun"
 # export PYTORCH_NO_CUDA_MEMORY_CACHING=1
 # TORCHRUN="/usr/local/cuda/bin/compute-sanitizer --tool memcheck torchrun"
+export CUDA_LAUNCH_BLOCKING=1
 TORCHRUN=torchrun
 CMD="${TORCHRUN} \
   --node_rank=${node_rank} \

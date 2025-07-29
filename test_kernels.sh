@@ -41,12 +41,22 @@
 #     bash ./scripts/launch.sh 8 ./python/triton_dist/test/nvidia/test_moe_reduce_rs.py $M $N $K $EXPERTS $TOPK --autotune
 # done
 
-### 4. allgather moe test  pass √
-echo "allgather MoE correctness test"
+# ### 4. allgather moe test  pass √
+# echo "allgather MoE correctness test"
+# export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+# # shapes=(128 256 512 1024 2048 4096 8192)
+# shapes=(512)
+# for shape in "${shapes[@]}"; do
+#     echo "Test with TP_SIZE=8 $shape" 
+#     bash ./scripts/launch.sh 8 ./python/triton_dist/test/nvidia/test_ag_moe.py --M $shape 
+# done
+
+### 5. ag_moe_rs test
+echo "allgather MoE Reducescatter test"
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 # shapes=(128 256 512 1024 2048 4096 8192)
 shapes=(512)
 for shape in "${shapes[@]}"; do
     echo "Test with TP_SIZE=8 $shape" 
-    bash ./scripts/launch.sh 8 ./python/triton_dist/test/nvidia/test_ag_moe.py --M $shape --autotune
+    bash ./scripts/launch.sh 8 ./python/triton_dist/test/nvidia/test_ag_moe_rs.py --M $shape
 done

@@ -243,6 +243,7 @@ class MoEAllGatherGroupGEMMTensorParallelContext:
 
         self.symm_workspaces = nvshmem_create_tensors((self.max_ntokens, self.K), self.dtype, self.rank,
                                                       self.num_local_ranks)
+        
         self.symm_workspace = self.symm_workspaces[self.local_rank]
 
         self.symm_barriers = nvshmem_create_tensors((self.num_ranks, ), NVSHMEM_SIGNAL_DTYPE, self.rank,
@@ -370,7 +371,6 @@ def create_ag_group_gemm_context(
     Returns:
         MoEAllGatherGroupGEMMTensorParallelContext
     """
-
     ctx = MoEAllGatherGroupGEMMTensorParallelContext(
         max_ntokens=max_ntokens,
         N_per_rank=N_per_rank,
@@ -395,7 +395,7 @@ def create_ag_group_gemm_context(
     return ctx
 
 
-def ag_group_gemm(a: torch.Tensor, b: torch.Tensor, ctx: MoEAllGatherGroupGEMMTensorParallelContext, full_topk_ids):
+def ag_group_gemm(a: torch.Tensor, b: torch.Tensor, ctx: MoEAllGatherGroupGEMMTensorParallelContext, full_topk_ids:torch.Tensor):
     ntokens_per_rank, hidden = a.shape
     n_experts, K, hidden_b = b.shape
     assert n_experts == ctx.num_experts
@@ -405,28 +405,32 @@ def ag_group_gemm(a: torch.Tensor, b: torch.Tensor, ctx: MoEAllGatherGroupGEMMTe
         device=a.device,
     )
     rowise_ag_scatter_group_gemm_dispatcher(a, b, c, ctx, full_topk_ids)
-    torch.cuda.synchronize()
+    return c
 
-    EM = ctx.topk * ntokens_per_rank * ctx.num_ranks
+def gated_silu(inter_states: torch.Tensor, block_N: int):
+    """
+    para inter_states: [topk * M, local_inter_size]
+    """
+    EM, N_per_rank = inter_states.shape[0], inter_states.shape[1]
     d = torch.empty(
-        [EM, ctx.N_per_rank // 2], # [topk * global_M, intermediate_size]
-        dtype=ctx.dtype,
-        device=a.device,
+        [EM, N_per_rank // 2], # [topk * global_M, local_inter_size // 2]
+        dtype=inter_states.dtype,
+        device=inter_states.device,
     )
-    grid_silu = lambda META: (EM, triton.cdiv(ctx.N_per_rank // 2, META['BLOCK_SIZE_N'])) # N -- intermediate_size
+    grid_silu = lambda META: (EM, triton.cdiv(N_per_rank // 2, META['BLOCK_SIZE_N'])) # N -- intermediate_size
     gated_silu_kernel[grid_silu](
-        c,
+        inter_states,
         d,
         EM,
-        ctx.N_per_rank,
-        c.stride(0),
-        c.stride(1),
+        N_per_rank,
+        inter_states.stride(0),
+        inter_states.stride(1),
         d.stride(0),
         d.stride(1),
-        ctx.BLOCK_N
+        block_N
     )
-
     return d
+
 
 
 def rowise_ag_scatter_group_gemm_dispatcher(a,  # local tensor

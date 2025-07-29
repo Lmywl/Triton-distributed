@@ -2,7 +2,7 @@ git submodule deinit --all -f # deinit previous submodules
 rm -rf 3rdparty/triton # remove previous triton
 git submodule update --init --recursive
 
-#pip3 install torch==2.4.1
+pip3 install torch==2.4.1
 pip3 install cuda-python==12.4 # need to align with your nvcc version
 pip3 install ninja cmake wheel pybind11 numpy chardet pytest
 pip3 install pynvml>=11.5.3

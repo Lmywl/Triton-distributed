@@ -28,7 +28,7 @@ from .low_latency_allgather import (fast_allgather, create_fast_allgather_contex
                                     _forward_push_2d_kernel, _forward_push_3d_kernel, _forward_push_2d_ll_kernel,
                                     _forward_push_2d_ll_multimem_kernel, _forward_push_numa_2d_ll_kernel,
                                     _forward_push_numa_2d_kernel, _forward_push_numa_2d_ll_multinode_kernel)
-from .allgather_group_gemm import (create_ag_group_gemm_context, ag_group_gemm)
+from .allgather_group_gemm import (create_ag_group_gemm_context, ag_group_gemm, gated_silu)
 from .flash_decode import (gqa_fwd_batch_decode_persistent, kernel_gqa_fwd_batch_decode_split_kv_persistent,
                            gqa_fwd_batch_decode_persistent_aot, gqa_fwd_batch_decode, gqa_fwd_batch_decode_aot,
                            gqa_fwd_batch_decode_intra_rank_aot, get_triton_combine_kv_algo_info,
@@ -38,6 +38,7 @@ from .low_latency_all_to_all import create_all_to_all_context, fast_all_to_all, 
 from .moe_reduce_rs import create_moe_rs_context, select_experts, moe_reduce_rs_rowise, create_moe_rs_context_colwise
 from .sp_ag_attention_intra_node import fused_sp_ag_attn_intra_node, create_sp_ag_attention_context_intra_node
 from .sp_ag_attention_inter_node import fused_sp_ag_attn_inter_node, create_sp_ag_attention_context_inter_node
+from .ag_moe_rs import AG_MOE_RS
 
 __all__ = [
     "_forward_pull_kernel",
@@ -50,6 +51,7 @@ __all__ = [
     "_forward_push_numa_2d_ll_multinode_kernel",
     "ag_gemm",
     "ag_group_gemm",
+    "gated_silu"
     "all_to_all_post_process",
     "create_ag_gemm_context",
     "create_ag_group_gemm_context",
@@ -82,4 +84,5 @@ __all__ = [
     "create_sp_ag_attention_context_intra_node",
     "fused_sp_ag_attn_inter_node",
     "create_sp_ag_attention_context_inter_node",
+    "AG_MOE_RS"
 ]
