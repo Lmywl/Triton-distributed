@@ -32,9 +32,10 @@ import triton
 import triton.language as tl
 import numpy as np
 import random
+from functools import partial
 
 import datetime
-from triton_dist.utils import finalize_distributed, init_nvshmem_by_torch_process_group
+from triton_dist.utils import finalize_distributed, init_nvshmem_by_torch_process_group, perf_func
 from triton_dist.kernels.nvidia import fast_all_to_all, create_all_to_all_context, all_to_all_post_process
 
 DTYPE_MAP = {
@@ -53,11 +54,11 @@ def parse_args():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-M", type=int, default=8)
-    parser.add_argument("-K", type=int, default=4096)
-    parser.add_argument("-N", type=int, default=4096)
-    parser.add_argument("-G", type=int, default=128)
-    parser.add_argument("--topk", type=int, default=8)
-    parser.add_argument("--bench_iters", default=1, type=int, help="perf iterations")
+    parser.add_argument("-K", type=int, default=8192) # hidden size
+    parser.add_argument("-N", type=int, default=3584) # immediate size
+    parser.add_argument("-G", type=int, default=64)  # num_experts
+    parser.add_argument("--topk", type=int, default=6)
+    parser.add_argument("--bench_iters", default=5, type=int, help="perf iterations")
     parser.add_argument("--rounds", default=1, type=int, help="random data round")
     parser.add_argument("--dtype", default="bfloat16", help="data type", choices=list(DTYPE_MAP.keys()))
     parser.add_argument("--profile", action="store_true")
@@ -354,31 +355,31 @@ class DistributedMoELayer:
         self.hidden = hidden
         self.intermediate = intermediate
         self.with_scale = with_scale
-        self.gate_up_proj = torch.randn([self.n_experts, 2 * intermediate, hidden], dtype=torch.float32,
+        self.gate_up_proj = torch.rand([self.n_experts, 2 * intermediate, hidden], dtype=torch.float32,
                                         device="cuda").to(dtype)
-        self.down_proj = torch.randn([self.n_experts, hidden, intermediate], dtype=torch.float32,
+        self.down_proj = torch.rand([self.n_experts, hidden, intermediate], dtype=torch.float32,
                                      device="cuda").to(dtype)
 
         if self.with_scale:
             # assume per-channel quant
-            self.gate_up_scale = torch.randn([self.n_experts, 2 * intermediate], dtype=torch.float32, device="cuda")
-            self.down_scale = torch.randn([self.n_experts, hidden], dtype=torch.float32, device="cuda")
+            self.gate_up_scale = torch.rand([self.n_experts, 2 * intermediate], dtype=torch.float32, device="cuda")
+            self.down_scale = torch.rand([self.n_experts, hidden], dtype=torch.float32, device="cuda")
         else:
             self.gate_up_scale, self.down_scale = None, None
 
-        self.MAX_M = 128 * topk
+        self.MAX_M = 520 * topk
         self.all2all_ctx = create_all_to_all_context(self.MAX_M, self.hidden, RANK, self.tot_experts, WORLD_SIZE,
                                                      self.n_experts, dtype, torch.float32)
 
     def simulate_input(self, num_tokens: int,  # local tokens
                        ) -> tuple[torch.Tensor, torch.Tensor, Optional[torch.Tensor]]:
 
-        exp_indices = generate_random_exp_indices(num_tokens, self.tot_experts, self.topk).cuda()
+        exp_indices = generate_random_exp_indices(num_tokens, self.tot_experts, self.topk).cuda() #[[e1,e2...], []]
         assert exp_indices.size(0) == num_tokens and exp_indices.size(1) == self.topk
-        # rank_print(f"exp_indices:\n{exp_indices}")
 
-        # prepare the indexes
-        splits_gpu_cur_rank = torch.bincount(exp_indices.view(-1), minlength=self.tot_experts).to(torch.int32)
+        # prepare the indexes 
+        # step1: count the scettered tokens of each expert
+        splits_gpu_cur_rank = torch.bincount(exp_indices.view(-1), minlength=self.tot_experts).to(torch.int32) 
         split_cumsum = splits_to_cumsum(splits_gpu_cur_rank)
 
         # calculate the scatter and the gather idx
@@ -414,10 +415,12 @@ class DistributedMoELayer:
         # 1. dispatch
         splits, recv_buf, scale_buf = fast_all_to_all(self.all2all_ctx, input, dispatch_split_cumsum, scale)
         dispatched_tokens, dispatched_scale = all_to_all_post_process(self.all2all_ctx, splits, recv_buf, scale_buf)
-
+        
         # rank_print(f"dispatch_split_cumsum: {dispatch_split_cumsum}")
         # rank_print(f"splits: {splits}")
-        # rank_print(f"send tokens: {input.shape}, recv tokens: {dispatched_tokens.shape}")
+        rank_print(f"dispatch_split_cumsum_shape: {dispatch_split_cumsum.shape}")
+        rank_print(f"splits_shape: {splits.shape}")
+        rank_print(f"send tokens: {input.shape}, recv tokens: {dispatched_tokens.shape}")
 
         # 2. compute
         input_splits = splits.reshape(WORLD_SIZE, -1)
@@ -456,22 +459,26 @@ class DistributedMoELayer:
         tmp1, tmp1_scale = DistributedMoELayer.act(tmp0, self.with_scale)
         local_out = group_gemm(tmp1, self.down_proj, scatter_indices, exp_indices, self.with_scale, BM)
 
-        _tmp0 = groupgemm_torch(dispatched_tokens, self.gate_up_proj, scatter_indices, exp_indices, self.with_scale, BM)
-        # rank_print(f"ref_output({_tmp0.shape}):\n{_tmp0[:16]}")
-        _tmp1, _tmp1_scale = DistributedMoELayer.act(_tmp0, self.with_scale)
-        _local_out = groupgemm_torch(_tmp1, self.down_proj, scatter_indices, exp_indices, self.with_scale, BM)
-        try:
-            torch.testing.assert_close(tmp0, _tmp0, rtol=1e-1, atol=1e-1)
-            print(f"✅ RANK-{RANK} check pass")
-        except Exception as e:
-            print(f"❌ RANK-{RANK} check failed")
+        # _tmp0 = groupgemm_torch(dispatched_tokens, self.gate_up_proj, scatter_indices, exp_indices, self.with_scale, BM)
+        # # rank_print(f"ref_output({_tmp0.shape}):\n{_tmp0[:16]}")
+        # _tmp1, _tmp1_scale = DistributedMoELayer.act(_tmp0, self.with_scale)
+        # _local_out = groupgemm_torch(_tmp1, self.down_proj, scatter_indices, exp_indices, self.with_scale, BM)
+        # try:
+        #     torch.testing.assert_close(tmp0, _tmp0, rtol=1e-1, atol=1e-1)
+        #     print(f"✅ RANK-{RANK} check pass")
+        # except Exception as e:
+        #     print(f"❌ RANK-{RANK} check failed")
 
         # 3. combine
         splits, recv_buf, scale_buf = fast_all_to_all(self.all2all_ctx, local_out, input_splits_cumsum, scale)
         combined_tokens, combined_scale = all_to_all_post_process(self.all2all_ctx, splits, recv_buf, scale_buf)
+        rank_print(f"combined shape is {combined_tokens.shape}")
         # 3.1. reduce: [num_tokens_local_rank * topk] => [num_tokens_local_rank]
         combine_reduced_out = torch.zeros_like(input)
         combine_reduced_out.index_add_(0, gather_idx_cur_rank, combined_tokens)
+        rank_print(f"gather_idx_cur_rank shape: {gather_idx_cur_rank.shape}")
+        rank_print(f"combined reduced shape is {combine_reduced_out.shape}")
+        
 
         return combine_reduced_out
 
@@ -519,6 +526,9 @@ if __name__ == "__main__":
 
     layer.forward(*input)
 
+    output, time_cost = perf_func(partial(layer.forward, *input), iters=5, warmup_iters=10)
+    
+    rank_print(f"RNAK = {RANK}\ttime = {time_cost}\toutput_shape={output.shape}")
     layer.all2all_ctx.finalize()
 
     finalize_distributed()

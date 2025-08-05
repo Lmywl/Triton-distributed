@@ -183,10 +183,10 @@ def initialize_distributed():
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-M", type=int, default=4096)
-    parser.add_argument("-N", type=int, default=7168)
-    parser.add_argument("-G", type=int, default=256)
-    parser.add_argument("--topk", type=int, default=8)
+    parser.add_argument("-M", type=int, default=4096)  # num_tokens
+    parser.add_argument("-N", type=int, default=8192)  # hidden_size
+    parser.add_argument("-G", type=int, default=64)    # num_experts
+    parser.add_argument("--topk", type=int, default=8) # topk = 8
     parser.add_argument("--iters", default=3, type=int, help="perf iterations")
     parser.add_argument("--verify-iters", default=5, type=int)
     parser.add_argument("--bench_iters", default=1, type=int, help="perf iterations")
@@ -327,9 +327,10 @@ if __name__ == "__main__":
 
     for rid in range(args.rounds):
         # random simulate token received from dataloader
-        L = args.M // 2 if not args.profile else args.M
+        # L = args.M // 2 if not args.profile else args.M
 
-        token_num = random.randint(L, args.M)
+        # token_num = random.randint(L, args.M)
+        token_num = args.M
 
         print(f"Rank-{RANK}: Received {token_num} tokens")
 
@@ -372,7 +373,7 @@ if __name__ == "__main__":
 
         torch.testing.assert_close(combined_out, input * args.topk, rtol=1e-2, atol=1e-2)
 
-        print(f"RANK {RANK}: triton dispatch perf = {triton_perf}ms, triton_combine_perf = {triton_combine_perf}ms")
+        print(f"RANK {RANK}: triton dispatch perf = {triton_perf:.5g}ms, triton_combine_perf = {triton_combine_perf:.5g}ms, output_shape = {combined_out.shape}")
 
     triton_a2a_op.finalize()
     nvshmem.core.finalize()

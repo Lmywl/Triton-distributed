@@ -1,0 +1,42 @@
+ep_moe_inference test
+Test with EP_SIZE=8 M=4096
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M 512
+W0804 12:51:22.746000 140641025775040 torch/distributed/run.py:779] 
+W0804 12:51:22.746000 140641025775040 torch/distributed/run.py:779] *****************************************
+W0804 12:51:22.746000 140641025775040 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0804 12:51:22.746000 140641025775040 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+RANK-0(local 0): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
+RANK-1(local 1): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
+RANK-2(local 2): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
+RANK-3(local 3): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
+RANK-4(local 4): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
+RANK-5(local 5): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
+RANK-6(local 6): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
+RANK-7(local 7): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
+RANK-0(local 0): RNAK = 0	time = 9.20341796875	output_shape=torch.Size([4096, 8192])
+RANK-1(local 1): RNAK = 1	time = 9.210739135742188	output_shape=torch.Size([4096, 8192])
+RANK-2(local 2): RNAK = 2	time = 9.182886505126953	output_shape=torch.Size([4096, 8192])
+RANK-3(local 3): RNAK = 3	time = 9.194393920898438	output_shape=torch.Size([4096, 8192])
+RANK-4(local 4): RNAK = 4	time = 9.212185668945313	output_shape=torch.Size([4096, 8192])
+RANK-5(local 5): RNAK = 5	time = 9.19459228515625	output_shape=torch.Size([4096, 8192])
+RANK-6(local 6): RNAK = 6	time = 9.218169403076171	output_shape=torch.Size([4096, 8192])
+RANK-7(local 7): RNAK = 7	time = 9.204774475097656	output_shape=torch.Size([4096, 8192])

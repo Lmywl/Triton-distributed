@@ -218,7 +218,7 @@ def fast_all_to_all(
     scale_buf_ed = scale_buf_st + ctx.WORLD_SIZE * ctx.max_m
 
     num_tokens = send_tensor.shape[0]
-    assert num_tokens <= ctx.max_m
+    assert num_tokens <= ctx.max_m, f"{num_tokens} > {ctx.max_m}"
     ctx.send_buf[:num_tokens, :] = send_tensor
     if with_scale:
         ctx.scale_send_buf[:num_tokens] = send_scale
