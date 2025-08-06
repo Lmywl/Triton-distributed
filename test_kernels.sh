@@ -64,8 +64,8 @@
 ### 6. ep_moe_inference test
 echo "ep_moe_inference test"
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-# shapes=(16 32 64 128 256 512 1024)
-shapes=(64)
+shapes=(16 32 64 128 256 512 1024)
+# shapes=(64)
 for shape in "${shapes[@]}"; do
     M=$[shape*8]
     echo "Test with EP_SIZE=8 M=$M" 

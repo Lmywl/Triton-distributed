@@ -1,13 +1,218 @@
 ep_moe_inference test
+Test with EP_SIZE=8 M=128
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M 16
+W0806 10:31:18.044000 140149948372288 torch/distributed/run.py:779] 
+W0806 10:31:18.044000 140149948372288 torch/distributed/run.py:779] *****************************************
+W0806 10:31:18.044000 140149948372288 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 10:31:18.044000 140149948372288 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+RANK-0(local 0): G=64, [K,N]=[8192, 3584], tokens_per_rank=16, topk=8, dtype: bfloat16 with_scale: False
+RANK-1(local 1): G=64, [K,N]=[8192, 3584], tokens_per_rank=16, topk=8, dtype: bfloat16 with_scale: False
+RANK-2(local 2): G=64, [K,N]=[8192, 3584], tokens_per_rank=16, topk=8, dtype: bfloat16 with_scale: False
+RANK-3(local 3): G=64, [K,N]=[8192, 3584], tokens_per_rank=16, topk=8, dtype: bfloat16 with_scale: False
+RANK-4(local 4): G=64, [K,N]=[8192, 3584], tokens_per_rank=16, topk=8, dtype: bfloat16 with_scale: False
+RANK-5(local 5): G=64, [K,N]=[8192, 3584], tokens_per_rank=16, topk=8, dtype: bfloat16 with_scale: False
+RANK-6(local 6): G=64, [K,N]=[8192, 3584], tokens_per_rank=16, topk=8, dtype: bfloat16 with_scale: False
+RANK-7(local 7): G=64, [K,N]=[8192, 3584], tokens_per_rank=16, topk=8, dtype: bfloat16 with_scale: False
+RANK-0(local 0): RNAK = 0	time = 3.7058174133300783	output_shape=torch.Size([128, 8192])
+RANK-1(local 1): RNAK = 1	time = 3.6892673492431642	output_shape=torch.Size([128, 8192])
+RANK-2(local 2): RNAK = 2	time = 3.690304183959961	output_shape=torch.Size([128, 8192])
+RANK-3(local 3): RNAK = 3	time = 3.699750518798828	output_shape=torch.Size([128, 8192])
+RANK-4(local 4): RNAK = 4	time = 3.6979007720947266	output_shape=torch.Size([128, 8192])
+RANK-5(local 5): RNAK = 5	time = 3.703123092651367	output_shape=torch.Size([128, 8192])
+RANK-6(local 6): RNAK = 6	time = 3.7032833099365234	output_shape=torch.Size([128, 8192])
+RANK-7(local 7): RNAK = 7	time = 3.7044864654541017	output_shape=torch.Size([128, 8192])
+Test with EP_SIZE=8 M=256
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M 32
+W0806 10:32:16.552000 140432477992256 torch/distributed/run.py:779] 
+W0806 10:32:16.552000 140432477992256 torch/distributed/run.py:779] *****************************************
+W0806 10:32:16.552000 140432477992256 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 10:32:16.552000 140432477992256 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+RANK-0(local 0): G=64, [K,N]=[8192, 3584], tokens_per_rank=32, topk=8, dtype: bfloat16 with_scale: False
+RANK-1(local 1): G=64, [K,N]=[8192, 3584], tokens_per_rank=32, topk=8, dtype: bfloat16 with_scale: False
+RANK-2(local 2): G=64, [K,N]=[8192, 3584], tokens_per_rank=32, topk=8, dtype: bfloat16 with_scale: False
+RANK-3(local 3): G=64, [K,N]=[8192, 3584], tokens_per_rank=32, topk=8, dtype: bfloat16 with_scale: False
+RANK-4(local 4): G=64, [K,N]=[8192, 3584], tokens_per_rank=32, topk=8, dtype: bfloat16 with_scale: False
+RANK-5(local 5): G=64, [K,N]=[8192, 3584], tokens_per_rank=32, topk=8, dtype: bfloat16 with_scale: False
+RANK-6(local 6): G=64, [K,N]=[8192, 3584], tokens_per_rank=32, topk=8, dtype: bfloat16 with_scale: False
+RANK-7(local 7): G=64, [K,N]=[8192, 3584], tokens_per_rank=32, topk=8, dtype: bfloat16 with_scale: False
+RANK-0(local 0): RNAK = 0	time = 4.847577667236328	output_shape=torch.Size([256, 8192])
+RANK-1(local 1): RNAK = 1	time = 5.267660903930664	output_shape=torch.Size([256, 8192])
+RANK-2(local 2): RNAK = 2	time = 5.2505535125732425	output_shape=torch.Size([256, 8192])
+RANK-3(local 3): RNAK = 3	time = 4.790873718261719	output_shape=torch.Size([256, 8192])
+RANK-4(local 4): RNAK = 4	time = 5.424038314819336	output_shape=torch.Size([256, 8192])
+RANK-5(local 5): RNAK = 5	time = 4.727417755126953	output_shape=torch.Size([256, 8192])
+RANK-6(local 6): RNAK = 6	time = 4.807820892333984	output_shape=torch.Size([256, 8192])
+RANK-7(local 7): RNAK = 7	time = 5.40563850402832	output_shape=torch.Size([256, 8192])
+Test with EP_SIZE=8 M=512
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M 64
+W0806 10:33:13.966000 140180616242496 torch/distributed/run.py:779] 
+W0806 10:33:13.966000 140180616242496 torch/distributed/run.py:779] *****************************************
+W0806 10:33:13.966000 140180616242496 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 10:33:13.966000 140180616242496 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+RANK-0(local 0): G=64, [K,N]=[8192, 3584], tokens_per_rank=64, topk=8, dtype: bfloat16 with_scale: False
+RANK-1(local 1): G=64, [K,N]=[8192, 3584], tokens_per_rank=64, topk=8, dtype: bfloat16 with_scale: False
+RANK-2(local 2): G=64, [K,N]=[8192, 3584], tokens_per_rank=64, topk=8, dtype: bfloat16 with_scale: False
+RANK-3(local 3): G=64, [K,N]=[8192, 3584], tokens_per_rank=64, topk=8, dtype: bfloat16 with_scale: False
+RANK-4(local 4): G=64, [K,N]=[8192, 3584], tokens_per_rank=64, topk=8, dtype: bfloat16 with_scale: False
+RANK-5(local 5): G=64, [K,N]=[8192, 3584], tokens_per_rank=64, topk=8, dtype: bfloat16 with_scale: False
+RANK-6(local 6): G=64, [K,N]=[8192, 3584], tokens_per_rank=64, topk=8, dtype: bfloat16 with_scale: False
+RANK-7(local 7): G=64, [K,N]=[8192, 3584], tokens_per_rank=64, topk=8, dtype: bfloat16 with_scale: False
+RANK-0(local 0): RNAK = 0	time = 4.094540786743164	output_shape=torch.Size([512, 8192])
+RANK-1(local 1): RNAK = 1	time = 4.117798233032227	output_shape=torch.Size([512, 8192])
+RANK-2(local 2): RNAK = 2	time = 4.1044353485107425	output_shape=torch.Size([512, 8192])
+RANK-3(local 3): RNAK = 3	time = 4.117139053344727	output_shape=torch.Size([512, 8192])
+RANK-4(local 4): RNAK = 4	time = 4.121247863769531	output_shape=torch.Size([512, 8192])
+RANK-5(local 5): RNAK = 5	time = 4.102099227905273	output_shape=torch.Size([512, 8192])
+RANK-6(local 6): RNAK = 6	time = 4.11910400390625	output_shape=torch.Size([512, 8192])
+RANK-7(local 7): RNAK = 7	time = 4.121926498413086	output_shape=torch.Size([512, 8192])
+Test with EP_SIZE=8 M=1024
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M 128
+W0806 10:34:10.789000 139626069534016 torch/distributed/run.py:779] 
+W0806 10:34:10.789000 139626069534016 torch/distributed/run.py:779] *****************************************
+W0806 10:34:10.789000 139626069534016 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 10:34:10.789000 139626069534016 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+RANK-0(local 0): G=64, [K,N]=[8192, 3584], tokens_per_rank=128, topk=8, dtype: bfloat16 with_scale: False
+RANK-1(local 1): G=64, [K,N]=[8192, 3584], tokens_per_rank=128, topk=8, dtype: bfloat16 with_scale: False
+RANK-2(local 2): G=64, [K,N]=[8192, 3584], tokens_per_rank=128, topk=8, dtype: bfloat16 with_scale: False
+RANK-3(local 3): G=64, [K,N]=[8192, 3584], tokens_per_rank=128, topk=8, dtype: bfloat16 with_scale: False
+RANK-4(local 4): G=64, [K,N]=[8192, 3584], tokens_per_rank=128, topk=8, dtype: bfloat16 with_scale: False
+RANK-5(local 5): G=64, [K,N]=[8192, 3584], tokens_per_rank=128, topk=8, dtype: bfloat16 with_scale: False
+RANK-6(local 6): G=64, [K,N]=[8192, 3584], tokens_per_rank=128, topk=8, dtype: bfloat16 with_scale: False
+RANK-7(local 7): G=64, [K,N]=[8192, 3584], tokens_per_rank=128, topk=8, dtype: bfloat16 with_scale: False
+RANK-0(local 0): RNAK = 0	time = 5.631052780151367	output_shape=torch.Size([1024, 8192])
+RANK-1(local 1): RNAK = 1	time = 5.627699279785157	output_shape=torch.Size([1024, 8192])
+RANK-2(local 2): RNAK = 2	time = 5.633631896972656	output_shape=torch.Size([1024, 8192])
+RANK-3(local 3): RNAK = 3	time = 5.66484489440918	output_shape=torch.Size([1024, 8192])
+RANK-4(local 4): RNAK = 4	time = 5.643807983398437	output_shape=torch.Size([1024, 8192])
+RANK-5(local 5): RNAK = 5	time = 5.639123153686524	output_shape=torch.Size([1024, 8192])
+RANK-6(local 6): RNAK = 6	time = 5.618259048461914	output_shape=torch.Size([1024, 8192])
+RANK-7(local 7): RNAK = 7	time = 5.6421760559082035	output_shape=torch.Size([1024, 8192])
+Test with EP_SIZE=8 M=2048
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M 256
+W0806 10:35:08.891000 139922750829888 torch/distributed/run.py:779] 
+W0806 10:35:08.891000 139922750829888 torch/distributed/run.py:779] *****************************************
+W0806 10:35:08.891000 139922750829888 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 10:35:08.891000 139922750829888 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+RANK-0(local 0): G=64, [K,N]=[8192, 3584], tokens_per_rank=256, topk=8, dtype: bfloat16 with_scale: False
+RANK-1(local 1): G=64, [K,N]=[8192, 3584], tokens_per_rank=256, topk=8, dtype: bfloat16 with_scale: False
+RANK-2(local 2): G=64, [K,N]=[8192, 3584], tokens_per_rank=256, topk=8, dtype: bfloat16 with_scale: False
+RANK-3(local 3): G=64, [K,N]=[8192, 3584], tokens_per_rank=256, topk=8, dtype: bfloat16 with_scale: False
+RANK-4(local 4): G=64, [K,N]=[8192, 3584], tokens_per_rank=256, topk=8, dtype: bfloat16 with_scale: False
+RANK-5(local 5): G=64, [K,N]=[8192, 3584], tokens_per_rank=256, topk=8, dtype: bfloat16 with_scale: False
+RANK-6(local 6): G=64, [K,N]=[8192, 3584], tokens_per_rank=256, topk=8, dtype: bfloat16 with_scale: False
+RANK-7(local 7): G=64, [K,N]=[8192, 3584], tokens_per_rank=256, topk=8, dtype: bfloat16 with_scale: False
+RANK-0(local 0): RNAK = 0	time = 6.3777729034423825	output_shape=torch.Size([2048, 8192])
+RANK-1(local 1): RNAK = 1	time = 6.342649459838867	output_shape=torch.Size([2048, 8192])
+RANK-2(local 2): RNAK = 2	time = 6.377977752685547	output_shape=torch.Size([2048, 8192])
+RANK-3(local 3): RNAK = 3	time = 6.358111953735351	output_shape=torch.Size([2048, 8192])
+RANK-4(local 4): RNAK = 4	time = 6.369286346435547	output_shape=torch.Size([2048, 8192])
+RANK-5(local 5): RNAK = 5	time = 6.378841781616211	output_shape=torch.Size([2048, 8192])
+RANK-6(local 6): RNAK = 6	time = 6.3829185485839846	output_shape=torch.Size([2048, 8192])
+RANK-7(local 7): RNAK = 7	time = 6.376217651367187	output_shape=torch.Size([2048, 8192])
 Test with EP_SIZE=8 M=4096
-Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_vllm_triton/lib/python3.12/site-packages/nvidia/nvshmem
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
 NCCL_SOCKET_IFNAME=xgbe0
 [0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
 torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M 512
-W0804 12:51:22.746000 140641025775040 torch/distributed/run.py:779] 
-W0804 12:51:22.746000 140641025775040 torch/distributed/run.py:779] *****************************************
-W0804 12:51:22.746000 140641025775040 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
-W0804 12:51:22.746000 140641025775040 torch/distributed/run.py:779] *****************************************
+W0806 10:36:07.507000 140196299015488 torch/distributed/run.py:779] 
+W0806 10:36:07.507000 140196299015488 torch/distributed/run.py:779] *****************************************
+W0806 10:36:07.507000 140196299015488 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 10:36:07.507000 140196299015488 torch/distributed/run.py:779] *****************************************
 WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
 
 WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
@@ -32,11 +237,706 @@ RANK-4(local 4): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: b
 RANK-5(local 5): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
 RANK-6(local 6): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
 RANK-7(local 7): G=64, [K,N]=[8192, 3584], tokens_per_rank=512, topk=8, dtype: bfloat16 with_scale: False
-RANK-0(local 0): RNAK = 0	time = 9.20341796875	output_shape=torch.Size([4096, 8192])
-RANK-1(local 1): RNAK = 1	time = 9.210739135742188	output_shape=torch.Size([4096, 8192])
-RANK-2(local 2): RNAK = 2	time = 9.182886505126953	output_shape=torch.Size([4096, 8192])
-RANK-3(local 3): RNAK = 3	time = 9.194393920898438	output_shape=torch.Size([4096, 8192])
-RANK-4(local 4): RNAK = 4	time = 9.212185668945313	output_shape=torch.Size([4096, 8192])
-RANK-5(local 5): RNAK = 5	time = 9.19459228515625	output_shape=torch.Size([4096, 8192])
-RANK-6(local 6): RNAK = 6	time = 9.218169403076171	output_shape=torch.Size([4096, 8192])
-RANK-7(local 7): RNAK = 7	time = 9.204774475097656	output_shape=torch.Size([4096, 8192])
+RANK-0(local 0): RNAK = 0	time = 9.161714935302735	output_shape=torch.Size([4096, 8192])
+RANK-1(local 1): RNAK = 1	time = 9.17127685546875	output_shape=torch.Size([4096, 8192])
+RANK-2(local 2): RNAK = 2	time = 9.160562896728516	output_shape=torch.Size([4096, 8192])
+RANK-3(local 3): RNAK = 3	time = 9.164761352539063	output_shape=torch.Size([4096, 8192])
+RANK-4(local 4): RNAK = 4	time = 9.160889434814454	output_shape=torch.Size([4096, 8192])
+RANK-5(local 5): RNAK = 5	time = 9.173113250732422	output_shape=torch.Size([4096, 8192])
+RANK-6(local 6): RNAK = 6	time = 9.175308990478516	output_shape=torch.Size([4096, 8192])
+RANK-7(local 7): RNAK = 7	time = 9.165593719482422	output_shape=torch.Size([4096, 8192])
+Test with EP_SIZE=8 M=8192
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M 1024
+W0806 10:37:05.832000 139651436844352 torch/distributed/run.py:779] 
+W0806 10:37:05.832000 139651436844352 torch/distributed/run.py:779] *****************************************
+W0806 10:37:05.832000 139651436844352 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 10:37:05.832000 139651436844352 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+RANK-0(local 0): G=64, [K,N]=[8192, 3584], tokens_per_rank=1024, topk=8, dtype: bfloat16 with_scale: False
+RANK-1(local 1): G=64, [K,N]=[8192, 3584], tokens_per_rank=1024, topk=8, dtype: bfloat16 with_scale: False
+RANK-2(local 2): G=64, [K,N]=[8192, 3584], tokens_per_rank=1024, topk=8, dtype: bfloat16 with_scale: False
+RANK-3(local 3): G=64, [K,N]=[8192, 3584], tokens_per_rank=1024, topk=8, dtype: bfloat16 with_scale: False
+RANK-4(local 4): G=64, [K,N]=[8192, 3584], tokens_per_rank=1024, topk=8, dtype: bfloat16 with_scale: False
+RANK-5(local 5): G=64, [K,N]=[8192, 3584], tokens_per_rank=1024, topk=8, dtype: bfloat16 with_scale: False
+RANK-6(local 6): G=64, [K,N]=[8192, 3584], tokens_per_rank=1024, topk=8, dtype: bfloat16 with_scale: False
+RANK-7(local 7): G=64, [K,N]=[8192, 3584], tokens_per_rank=1024, topk=8, dtype: bfloat16 with_scale: False
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 527, in <module>
+[rank7]:     layer.forward(*input)
+[rank7]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 494, in forward
+[rank7]:     return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale)
+[rank7]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 412, in naive_forward
+[rank7]:     assert input.shape[0] <= self.MAX_M, f"input.shape[0]({input.shape[0]}) > MAX_M({self.MAX_M})"
+[rank7]: AssertionError: input.shape[0](8192) > MAX_M(4160)
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 527, in <module>
+[rank4]:     layer.forward(*input)
+[rank4]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 494, in forward
+[rank4]:     return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale)
+[rank4]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 412, in naive_forward
+[rank4]:     assert input.shape[0] <= self.MAX_M, f"input.shape[0]({input.shape[0]}) > MAX_M({self.MAX_M})"
+[rank4]: AssertionError: input.shape[0](8192) > MAX_M(4160)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 527, in <module>
+[rank0]:     layer.forward(*input)
+[rank0]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 494, in forward
+[rank0]:     return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale)
+[rank0]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 412, in naive_forward
+[rank0]:     assert input.shape[0] <= self.MAX_M, f"input.shape[0]({input.shape[0]}) > MAX_M({self.MAX_M})"
+[rank0]: AssertionError: input.shape[0](8192) > MAX_M(4160)
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 527, in <module>
+[rank1]:     layer.forward(*input)
+[rank1]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 494, in forward
+[rank1]:     return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale)
+[rank1]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 412, in naive_forward
+[rank1]:     assert input.shape[0] <= self.MAX_M, f"input.shape[0]({input.shape[0]}) > MAX_M({self.MAX_M})"
+[rank1]: AssertionError: input.shape[0](8192) > MAX_M(4160)
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 527, in <module>
+[rank5]:     layer.forward(*input)
+[rank5]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 494, in forward
+[rank5]:     return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale)
+[rank5]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 412, in naive_forward
+[rank5]:     assert input.shape[0] <= self.MAX_M, f"input.shape[0]({input.shape[0]}) > MAX_M({self.MAX_M})"
+[rank5]: AssertionError: input.shape[0](8192) > MAX_M(4160)
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 527, in <module>
+[rank6]:     layer.forward(*input)
+[rank6]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 494, in forward
+[rank6]:     return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale)
+[rank6]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 412, in naive_forward
+[rank6]:     assert input.shape[0] <= self.MAX_M, f"input.shape[0]({input.shape[0]}) > MAX_M({self.MAX_M})"
+[rank6]: AssertionError: input.shape[0](8192) > MAX_M(4160)
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank4]:     f()
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank4]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank4]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank4]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank4]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fca37faea70> freed implicitly.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank0]:     f()
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank0]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank0]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank0]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank0]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fb3007a2590> freed implicitly.
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank7]:     f()
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank7]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank7]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank7]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank7]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fd6b012aaa0> freed implicitly.
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank5]:     f()
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank5]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank5]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank5]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank5]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f7565bfea70> freed implicitly.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank6]:     f()
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank6]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank6]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank6]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank6]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f520c1f6a70> freed implicitly.
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank4]:     f()
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank4]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank4]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank4]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank4]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fca37fae650> freed implicitly.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank0]:     f()
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank0]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank0]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank0]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank0]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fb3007a2b30> freed implicitly.
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank7]:     f()
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank7]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank7]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank7]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank7]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fd6b012a680> freed implicitly.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 527, in <module>
+[rank3]:     layer.forward(*input)
+[rank3]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 494, in forward
+[rank3]:     return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale)
+[rank3]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 412, in naive_forward
+[rank3]:     assert input.shape[0] <= self.MAX_M, f"input.shape[0]({input.shape[0]}) > MAX_M({self.MAX_M})"
+[rank3]: AssertionError: input.shape[0](8192) > MAX_M(4160)
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 527, in <module>
+[rank2]:     layer.forward(*input)
+[rank2]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 494, in forward
+[rank2]:     return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale)
+[rank2]:   File "/root/paddlejob/workspace/env_run/output/liumengyuan/code/Triton-distributed/./python/triton_dist/test/nvidia/test_ep_moe_inference.py", line 412, in naive_forward
+[rank2]:     assert input.shape[0] <= self.MAX_M, f"input.shape[0]({input.shape[0]}) > MAX_M({self.MAX_M})"
+[rank2]: AssertionError: input.shape[0](8192) > MAX_M(4160)
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank5]:     f()
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank5]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank5]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank5]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank5]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f7565bfe650> freed implicitly.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank6]:     f()
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank6]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank6]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank6]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank6]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f520c1f6650> freed implicitly.
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank4]:     f()
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank4]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank4]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank4]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank4]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fca37faeb90> freed implicitly.
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank7]:     f()
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank7]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank7]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank7]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank7]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fd6b012abc0> freed implicitly.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank0]:     f()
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank0]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank0]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank0]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank0]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fb3007a2a70> freed implicitly.
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank5]:     f()
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank5]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank5]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank5]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank5]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f7565bfeb90> freed implicitly.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank1]:     f()
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank1]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank1]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank1]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank1]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fe8f0302a70> freed implicitly.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank6]:     f()
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank6]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank6]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank6]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank6]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f520c1f6b90> freed implicitly.
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank4]:     f()
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank4]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank4]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank4]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank4]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fca37faead0> freed implicitly.
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank7]:     f()
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank7]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank7]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank7]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank7]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fd6b012ab00> freed implicitly.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank0]:     f()
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank0]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank0]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank0]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank0]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fb3007a2650> freed implicitly.
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank5]:     f()
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank5]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank5]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank5]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank5]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f7565bfead0> freed implicitly.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank6]:     f()
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank6]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank6]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank6]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank6]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f520c1f6ad0> freed implicitly.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank1]:     f()
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank1]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank1]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank1]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank1]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fe8f0302650> freed implicitly.
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank4]:     f()
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank4]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank4]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank4]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank4]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fca37fae6b0> freed implicitly.
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank7]:     f()
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank7]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank7]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank7]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank7]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fd6b012a6e0> freed implicitly.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank0]:     f()
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank0]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank0]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank0]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank0]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fb3007a2a40> freed implicitly.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank3]:     f()
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank3]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank3]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank3]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank3]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f6290ffaa70> freed implicitly.
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank5]:     f()
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank5]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank5]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank5]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank5]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f7565bfe6b0> freed implicitly.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank6]:     f()
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank6]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank6]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank6]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank6]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f520c1f66b0> freed implicitly.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank1]:     f()
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank1]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank1]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank1]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank1]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fe8f0302b90> freed implicitly.
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank4]:     f()
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank4]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank4]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank4]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank4]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fca37faeaa0> freed implicitly.
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank7]:     f()
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank7]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank7]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank7]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank7]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fd6b012aad0> freed implicitly.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank0]:     f()
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank0]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank0]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank0]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank0]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fb3007a2a10> freed implicitly.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank3]:     f()
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank3]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank3]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank3]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank3]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f6290ffa650> freed implicitly.
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank5]:     f()
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank5]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank5]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank5]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank5]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f7565bfeaa0> freed implicitly.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank6]:     f()
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank6]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank6]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank6]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank6]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f520c1f6aa0> freed implicitly.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank1]:     f()
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank1]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank1]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank1]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank1]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fe8f0302ad0> freed implicitly.
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank4]:     f()
+[rank4]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank4]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank4]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank4]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank4]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank4]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fca37fae5f0> freed implicitly.
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank7]:     f()
+[rank7]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank7]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank7]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank7]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank7]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank7]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fd6b012a620> freed implicitly.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank0]:     f()
+[rank0]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank0]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank0]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank0]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank0]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank0]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fb3007a15d0> freed implicitly.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank2]:     f()
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank2]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank2]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank2]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank2]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f3d9109ea70> freed implicitly.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank3]:     f()
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank3]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank3]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank3]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank3]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f6290ffab90> freed implicitly.
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank5]:     f()
+[rank5]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank5]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank5]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank5]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank5]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank5]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f7565bfe5f0> freed implicitly.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank1]:     f()
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank1]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank1]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank1]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank1]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fe8f03026b0> freed implicitly.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank6]:     f()
+[rank6]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank6]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank6]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank6]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank6]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank6]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f520c1f65f0> freed implicitly.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank2]:     f()
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank2]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank2]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank2]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank2]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f3d9109e650> freed implicitly.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank3]:     f()
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank3]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank3]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank3]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank3]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f6290ffaad0> freed implicitly.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank1]:     f()
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank1]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank1]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank1]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank1]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fe8f0302aa0> freed implicitly.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank2]:     f()
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank2]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank2]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank2]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank2]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f3d9109eb90> freed implicitly.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank3]:     f()
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank3]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank3]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank3]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank3]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f6290ffa6b0> freed implicitly.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank1]:     f()
+[rank1]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank1]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank1]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank1]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank1]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank1]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7fe8f03025f0> freed implicitly.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank2]:     f()
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank2]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank2]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank2]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank2]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f3d9109ead0> freed implicitly.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank3]:     f()
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank3]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank3]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank3]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank3]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f6290ffaaa0> freed implicitly.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank2]:     f()
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank2]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank2]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank2]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank2]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f3d9109e6b0> freed implicitly.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank3]:     f()
+[rank3]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank3]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank3]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank3]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank3]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank3]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f6290ffa5f0> freed implicitly.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank2]:     f()
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank2]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank2]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank2]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank2]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f3d9109eaa0> freed implicitly.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 667, in _exitfunc
+[rank2]:     f()
+[rank2]:   File "/usr/lib/python3.10/weakref.py", line 591, in __call__
+[rank2]:     return info.func(*info.args, **(info.kwargs or {}))
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/cuda/core/experimental/_memory.py", line 57, in close
+[rank2]:     self.mr.deallocate(self.ptr, self.size, stream)
+[rank2]:   File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvshmem/core/nvshmem_types.py", line 149, in deallocate
+[rank2]:     raise NvshmemError(f'Buffer {self._mem_references[ptr]["buffer"]} freed implicitly.')
+[rank2]: nvshmem.core.nvshmem_types.NvshmemError: Buffer <cuda.core.experimental._memory.Buffer object at 0x7f3d9109e5f0> freed implicitly.
+[rank0]:[W806 10:38:01.431880701 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W0806 10:38:02.254000 139651436844352 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 160034 closing signal SIGTERM
+W0806 10:38:02.254000 139651436844352 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 160035 closing signal SIGTERM
+W0806 10:38:02.254000 139651436844352 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 160036 closing signal SIGTERM
+W0806 10:38:02.254000 139651436844352 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 160037 closing signal SIGTERM
+W0806 10:38:02.255000 139651436844352 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 160039 closing signal SIGTERM
+W0806 10:38:02.255000 139651436844352 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 160040 closing signal SIGTERM
+W0806 10:38:02.255000 139651436844352 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 160041 closing signal SIGTERM
+E0806 10:38:03.750000 139651436844352 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 4 (pid: 160038) of binary: /root/.virtualenvs/lmy_triton_dis/bin/python
+Traceback (most recent call last):
+  File "/root/.virtualenvs/lmy_triton_dis/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+./python/triton_dist/test/nvidia/test_ep_moe_inference.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-08-06_10:38:02
+  host      : szzj-inf-sci-k8s-hzz1-h72ni7-0542.szzj.baidu.com
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 160038)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

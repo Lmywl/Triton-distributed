@@ -12,7 +12,7 @@ CPPFLAGS="-I/usr/local/cuda/include" pip3 install https://developer.download.nvi
 
 # Remove triton installed with torch
 pip uninstall triton -y
-pip uninstall triton_dist # remove previous triton-dist
+pip uninstall triton_dist -y # remove previous triton-dist
 rm -rf /usr/local/lib/python3.12/dist-packages/triton -y
 # Install Triton-distributed
 export USE_TRITON_DISTRIBUTED_AOT=0

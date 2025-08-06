@@ -57,7 +57,7 @@ def parse_args():
     parser.add_argument("-K", type=int, default=8192) # hidden size
     parser.add_argument("-N", type=int, default=3584) # immediate size
     parser.add_argument("-G", type=int, default=64)  # num_experts
-    parser.add_argument("--topk", type=int, default=6)
+    parser.add_argument("--topk", type=int, default=8)
     parser.add_argument("--bench_iters", default=5, type=int, help="perf iterations")
     parser.add_argument("--rounds", default=1, type=int, help="random data round")
     parser.add_argument("--dtype", default="bfloat16", help="data type", choices=list(DTYPE_MAP.keys()))
@@ -418,9 +418,9 @@ class DistributedMoELayer:
         
         # rank_print(f"dispatch_split_cumsum: {dispatch_split_cumsum}")
         # rank_print(f"splits: {splits}")
-        rank_print(f"dispatch_split_cumsum_shape: {dispatch_split_cumsum.shape}")
-        rank_print(f"splits_shape: {splits.shape}")
-        rank_print(f"send tokens: {input.shape}, recv tokens: {dispatched_tokens.shape}")
+        # rank_print(f"dispatch_split_cumsum_shape: {dispatch_split_cumsum.shape}")
+        # rank_print(f"splits_shape: {splits.shape}")
+        # rank_print(f"send tokens: {input.shape}, recv tokens: {dispatched_tokens.shape}")
 
         # 2. compute
         input_splits = splits.reshape(WORLD_SIZE, -1)
@@ -472,12 +472,12 @@ class DistributedMoELayer:
         # 3. combine
         splits, recv_buf, scale_buf = fast_all_to_all(self.all2all_ctx, local_out, input_splits_cumsum, scale)
         combined_tokens, combined_scale = all_to_all_post_process(self.all2all_ctx, splits, recv_buf, scale_buf)
-        rank_print(f"combined shape is {combined_tokens.shape}")
+       
         # 3.1. reduce: [num_tokens_local_rank * topk] => [num_tokens_local_rank]
         combine_reduced_out = torch.zeros_like(input)
         combine_reduced_out.index_add_(0, gather_idx_cur_rank, combined_tokens)
-        rank_print(f"gather_idx_cur_rank shape: {gather_idx_cur_rank.shape}")
-        rank_print(f"combined reduced shape is {combine_reduced_out.shape}")
+        # rank_print(f"gather_idx_cur_rank shape: {gather_idx_cur_rank.shape}")
+        # rank_print(f"combined reduced shape is {combine_reduced_out.shape}")
         
 
         return combine_reduced_out
