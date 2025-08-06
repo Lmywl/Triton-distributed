@@ -1,0 +1,351 @@
+all to all test
+Test with EP_SIZE=8 M=16
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_a2a.py -M 16
+W0806 11:33:07.920000 140711519180096 torch/distributed/run.py:779] 
+W0806 11:33:07.920000 140711519180096 torch/distributed/run.py:779] *****************************************
+W0806 11:33:07.920000 140711519180096 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 11:33:07.920000 140711519180096 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Rank-0: Received 16 tokensRank-1: Received 16 tokensRank-4: Received 16 tokensRank-7: Received 16 tokensRank-6: Received 16 tokensRank-3: Received 16 tokensRank-5: Received 16 tokens
+
+
+Rank-2: Received 16 tokens
+
+
+
+
+✅ RANK[0] check Triton passed
+✅ RANK[1] check Triton passed
+✅ RANK[3] check Triton passed
+✅ RANK[6] check Triton passed
+✅ RANK[4] check Triton passed
+✅ RANK[7] check Triton passed
+✅ RANK[5] check Triton passed
+✅ RANK[2] check Triton passed
+RANK 3: triton dispatch perf = 0.66541ms, triton_combine_perf = 0.16503ms, output_shape = torch.Size([16, 8192])
+RANK 7: triton dispatch perf = 0.66542ms, triton_combine_perf = 0.16492ms, output_shape = torch.Size([16, 8192])
+RANK 4: triton dispatch perf = 0.6654ms, triton_combine_perf = 0.16495ms, output_shape = torch.Size([16, 8192])
+RANK 5: triton dispatch perf = 0.66541ms, triton_combine_perf = 0.16504ms, output_shape = torch.Size([16, 8192])
+RANK 1: triton dispatch perf = 0.66542ms, triton_combine_perf = 0.16501ms, output_shape = torch.Size([16, 8192])
+RANK 6: triton dispatch perf = 0.66541ms, triton_combine_perf = 0.16499ms, output_shape = torch.Size([16, 8192])
+RANK 2: triton dispatch perf = 0.66544ms, triton_combine_perf = 0.16487ms, output_shape = torch.Size([16, 8192])
+RANK 0: triton dispatch perf = 0.66542ms, triton_combine_perf = 0.16492ms, output_shape = torch.Size([16, 8192])
+[rank0]:[W806 11:34:28.296008796 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+Test with EP_SIZE=8 M=32
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_a2a.py -M 32
+W0806 11:34:33.087000 139859677676864 torch/distributed/run.py:779] 
+W0806 11:34:33.087000 139859677676864 torch/distributed/run.py:779] *****************************************
+W0806 11:34:33.087000 139859677676864 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 11:34:33.087000 139859677676864 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Rank-4: Received 32 tokensRank-6: Received 32 tokensRank-7: Received 32 tokensRank-1: Received 32 tokensRank-5: Received 32 tokensRank-0: Received 32 tokens
+
+Rank-2: Received 32 tokensRank-3: Received 32 tokens
+
+
+
+
+
+✅ RANK[5] check Triton passed
+✅ RANK[4] check Triton passed
+✅ RANK[6] check Triton passed
+✅ RANK[0] check Triton passed
+✅ RANK[2] check Triton passed
+✅ RANK[1] check Triton passed
+✅ RANK[7] check Triton passed
+✅ RANK[3] check Triton passed
+RANK 4: triton dispatch perf = 0.48713ms, triton_combine_perf = 0.18473ms, output_shape = torch.Size([32, 8192])
+RANK 6: triton dispatch perf = 0.48713ms, triton_combine_perf = 0.18472ms, output_shape = torch.Size([32, 8192])
+RANK 1: triton dispatch perf = 0.48713ms, triton_combine_perf = 0.18459ms, output_shape = torch.Size([32, 8192])
+RANK 5: triton dispatch perf = 0.48712ms, triton_combine_perf = 0.18475ms, output_shape = torch.Size([32, 8192])
+RANK 2: triton dispatch perf = 0.48712ms, triton_combine_perf = 0.18459ms, output_shape = torch.Size([32, 8192])
+RANK 3: triton dispatch perf = 0.48713ms, triton_combine_perf = 0.18467ms, output_shape = torch.Size([32, 8192])
+RANK 7: triton dispatch perf = 0.48713ms, triton_combine_perf = 0.18476ms, output_shape = torch.Size([32, 8192])
+RANK 0: triton dispatch perf = 0.48713ms, triton_combine_perf = 0.18449ms, output_shape = torch.Size([32, 8192])
+[rank0]:[W806 11:35:53.811449581 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+Test with EP_SIZE=8 M=64
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_a2a.py -M 64
+W0806 11:35:55.997000 140009648715072 torch/distributed/run.py:779] 
+W0806 11:35:55.997000 140009648715072 torch/distributed/run.py:779] *****************************************
+W0806 11:35:55.997000 140009648715072 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 11:35:55.997000 140009648715072 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Rank-6: Received 64 tokensRank-7: Received 64 tokensRank-4: Received 64 tokensRank-3: Received 64 tokensRank-2: Received 64 tokensRank-1: Received 64 tokensRank-5: Received 64 tokens
+
+
+Rank-0: Received 64 tokens
+
+
+
+
+✅ RANK[7] check Triton passed✅ RANK[5] check Triton passed
+
+✅ RANK[4] check Triton passed
+✅ RANK[6] check Triton passed
+✅ RANK[1] check Triton passed✅ RANK[0] check Triton passed
+
+✅ RANK[2] check Triton passed
+✅ RANK[3] check Triton passed
+RANK 7: triton dispatch perf = 0.71005ms, triton_combine_perf = 0.19796ms, output_shape = torch.Size([64, 8192])RANK 6: triton dispatch perf = 0.71003ms, triton_combine_perf = 0.19794ms, output_shape = torch.Size([64, 8192])
+
+RANK 4: triton dispatch perf = 0.71001ms, triton_combine_perf = 0.19792ms, output_shape = torch.Size([64, 8192])
+RANK 3: triton dispatch perf = 0.71ms, triton_combine_perf = 0.19791ms, output_shape = torch.Size([64, 8192])RANK 5: triton dispatch perf = 0.71002ms, triton_combine_perf = 0.19792ms, output_shape = torch.Size([64, 8192])
+
+RANK 2: triton dispatch perf = 0.71004ms, triton_combine_perf = 0.19783ms, output_shape = torch.Size([64, 8192])
+RANK 1: triton dispatch perf = 0.71008ms, triton_combine_perf = 0.19784ms, output_shape = torch.Size([64, 8192])
+RANK 0: triton dispatch perf = 0.71008ms, triton_combine_perf = 0.19779ms, output_shape = torch.Size([64, 8192])
+[rank0]:[W806 11:37:17.508354376 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+Test with EP_SIZE=8 M=128
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_a2a.py -M 128
+W0806 11:37:21.126000 139782043002176 torch/distributed/run.py:779] 
+W0806 11:37:21.126000 139782043002176 torch/distributed/run.py:779] *****************************************
+W0806 11:37:21.126000 139782043002176 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 11:37:21.126000 139782043002176 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Rank-0: Received 128 tokensRank-4: Received 128 tokensRank-7: Received 128 tokensRank-6: Received 128 tokensRank-3: Received 128 tokensRank-1: Received 128 tokensRank-5: Received 128 tokens
+
+
+
+Rank-2: Received 128 tokens
+
+
+
+✅ RANK[3] check Triton passed✅ RANK[5] check Triton passed✅ RANK[7] check Triton passed✅ RANK[6] check Triton passed
+✅ RANK[4] check Triton passed
+
+
+
+✅ RANK[0] check Triton passed
+✅ RANK[2] check Triton passed
+✅ RANK[1] check Triton passed
+RANK 5: triton dispatch perf = 0.57147ms, triton_combine_perf = 0.2354ms, output_shape = torch.Size([128, 8192])
+RANK 6: triton dispatch perf = 0.57153ms, triton_combine_perf = 0.23538ms, output_shape = torch.Size([128, 8192])RANK 7: triton dispatch perf = 0.5715ms, triton_combine_perf = 0.23536ms, output_shape = torch.Size([128, 8192])
+
+RANK 4: triton dispatch perf = 0.57149ms, triton_combine_perf = 0.23536ms, output_shape = torch.Size([128, 8192])
+RANK 3: triton dispatch perf = 0.57153ms, triton_combine_perf = 0.23526ms, output_shape = torch.Size([128, 8192])
+RANK 1: triton dispatch perf = 0.5715ms, triton_combine_perf = 0.23537ms, output_shape = torch.Size([128, 8192])
+RANK 2: triton dispatch perf = 0.57149ms, triton_combine_perf = 0.23538ms, output_shape = torch.Size([128, 8192])
+RANK 0: triton dispatch perf = 0.5715ms, triton_combine_perf = 0.23539ms, output_shape = torch.Size([128, 8192])
+[rank0]:[W806 11:38:41.473958179 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+Test with EP_SIZE=8 M=256
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_a2a.py -M 256
+W0806 11:38:45.280000 140394982761792 torch/distributed/run.py:779] 
+W0806 11:38:45.280000 140394982761792 torch/distributed/run.py:779] *****************************************
+W0806 11:38:45.280000 140394982761792 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 11:38:45.280000 140394982761792 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Rank-0: Received 256 tokensRank-4: Received 256 tokensRank-2: Received 256 tokensRank-6: Received 256 tokensRank-5: Received 256 tokensRank-3: Received 256 tokensRank-7: Received 256 tokens
+
+Rank-1: Received 256 tokens
+
+
+
+
+
+✅ RANK[5] check Triton passed
+✅ RANK[4] check Triton passed
+✅ RANK[6] check Triton passed
+✅ RANK[7] check Triton passed
+✅ RANK[1] check Triton passed✅ RANK[0] check Triton passed
+
+✅ RANK[3] check Triton passed
+✅ RANK[2] check Triton passed
+RANK 1: triton dispatch perf = 0.53809ms, triton_combine_perf = 0.32278ms, output_shape = torch.Size([256, 8192])
+RANK 3: triton dispatch perf = 0.5382ms, triton_combine_perf = 0.3227ms, output_shape = torch.Size([256, 8192])
+RANK 2: triton dispatch perf = 0.5381ms, triton_combine_perf = 0.32274ms, output_shape = torch.Size([256, 8192])
+RANK 4: triton dispatch perf = 0.5381ms, triton_combine_perf = 0.32283ms, output_shape = torch.Size([256, 8192])
+RANK 6: triton dispatch perf = 0.5381ms, triton_combine_perf = 0.32281ms, output_shape = torch.Size([256, 8192])
+RANK 5: triton dispatch perf = 0.53822ms, triton_combine_perf = 0.32279ms, output_shape = torch.Size([256, 8192])
+RANK 7: triton dispatch perf = 0.5382ms, triton_combine_perf = 0.32286ms, output_shape = torch.Size([256, 8192])
+RANK 0: triton dispatch perf = 0.5381ms, triton_combine_perf = 0.32272ms, output_shape = torch.Size([256, 8192])
+[rank0]:[W806 11:40:01.926806186 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+Test with EP_SIZE=8 M=512
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_a2a.py -M 512
+W0806 11:40:06.338000 139852611298624 torch/distributed/run.py:779] 
+W0806 11:40:06.338000 139852611298624 torch/distributed/run.py:779] *****************************************
+W0806 11:40:06.338000 139852611298624 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 11:40:06.338000 139852611298624 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Rank-4: Received 512 tokensRank-5: Received 512 tokensRank-0: Received 512 tokensRank-7: Received 512 tokensRank-6: Received 512 tokens
+Rank-3: Received 512 tokens
+Rank-1: Received 512 tokensRank-2: Received 512 tokens
+
+
+
+
+
+✅ RANK[4] check Triton passed
+✅ RANK[3] check Triton passed
+✅ RANK[5] check Triton passed
+✅ RANK[6] check Triton passed
+✅ RANK[7] check Triton passed
+✅ RANK[1] check Triton passed
+✅ RANK[2] check Triton passed
+✅ RANK[0] check Triton passed
+RANK 4: triton dispatch perf = 0.86035ms, triton_combine_perf = 0.51416ms, output_shape = torch.Size([512, 8192])
+RANK 5: triton dispatch perf = 0.86042ms, triton_combine_perf = 0.51423ms, output_shape = torch.Size([512, 8192])
+RANK 7: triton dispatch perf = 0.86042ms, triton_combine_perf = 0.51413ms, output_shape = torch.Size([512, 8192])
+RANK 6: triton dispatch perf = 0.86039ms, triton_combine_perf = 0.51412ms, output_shape = torch.Size([512, 8192])
+RANK 3: triton dispatch perf = 0.86041ms, triton_combine_perf = 0.51647ms, output_shape = torch.Size([512, 8192])
+RANK 1: triton dispatch perf = 0.86057ms, triton_combine_perf = 0.51598ms, output_shape = torch.Size([512, 8192])
+RANK 2: triton dispatch perf = 0.8604ms, triton_combine_perf = 0.51597ms, output_shape = torch.Size([512, 8192])
+RANK 0: triton dispatch perf = 0.8604ms, triton_combine_perf = 0.51606ms, output_shape = torch.Size([512, 8192])
+[rank0]:[W806 11:41:20.536497339 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+Test with EP_SIZE=8 M=1024
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/.virtualenvs/lmy_triton_dis/lib/python3.10/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/test/nvidia/test_ep_a2a.py -M 1024
+W0806 11:41:23.502000 140586788611392 torch/distributed/run.py:779] 
+W0806 11:41:23.502000 140586788611392 torch/distributed/run.py:779] *****************************************
+W0806 11:41:23.502000 140586788611392 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0806 11:41:23.502000 140586788611392 torch/distributed/run.py:779] *****************************************
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Rank-6: Received 1024 tokensRank-7: Received 1024 tokensRank-4: Received 1024 tokensRank-5: Received 1024 tokensRank-3: Received 1024 tokensRank-0: Received 1024 tokensRank-2: Received 1024 tokens
+Rank-1: Received 1024 tokens
+
+
+
+
+
+
+✅ RANK[1] check Triton passed
+✅ RANK[0] check Triton passed
+✅ RANK[2] check Triton passed
+✅ RANK[6] check Triton passed
+✅ RANK[4] check Triton passed
+✅ RANK[5] check Triton passed✅ RANK[7] check Triton passed
+
+✅ RANK[3] check Triton passed
+RANK 2: triton dispatch perf = 0.89315ms, triton_combine_perf = 0.83034ms, output_shape = torch.Size([1024, 8192])RANK 3: triton dispatch perf = 0.89314ms, triton_combine_perf = 0.83036ms, output_shape = torch.Size([1024, 8192])RANK 1: triton dispatch perf = 0.89314ms, triton_combine_perf = 0.83034ms, output_shape = torch.Size([1024, 8192])
+
+
+RANK 4: triton dispatch perf = 0.89314ms, triton_combine_perf = 0.83044ms, output_shape = torch.Size([1024, 8192])
+RANK 6: triton dispatch perf = 0.89315ms, triton_combine_perf = 0.83046ms, output_shape = torch.Size([1024, 8192])
+RANK 7: triton dispatch perf = 0.8932ms, triton_combine_perf = 0.8303ms, output_shape = torch.Size([1024, 8192])
+RANK 5: triton dispatch perf = 0.89315ms, triton_combine_perf = 0.83043ms, output_shape = torch.Size([1024, 8192])
+RANK 0: triton dispatch perf = 0.89314ms, triton_combine_perf = 0.83034ms, output_shape = torch.Size([1024, 8192])
+[rank0]:[W806 11:42:38.937406322 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())

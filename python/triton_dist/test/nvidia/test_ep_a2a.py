@@ -192,7 +192,7 @@ def parse_args():
     parser.add_argument("--bench_iters", default=1, type=int, help="perf iterations")
     parser.add_argument("--rounds", default=1, type=int, help="random data round")
     parser.add_argument("--sm_margin", default=16, type=int, help="sm margin")
-    parser.add_argument("--dtype", default="bfloat16", help="data type", choices=list(DTYPE_MAP.keys()))
+    parser.add_argument("--dtype", default="float8_e4m3fn", help="data type", choices=list(DTYPE_MAP.keys()))
     parser.add_argument("--profile", action="store_true")
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--with_scale", action="store_true")
