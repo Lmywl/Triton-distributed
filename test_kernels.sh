@@ -61,23 +61,23 @@
 #     bash ./scripts/launch.sh 8 ./python/triton_dist/test/nvidia/test_ag_moe_rs.py --M $shape
 # done
 
-# ### 6. ep_moe_inference test
-# echo "ep_moe_inference test"
-# export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-# shapes=(16 32 64 128 256 512 1024)
-# # shapes=(64)
-# for shape in "${shapes[@]}"; do
-#     M=$[shape*8]
-#     echo "Test with EP_SIZE=8 M=$M" 
-#     bash ./scripts/launch.sh 8 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M $shape
-# done
-
-### 7. a2a kernel test
-echo "all to all test"
+### 6. ep_moe_inference test
+echo "ep_moe_inference test"
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 # shapes=(16 32 64 128 256 512 1024)
-shapes=(16)
+shapes=(64)
 for shape in "${shapes[@]}"; do
-    echo "Test with EP_SIZE=8 M=$shape" 
-    bash ./scripts/launch.sh 8 ./python/triton_dist/test/nvidia/test_ep_a2a.py -M $shape
+    M=$[shape*8]
+    echo "Test with EP_SIZE=8 M=$M" 
+    bash ./scripts/launch.sh 8 ./python/triton_dist/test/nvidia/test_ep_moe_inference.py -M $shape
 done
+
+# ### 7. a2a kernel test
+# echo "all to all test"
+# export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+# # shapes=(16 32 64 128 256 512 1024)
+# shapes=(16)
+# for shape in "${shapes[@]}"; do
+#     echo "Test with EP_SIZE=8 M=$shape" 
+#     bash ./scripts/launch.sh 8 ./python/triton_dist/test/nvidia/test_ep_a2a.py -M $shape
+# done

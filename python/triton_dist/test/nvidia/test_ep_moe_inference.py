@@ -23,6 +23,7 @@
 #
 ################################################################################
 
+from torch.cuda import nvtx
 import os
 from typing import Optional
 import torch
@@ -405,6 +406,7 @@ class DistributedMoELayer:
         dispatch_split_cumsum: torch.Tensor,
         gather_idx_cur_rank: torch.Tensor,
         scale: Optional[torch.Tensor] = None,
+        ind: int = 0
     ):
         """
         no-overlap
@@ -413,9 +415,11 @@ class DistributedMoELayer:
         assert scale is None, "scale is not supported yet"
 
         # 1. dispatch
-        splits, recv_buf, scale_buf = fast_all_to_all(self.all2all_ctx, input, dispatch_split_cumsum, scale)
-        dispatched_tokens, dispatched_scale = all_to_all_post_process(self.all2all_ctx, splits, recv_buf, scale_buf)
         
+        with nvtx.range(f"dispatch{ind}"):
+            splits, recv_buf, scale_buf = fast_all_to_all(self.all2all_ctx, input, dispatch_split_cumsum, scale)
+            dispatched_tokens, dispatched_scale = all_to_all_post_process(self.all2all_ctx, splits, recv_buf, scale_buf)
+       
         # rank_print(f"dispatch_split_cumsum: {dispatch_split_cumsum}")
         # rank_print(f"splits: {splits}")
         # rank_print(f"dispatch_split_cumsum_shape: {dispatch_split_cumsum.shape}")
@@ -454,11 +458,12 @@ class DistributedMoELayer:
         # rank_print(f"input_splits_cumsum:\n{input_splits_cumsum}")
         # rank_print(f"scatter_indices ({scatter_indices.shape}):\n{scatter_indices}")
         # rank_print(f"exp_indices ({exp_indices.shape}):\n{exp_indices}")
-
-        tmp0 = group_gemm(dispatched_tokens, self.gate_up_proj, scatter_indices, exp_indices, self.with_scale, BM)
-        tmp1, tmp1_scale = DistributedMoELayer.act(tmp0, self.with_scale)
-        local_out = group_gemm(tmp1, self.down_proj, scatter_indices, exp_indices, self.with_scale, BM)
-
+        
+        with nvtx.range(f"group_gemm{ind}"):
+            tmp0 = group_gemm(dispatched_tokens, self.gate_up_proj, scatter_indices, exp_indices, self.with_scale, BM)
+            tmp1, tmp1_scale = DistributedMoELayer.act(tmp0, self.with_scale)
+            local_out = group_gemm(tmp1, self.down_proj, scatter_indices, exp_indices, self.with_scale, BM)
+        
         # _tmp0 = groupgemm_torch(dispatched_tokens, self.gate_up_proj, scatter_indices, exp_indices, self.with_scale, BM)
         # # rank_print(f"ref_output({_tmp0.shape}):\n{_tmp0[:16]}")
         # _tmp1, _tmp1_scale = DistributedMoELayer.act(_tmp0, self.with_scale)
@@ -470,11 +475,14 @@ class DistributedMoELayer:
         #     print(f"❌ RANK-{RANK} check failed")
 
         # 3. combine
-        splits, recv_buf, scale_buf = fast_all_to_all(self.all2all_ctx, local_out, input_splits_cumsum, scale)
-        combined_tokens, combined_scale = all_to_all_post_process(self.all2all_ctx, splits, recv_buf, scale_buf)
-       
+        
+        with nvtx.range(f"combine{ind}"):
+            splits, recv_buf, scale_buf = fast_all_to_all(self.all2all_ctx, local_out, input_splits_cumsum, scale)
+            combined_tokens, combined_scale = all_to_all_post_process(self.all2all_ctx, splits, recv_buf, scale_buf)
+
         # 3.1. reduce: [num_tokens_local_rank * topk] => [num_tokens_local_rank]
-        combine_reduced_out = torch.zeros_like(input)
+        # combine_reduced_out = torch.zeros_like(input)
+        combine_reduced_out = torch.zeros((input.shape[0] // self.topk, input.shape[1]), dtype=input.dtype, device=input.device)
         combine_reduced_out.index_add_(0, gather_idx_cur_rank, combined_tokens)
         # rank_print(f"gather_idx_cur_rank shape: {gather_idx_cur_rank.shape}")
         # rank_print(f"combined reduced shape is {combine_reduced_out.shape}")
@@ -489,9 +497,10 @@ class DistributedMoELayer:
         gather_idx_cur_rank: torch.Tensor,
         scale: Optional[torch.Tensor] = None,
         impl="naive",
+        ind=0
     ):
         if impl == "naive":
-            return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale)
+            return self.naive_forward(input, dispatch_split_cumsum, gather_idx_cur_rank, scale, ind=ind)
         elif impl == "fused":
             raise NotImplementedError()
 
@@ -526,9 +535,15 @@ if __name__ == "__main__":
 
     layer.forward(*input)
 
-    output, time_cost = perf_func(partial(layer.forward, *input), iters=5, warmup_iters=10)
     
-    rank_print(f"RNAK = {RANK}\ttime = {time_cost}\toutput_shape={output.shape}")
+    # output, time_cost = perf_func(partial(layer.forward, *input), iters=5, warmup_iters=10)
+    for i in range(6):
+        if i == 5:
+            layer.forward(*input, ind=i) 
+        else:
+            layer.forward(*input)
+    
+    # rank_print(f"RNAK = {RANK}\ttime = {time_cost}\toutput_shape={output.shape}")
     layer.all2all_ctx.finalize()
 
     finalize_distributed()
