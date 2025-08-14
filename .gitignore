@@ -1,6 +1,7 @@
 # Pytest
 pytest.ini
 
+timelines/
 # Python caches
 __pycache__/
 *.py[cod]

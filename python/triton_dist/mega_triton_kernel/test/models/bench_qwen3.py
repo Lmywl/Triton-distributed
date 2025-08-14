@@ -42,7 +42,7 @@ from triton_dist.utils import (
     nvshmem_barrier_all_on_stream,
     dist_print,
 )
-
+from torch.cuda import nvtx
 
 def make_cuda_graph(mempool, func):
     s = torch.cuda.Stream()
@@ -110,9 +110,10 @@ if __name__ == "__main__":
                         batch_size=batch_size, dtype=dtype, max_length=model.max_length, world_size=WORLD_SIZE)
     kv_cache.kv_offset.fill_(seq_len)
 
+    
     model.set_fwd(mode='torch')
     torch_eager = partial(model.inference, input_ids, position_ids, kv_cache, False)
-
+    
     mempool = torch.cuda.graph_pool_handle()
     model.set_fwd(mode='torch')
     torch_graph = make_cuda_graph(mempool, partial(model.inference, input_ids, position_ids, kv_cache, False))
@@ -120,25 +121,34 @@ if __name__ == "__main__":
     model.set_fwd(mode='triton_dist_AR')
     triton_dist_graph = make_cuda_graph(mempool, partial(model.inference, input_ids, position_ids, kv_cache, False))
 
-    with group_profile("tp_e2e_decode", args.profile, group=TP_GROUP):
-        torch.cuda.synchronize()
-        _, torch_eager_perf = perf_func(torch_eager, iters=args.iters, warmup_iters=args.warmup)
+    # torch.cuda.profiler.start()
+    # with group_profile("tp_e2e_decode", args.profile, group=TP_GROUP):
+    torch.cuda.synchronize()
+    nvtx.range_push("torch_eager")
+    _, torch_eager_perf = perf_func(torch_eager, iters=args.iters, warmup_iters=args.warmup)
+    torch.cuda.synchronize()
+    nvtx.range_pop()
 
-        _, torch_wi_graph_perf = perf_func(torch_graph.replay, iters=args.iters, warmup_iters=args.warmup)
+    nvtx.range_push("torch_cudagraph")
+    _, torch_wi_graph_perf = perf_func(torch_graph.replay, iters=args.iters, warmup_iters=args.warmup)
+    nvshmem_barrier_all_on_stream(torch.cuda.current_stream())
+    torch.cuda.synchronize()
+    nvtx.range_pop()
 
-        nvshmem_barrier_all_on_stream(torch.cuda.current_stream())
-        torch.cuda.synchronize()
+    torch.cuda.synchronize()
+    nvtx.range_push("dist_triton_cudagraph_AR")
+    _, dist_triton_perf = perf_func(triton_dist_graph.replay, iters=args.iters, warmup_iters=args.warmup)
+    nvshmem_barrier_all_on_stream(torch.cuda.current_stream())
+    torch.cuda.synchronize()
+    nvtx.range_pop()
 
-        torch.cuda.synchronize()
-        _, dist_triton_perf = perf_func(triton_dist_graph.replay, iters=args.iters, warmup_iters=args.warmup)
-        nvshmem_barrier_all_on_stream(torch.cuda.current_stream())
-        torch.cuda.synchronize()
-
-        _, mega_kernel_perf = perf_func(partial(mege_kernel_model.mega_forwrad, input_ids), iters=args.iters,
-                                        warmup_iters=args.warmup)
-        nvshmem_barrier_all_on_stream(torch.cuda.current_stream())
-        torch.cuda.synchronize()
-
+    nvtx.range_push("mega_kernel")
+    _, mega_kernel_perf = perf_func(partial(mege_kernel_model.mega_forwrad, input_ids), iters=args.iters,
+                                    warmup_iters=args.warmup)
+    nvshmem_barrier_all_on_stream(torch.cuda.current_stream())
+    torch.cuda.synchronize()
+    nvtx.range_pop()
+        
     dist_print(f"torch eager decode #{RANK}:", torch_eager_perf, need_sync=True, allowed_ranks=list(range(WORLD_SIZE)))
 
     dist_print(f"torch + cudagraph decode #{RANK}:", torch_wi_graph_perf, need_sync=True,

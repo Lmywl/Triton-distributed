@@ -112,7 +112,7 @@ for MODEL_NAME in "${MODELS[@]}"; do
   while true; do
     echo "Attempting to download model: $MODEL_NAME (timeout: 120s)..."
     # Use timeout to prevent the script from hanging indefinitely.
-    timeout 120s huggingface-cli download "$MODEL_NAME"
+    timeout 120s hf download "$MODEL_NAME"
 
     EXIT_CODE=$?
 

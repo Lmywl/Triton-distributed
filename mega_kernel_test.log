@@ -1,0 +1,1072 @@
+triton_dist mega kernel test
+Test with TP_SIZE=8 M=16
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/mega_triton_kernel/test/models/bench_qwen3.py --seq_len 16
+W0814 12:55:48.763000 139869272487744 torch/distributed/run.py:779] 
+W0814 12:55:48.763000 139869272487744 torch/distributed/run.py:779] *****************************************
+W0814 12:55:48.763000 139869272487744 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0814 12:55:48.763000 139869272487744 torch/distributed/run.py:779] *****************************************
+[2025-08-14 12:55:54,668] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:55:54,695] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:55:54,697] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:55:54,714] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:55:54,719] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:55:54,732] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:55:54,739] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:55:54,742] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:55:55,636] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:55:55,640] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:55:55,640] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:55:55,647] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:55:55,656] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:55:55,681] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:55:55,686] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:55:55,697] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 265.63it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 264.25it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 263.95it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.15it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.63it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 239.09it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 265.63it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 265.77it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.27it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 271.33it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 278.30it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 276.60it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 278.09it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.30it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 269.39it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 249.00it/s]
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+torch eager decode #0: 70.177685546875
+torch eager decode #1: 70.181787109375
+torch eager decode #2: 70.17950439453125
+torch eager decode #3: 70.179248046875
+torch eager decode #4: 70.18253173828126
+torch eager decode #5: 70.17963256835938
+torch eager decode #6: 70.18218383789062
+torch eager decode #7: 70.17512817382813
+torch + cudagraph decode #0: 9.275379180908203
+torch + cudagraph decode #1: 9.271060943603516
+torch + cudagraph decode #2: 9.26722412109375
+torch + cudagraph decode #3: 9.270606231689452
+torch + cudagraph decode #4: 9.267552185058594
+torch + cudagraph decode #5: 9.26836929321289
+torch + cudagraph decode #6: 9.26788330078125
+torch + cudagraph decode #7: 9.267683410644532
+dist-triton-AR_one_shot_multimem decode #0: 7.723188781738282
+dist-triton-AR_one_shot_multimem decode #1: 7.721060943603516
+dist-triton-AR_one_shot_multimem decode #2: 7.721578979492188
+dist-triton-AR_one_shot_multimem decode #3: 7.723273468017578
+dist-triton-AR_one_shot_multimem decode #4: 7.722160339355469
+dist-triton-AR_one_shot_multimem decode #5: 7.724195098876953
+dist-triton-AR_one_shot_multimem decode #6: 7.722235107421875
+dist-triton-AR_one_shot_multimem decode #7: 7.721609497070313
+mega-kernel decode #0: 7.518782043457032
+mega-kernel decode #1: 7.51824951171875
+mega-kernel decode #2: 7.518228912353516
+mega-kernel decode #3: 7.519687652587891
+mega-kernel decode #4: 7.519512176513672
+mega-kernel decode #5: 7.518276977539062
+mega-kernel decode #6: 7.518376159667969
+mega-kernel decode #7: 7.5181121826171875
+mega-kernel speedup: torch = 9.33x, torch + cudagraph = 1.23, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.33x, torch + cudagraph = 1.23, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.33x, torch + cudagraph = 1.23, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.33x, torch + cudagraph = 1.23, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.33x, torch + cudagraph = 1.23, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.33x, torch + cudagraph = 1.23, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.33x, torch + cudagraph = 1.23, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.33x, torch + cudagraph = 1.23, dist-triton = 1.03x
+Test with TP_SIZE=8 M=32
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/mega_triton_kernel/test/models/bench_qwen3.py --seq_len 32
+W0814 12:57:37.403000 140717387634496 torch/distributed/run.py:779] 
+W0814 12:57:37.403000 140717387634496 torch/distributed/run.py:779] *****************************************
+W0814 12:57:37.403000 140717387634496 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0814 12:57:37.403000 140717387634496 torch/distributed/run.py:779] *****************************************
+[2025-08-14 12:57:42,605] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:57:43,324] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:57:43,353] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:57:43,355] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:57:43,374] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:57:43,378] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:57:43,380] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:57:43,381] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:57:43,487] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+[2025-08-14 12:57:44,297] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:57:44,322] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:57:44,344] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:57:44,355] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:57:44,370] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:57:44,374] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:57:44,376] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.11it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 270.34it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 278.02it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 275.65it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.18it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.60it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 261.71it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 267.02it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 271.27it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 259.91it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 236.17it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 272.33it/s]
+Loading checkpoint shards:  88%|████████▊ | 15/17 [00:00<00:00, 148.20it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 153.42it/s]
+Loading checkpoint shards:  94%|█████████▍| 16/17 [00:00<00:00, 156.31it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 163.38it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 263.96it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 264.07it/s]
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+torch eager decode #0: 66.61708984375
+torch eager decode #1: 66.61710815429687
+torch eager decode #2: 66.6178955078125
+torch eager decode #3: 66.61661376953126
+torch eager decode #4: 66.61937866210937
+torch eager decode #5: 66.61888427734375
+torch eager decode #6: 66.61551513671876
+torch eager decode #7: 66.61683349609375
+torch + cudagraph decode #0: 9.240496063232422
+torch + cudagraph decode #1: 9.241222381591797
+torch + cudagraph decode #2: 9.24194564819336
+torch + cudagraph decode #3: 9.244998168945312
+torch + cudagraph decode #4: 9.240459442138672
+torch + cudagraph decode #5: 9.244849395751952
+torch + cudagraph decode #6: 9.240678405761718
+torch + cudagraph decode #7: 9.24071044921875
+dist-triton-AR_one_shot_multimem decode #0: 7.807366180419922
+dist-triton-AR_one_shot_multimem decode #1: 7.807559967041016
+dist-triton-AR_one_shot_multimem decode #2: 7.808430480957031
+dist-triton-AR_one_shot_multimem decode #3: 7.807249450683594
+dist-triton-AR_one_shot_multimem decode #4: 7.807230377197266
+dist-triton-AR_one_shot_multimem decode #5: 7.808073425292969
+dist-triton-AR_one_shot_multimem decode #6: 7.808112335205078
+dist-triton-AR_one_shot_multimem decode #7: 7.807915496826172
+mega-kernel decode #0: 7.506865692138672
+mega-kernel decode #1: 7.507457733154297
+mega-kernel decode #2: 7.507374572753906
+mega-kernel decode #3: 7.506508636474609
+mega-kernel decode #4: 7.5070945739746096
+mega-kernel decode #5: 7.506462097167969
+mega-kernel decode #6: 7.506507110595703
+mega-kernel decode #7: 7.506556701660156
+mega-kernel speedup: torch = 8.87x, torch + cudagraph = 1.23, dist-triton = 1.04x
+mega-kernel speedup: torch = 8.87x, torch + cudagraph = 1.23, dist-triton = 1.04x
+mega-kernel speedup: torch = 8.87x, torch + cudagraph = 1.23, dist-triton = 1.04x
+mega-kernel speedup: torch = 8.87x, torch + cudagraph = 1.23, dist-triton = 1.04x
+mega-kernel speedup: torch = 8.87x, torch + cudagraph = 1.23, dist-triton = 1.04x
+mega-kernel speedup: torch = 8.87x, torch + cudagraph = 1.23, dist-triton = 1.04x
+mega-kernel speedup: torch = 8.87x, torch + cudagraph = 1.23, dist-triton = 1.04x
+mega-kernel speedup: torch = 8.87x, torch + cudagraph = 1.23, dist-triton = 1.04x
+Test with TP_SIZE=8 M=64
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/mega_triton_kernel/test/models/bench_qwen3.py --seq_len 64
+W0814 12:59:21.909000 139671100196672 torch/distributed/run.py:779] 
+W0814 12:59:21.909000 139671100196672 torch/distributed/run.py:779] *****************************************
+W0814 12:59:21.909000 139671100196672 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0814 12:59:21.909000 139671100196672 torch/distributed/run.py:779] *****************************************
+[2025-08-14 12:59:28,124] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:59:29,217] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:59:29,396] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:59:29,464] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+[2025-08-14 12:59:29,511] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:59:29,526] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:59:29,531] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:59:29,541] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:59:29,554] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 12:59:30,493] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:59:30,496] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:59:30,535] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:59:30,568] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:59:30,589] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+[2025-08-14 12:59:31,107] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 12:59:31,169] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 270.89it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 264.52it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.60it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 270.96it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.31it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 260.06it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 277.30it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 270.40it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 264.71it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 250.42it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.63it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 253.35it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 258.64it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.15it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 276.30it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.04it/s]
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+torch eager decode #0: 73.12801513671874
+torch eager decode #1: 73.13484497070313
+torch eager decode #2: 73.1279052734375
+torch eager decode #3: 73.1294677734375
+torch eager decode #4: 73.12947387695313
+torch eager decode #5: 73.12796020507812
+torch eager decode #6: 73.12853393554687
+torch eager decode #7: 73.12627563476562
+torch + cudagraph decode #0: 9.273939514160157
+torch + cudagraph decode #1: 9.275857543945312
+torch + cudagraph decode #2: 9.273470306396485
+torch + cudagraph decode #3: 9.274201965332031
+torch + cudagraph decode #4: 9.274823760986328
+torch + cudagraph decode #5: 9.276595306396484
+torch + cudagraph decode #6: 9.273299407958984
+torch + cudagraph decode #7: 9.273159790039063
+dist-triton-AR_one_shot_multimem decode #0: 7.701731109619141
+dist-triton-AR_one_shot_multimem decode #1: 7.703041839599609
+dist-triton-AR_one_shot_multimem decode #2: 7.701457977294922
+dist-triton-AR_one_shot_multimem decode #3: 7.700230407714844
+dist-triton-AR_one_shot_multimem decode #4: 7.701751708984375
+dist-triton-AR_one_shot_multimem decode #5: 7.70072021484375
+dist-triton-AR_one_shot_multimem decode #6: 7.700651550292969
+dist-triton-AR_one_shot_multimem decode #7: 7.701030731201172
+mega-kernel decode #0: 7.48895034790039
+mega-kernel decode #1: 7.489527893066406
+mega-kernel decode #2: 7.486561584472656
+mega-kernel decode #3: 7.488670349121094
+mega-kernel decode #4: 7.488531494140625
+mega-kernel decode #5: 7.488771057128906
+mega-kernel decode #6: 7.488670349121094
+mega-kernel decode #7: 7.488626861572266
+mega-kernel speedup: torch = 9.76x, torch + cudagraph = 1.24, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.76x, torch + cudagraph = 1.24, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.77x, torch + cudagraph = 1.24, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.77x, torch + cudagraph = 1.24, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.77x, torch + cudagraph = 1.24, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.77x, torch + cudagraph = 1.24, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.77x, torch + cudagraph = 1.24, dist-triton = 1.03x
+mega-kernel speedup: torch = 9.76x, torch + cudagraph = 1.24, dist-triton = 1.03x
+Test with TP_SIZE=8 M=128
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/mega_triton_kernel/test/models/bench_qwen3.py --seq_len 128
+W0814 13:01:08.692000 140196902561600 torch/distributed/run.py:779] 
+W0814 13:01:08.692000 140196902561600 torch/distributed/run.py:779] *****************************************
+W0814 13:01:08.692000 140196902561600 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0814 13:01:08.692000 140196902561600 torch/distributed/run.py:779] *****************************************
+[2025-08-14 13:01:14,001] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:01:14,723] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:01:14,741] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:01:14,743] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:01:14,755] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:01:14,756] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:01:14,759] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:01:14,762] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:01:14,920] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+[2025-08-14 13:01:15,628] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:01:15,740] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:01:15,744] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:01:15,749] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:01:15,772] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:01:15,773] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:01:15,778] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 272.83it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 271.96it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 268.80it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 276.35it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 266.41it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 260.48it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 275.23it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 201.93it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.57it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 265.01it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.71it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 276.60it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 250.24it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 248.61it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 240.56it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 267.84it/s]
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+torch eager decode #0: 68.28739013671876
+torch eager decode #1: 68.28513793945312
+torch eager decode #2: 68.28565063476563
+torch eager decode #3: 68.28662109375
+torch eager decode #4: 68.282861328125
+torch eager decode #5: 68.29000244140624
+torch eager decode #6: 68.28381958007813
+torch eager decode #7: 68.27969360351562
+torch + cudagraph decode #0: 9.365135955810548
+torch + cudagraph decode #1: 9.366470336914062
+torch + cudagraph decode #2: 9.365755462646485
+torch + cudagraph decode #3: 9.365113830566406
+torch + cudagraph decode #4: 9.363846588134766
+torch + cudagraph decode #5: 9.366696166992188
+torch + cudagraph decode #6: 9.363998413085938
+torch + cudagraph decode #7: 9.364500427246094
+dist-triton-AR_one_shot_multimem decode #0: 7.8030242919921875
+dist-triton-AR_one_shot_multimem decode #1: 7.801601409912109
+dist-triton-AR_one_shot_multimem decode #2: 7.801001739501953
+dist-triton-AR_one_shot_multimem decode #3: 7.796080017089844
+dist-triton-AR_one_shot_multimem decode #4: 7.801185607910156
+dist-triton-AR_one_shot_multimem decode #5: 7.800415802001953
+dist-triton-AR_one_shot_multimem decode #6: 7.8014671325683596
+dist-triton-AR_one_shot_multimem decode #7: 7.802053070068359
+mega-kernel decode #0: 7.453314971923828
+mega-kernel decode #1: 7.453182220458984
+mega-kernel decode #2: 7.453758239746094
+mega-kernel decode #3: 7.462782287597657
+mega-kernel decode #4: 7.454414367675781
+mega-kernel decode #5: 7.454684448242188
+mega-kernel decode #6: 7.457630157470703
+mega-kernel decode #7: 7.457465362548828
+mega-kernel speedup: torch = 9.16x, torch + cudagraph = 1.26, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.16x, torch + cudagraph = 1.26, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.16x, torch + cudagraph = 1.26, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.15x, torch + cudagraph = 1.25, dist-triton = 1.04x
+mega-kernel speedup: torch = 9.16x, torch + cudagraph = 1.26, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.16x, torch + cudagraph = 1.26, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.16x, torch + cudagraph = 1.26, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.16x, torch + cudagraph = 1.26, dist-triton = 1.05x
+Test with TP_SIZE=8 M=256
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/mega_triton_kernel/test/models/bench_qwen3.py --seq_len 256
+W0814 13:03:04.554000 140269865674560 torch/distributed/run.py:779] 
+W0814 13:03:04.554000 140269865674560 torch/distributed/run.py:779] *****************************************
+W0814 13:03:04.554000 140269865674560 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0814 13:03:04.554000 140269865674560 torch/distributed/run.py:779] *****************************************
+[2025-08-14 13:03:10,732] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:03:10,746] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:03:10,753] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:03:10,758] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:03:10,763] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:03:10,792] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:03:10,800] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:03:10,802] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:03:11,717] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:03:11,736] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:03:11,745] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:03:11,779] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:03:11,781] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:03:11,788] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:03:11,791] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:03:11,792] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 271.32it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 272.81it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 267.46it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.89it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.09it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 270.74it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 272.96it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.20it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.81it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.25it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 275.89it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.35it/s]
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 278.01it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 268.92it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.78it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 282.85it/s]
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+torch eager decode #0: 69.69757690429688
+torch eager decode #1: 69.6977783203125
+torch eager decode #2: 69.70126342773438
+torch eager decode #3: 69.69443359375
+torch eager decode #4: 69.69425048828126
+torch eager decode #5: 69.6945068359375
+torch eager decode #6: 69.69454345703124
+torch eager decode #7: 69.69342651367188
+torch + cudagraph decode #0: 9.357977294921875
+torch + cudagraph decode #1: 9.354558563232422
+torch + cudagraph decode #2: 9.364476776123047
+torch + cudagraph decode #3: 9.35787353515625
+torch + cudagraph decode #4: 9.358026885986328
+torch + cudagraph decode #5: 9.357937622070313
+torch + cudagraph decode #6: 9.358020782470703
+torch + cudagraph decode #7: 9.35797119140625
+dist-triton-AR_one_shot_multimem decode #0: 7.840748596191406
+dist-triton-AR_one_shot_multimem decode #1: 7.840351867675781
+dist-triton-AR_one_shot_multimem decode #2: 7.84277114868164
+dist-triton-AR_one_shot_multimem decode #3: 7.8412353515625
+dist-triton-AR_one_shot_multimem decode #4: 7.841519927978515
+dist-triton-AR_one_shot_multimem decode #5: 7.839750671386719
+dist-triton-AR_one_shot_multimem decode #6: 7.841094207763672
+dist-triton-AR_one_shot_multimem decode #7: 7.840636444091797
+mega-kernel decode #0: 7.524562835693359
+mega-kernel decode #1: 7.523873901367187
+mega-kernel decode #2: 7.527489471435547
+mega-kernel decode #3: 7.524534606933594
+mega-kernel decode #4: 7.524209594726562
+mega-kernel decode #5: 7.523916625976563
+mega-kernel decode #6: 7.524166107177734
+mega-kernel decode #7: 7.524235534667969
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.24, dist-triton = 1.04x
+Test with TP_SIZE=8 M=512
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/mega_triton_kernel/test/models/bench_qwen3.py --seq_len 512
+W0814 13:04:52.476000 140313135417152 torch/distributed/run.py:779] 
+W0814 13:04:52.476000 140313135417152 torch/distributed/run.py:779] *****************************************
+W0814 13:04:52.476000 140313135417152 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0814 13:04:52.476000 140313135417152 torch/distributed/run.py:779] *****************************************
+[2025-08-14 13:04:58,032] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:04:58,289] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:04:58,327] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:04:58,343] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:04:58,364] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:04:58,374] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:04:58,380] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:04:58,383] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:04:59,135] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:04:59,242] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:04:59,302] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:04:59,310] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:04:59,331] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:04:59,331] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+[2025-08-14 13:04:59,415] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:04:59,451] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 262.21it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 249.43it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 272.55it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 254.81it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 251.18it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 188.00it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 257.09it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 252.14it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 273.28it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 269.04it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 257.87it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 275.56it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 275.64it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.31it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 256.69it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 267.73it/s]
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+torch eager decode #0: 59.002899169921875
+torch eager decode #1: 59.00309448242187
+torch eager decode #2: 59.002264404296874
+torch eager decode #3: 59.004052734375
+torch eager decode #4: 59.00315551757812
+torch eager decode #5: 59.0028564453125
+torch eager decode #6: 59.0030517578125
+torch eager decode #7: 59.002679443359376
+torch + cudagraph decode #0: 9.409471893310547
+torch + cudagraph decode #1: 9.409236907958984
+torch + cudagraph decode #2: 9.409529876708984
+torch + cudagraph decode #3: 9.410340881347656
+torch + cudagraph decode #4: 9.409529876708984
+torch + cudagraph decode #5: 9.409603118896484
+torch + cudagraph decode #6: 9.409809875488282
+torch + cudagraph decode #7: 9.40928955078125
+dist-triton-AR_one_shot_multimem decode #0: 7.8477020263671875
+dist-triton-AR_one_shot_multimem decode #1: 7.847361755371094
+dist-triton-AR_one_shot_multimem decode #2: 7.847657775878906
+dist-triton-AR_one_shot_multimem decode #3: 7.844159698486328
+dist-triton-AR_one_shot_multimem decode #4: 7.8476318359375
+dist-triton-AR_one_shot_multimem decode #5: 7.847740936279297
+dist-triton-AR_one_shot_multimem decode #6: 7.84893569946289
+dist-triton-AR_one_shot_multimem decode #7: 7.846769714355469
+mega-kernel decode #0: 7.552798461914063
+mega-kernel decode #1: 7.564669036865235
+mega-kernel decode #2: 7.5634513854980465
+mega-kernel decode #3: 7.566304016113281
+mega-kernel decode #4: 7.5626686096191404
+mega-kernel decode #5: 7.563070678710938
+mega-kernel decode #6: 7.566487884521484
+mega-kernel decode #7: 7.562477111816406
+mega-kernel speedup: torch = 7.81x, torch + cudagraph = 1.25, dist-triton = 1.04x
+mega-kernel speedup: torch = 7.80x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 7.80x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 7.80x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 7.80x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 7.80x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 7.80x, torch + cudagraph = 1.24, dist-triton = 1.04x
+mega-kernel speedup: torch = 7.80x, torch + cudagraph = 1.24, dist-triton = 1.04x
+Test with TP_SIZE=8 M=1024
+Found NVSHMEM_HOME from Python nvidia-nvshmem-cu12: /root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/nvidia/nvshmem
+NCCL_SOCKET_IFNAME=xgbe0
+[0;33m[1m⚠️ WARNING: [0m[1m[0m NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY= does not support IPv4, force set NVSHMEM_BOOTSTRAP_UID_SOCK_FAMILY to AF_INET6...
+torchrun --node_rank=0 --nproc_per_node=8 --nnodes=1 --rdzv_endpoint=127.0.0.1:23457 ./python/triton_dist/mega_triton_kernel/test/models/bench_qwen3.py --seq_len 1024
+W0814 13:06:45.453000 140240287160128 torch/distributed/run.py:779] 
+W0814 13:06:45.453000 140240287160128 torch/distributed/run.py:779] *****************************************
+W0814 13:06:45.453000 140240287160128 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0814 13:06:45.453000 140240287160128 torch/distributed/run.py:779] *****************************************
+[2025-08-14 13:06:51,857] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:06:51,871] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:06:51,872] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:06:51,872] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:06:51,888] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:06:51,888] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:06:51,923] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:06:51,929] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-14 13:06:52,850] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:06:52,856] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:06:52,859] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:06:52,892] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:06:52,897] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:06:52,914] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:06:53,002] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-08-14 13:06:53,051] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+Using flash_attn, which is much slower than flash_attn_interface for sm90
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+WARN: cound not find user specified HCA name: =mlx5_1 port: -1, skipping
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 255.13it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 274.10it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 272.78it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 258.31it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 267.50it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 267.38it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 260.31it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 192.58it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 275.37it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 267.57it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 263.77it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 265.58it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 250.77it/s]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 270.45it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 232.18it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 237.43it/s]
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/root/miniconda3/envs/lmy_triton_dis/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+torch eager decode #0: 69.6736083984375
+torch eager decode #1: 69.67824096679688
+torch eager decode #2: 69.67783203125
+torch eager decode #3: 69.67807006835938
+torch eager decode #4: 69.67791137695312
+torch eager decode #5: 69.67798461914063
+torch eager decode #6: 69.67808227539062
+torch eager decode #7: 69.67855224609374
+torch + cudagraph decode #0: 9.442691040039062
+torch + cudagraph decode #1: 9.443225860595703
+torch + cudagraph decode #2: 9.444583892822266
+torch + cudagraph decode #3: 9.442533111572265
+torch + cudagraph decode #4: 9.442479705810547
+torch + cudagraph decode #5: 9.442171478271485
+torch + cudagraph decode #6: 9.442324829101562
+torch + cudagraph decode #7: 9.443653106689453
+dist-triton-AR_one_shot_multimem decode #0: 7.896125030517578
+dist-triton-AR_one_shot_multimem decode #1: 7.8968254089355465
+dist-triton-AR_one_shot_multimem decode #2: 7.896685028076172
+dist-triton-AR_one_shot_multimem decode #3: 7.8955741882324215
+dist-triton-AR_one_shot_multimem decode #4: 7.8956451416015625
+dist-triton-AR_one_shot_multimem decode #5: 7.895958709716797
+dist-triton-AR_one_shot_multimem decode #6: 7.899820709228516
+dist-triton-AR_one_shot_multimem decode #7: 7.894785308837891
+mega-kernel decode #0: 7.530388641357422
+mega-kernel decode #1: 7.5270530700683596
+mega-kernel decode #2: 7.52864990234375
+mega-kernel decode #3: 7.529383850097656
+mega-kernel decode #4: 7.530284881591797
+mega-kernel decode #5: 7.5282844543457035
+mega-kernel decode #6: 7.528947448730468
+mega-kernel decode #7: 7.528224182128906
+mega-kernel speedup: torch = 9.25x, torch + cudagraph = 1.25, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.25, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.25, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.25x, torch + cudagraph = 1.25, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.25x, torch + cudagraph = 1.25, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.25, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.25x, torch + cudagraph = 1.25, dist-triton = 1.05x
+mega-kernel speedup: torch = 9.26x, torch + cudagraph = 1.25, dist-triton = 1.05x
